@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>
+            Mayflower Code Browser - Source Code
+        </title>
+        <link rel="stylesheet" type="text/css" href="../../../../../../../js/jquery.sidebar/css/codebrowser/sidebar.css" />
+        <link rel="stylesheet" type="text/css" href="../../../../../../../css/global.css" />
+        <link rel="stylesheet" type="text/css" href="../../../../../../../css/cruisecontrol.css" />
+        <link rel="stylesheet" type="text/css" href="../../../../../../../css/review.css" />
+
+        <script type="text/javascript" src="../../../../../../../js/jquery-1.4.2.min.js"></script>
+        <script type="text/javascript" src="../../../../../../../js/jquery.sidebar/jquery-ui-1.7.2.custom.min.js"></script>
+        <script type="text/javascript" src="../../../../../../../js/jquery.sidebar/jquery.sidebar.js"></script>
+        <script type="text/javascript" src="../../../../../../../js/jquery.cluetip/lib/jquery.hoverIntent.js"></script>
+        <script type="text/javascript" src="../../../../../../../js/jquery.cluetip/lib/jquery.bgiframe.min.js"></script>
+        <script type="text/javascript" src="../../../../../../../js/jquery.cluetip/jquery.cluetip.min.js"></script>
+
+        <script type="text/javascript" src="../../../../../../../js/review.js"></script>
+    </head>
+    <body class="codebrowser">
+        <div class="header">
+            <a href="./../../../../../../../index.html">Go back to index</a> |
+            <a href="https://github.com/Mayflower/PHP_CodeBrowser">PHP CodeBrowser</a>
+        </div>
+        <hr/>
+        <div id="review">
+            <div class="filepath">
+                FrontBundle/Resources/public/plugins/moment/src/lib/duration/bubble.js            </div>
+
+            <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><div class="code"><ol class="code"><li id="line_1" class="odd"><span class="lineNumber">&nbsp;1&nbsp;</span>import&nbsp;absFloor&nbsp;from&nbsp;'../utils/abs-floor';<a name="line_1"></a></li>
+<li id="line_2" class="even"><span class="lineNumber">&nbsp;2&nbsp;</span>import&nbsp;absCeil&nbsp;from&nbsp;'../utils/abs-ceil';<a name="line_2"></a></li>
+<li id="line_3" class="odd"><span class="lineNumber">&nbsp;3&nbsp;</span>import&nbsp;{&nbsp;createUTCDate&nbsp;}&nbsp;from&nbsp;'../create/date-from-array';<a name="line_3"></a></li>
+<li id="line_4" class="even"><span class="lineNumber">&nbsp;4&nbsp;</span><a name="line_4"></a></li>
+<li id="line_5" class="odd"><span class="lineNumber">&nbsp;5&nbsp;</span>export&nbsp;function&nbsp;bubble&nbsp;()&nbsp;{<a name="line_5"></a></li>
+<li id="line_6" class="even"><span class="lineNumber">&nbsp;6&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;milliseconds&nbsp;=&nbsp;this._milliseconds;<a name="line_6"></a></li>
+<li id="line_7" class="odd"><span class="lineNumber">&nbsp;7&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;days&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;this._days;<a name="line_7"></a></li>
+<li id="line_8" class="even"><span class="lineNumber">&nbsp;8&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;months&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;this._months;<a name="line_8"></a></li>
+<li id="line_9" class="odd"><span class="lineNumber">&nbsp;9&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;data&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;this._data;<a name="line_9"></a></li>
+<li id="line_10" class="even"><span class="lineNumber">10&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;seconds,&nbsp;minutes,&nbsp;hours,&nbsp;years,&nbsp;monthsFromDays;<a name="line_10"></a></li>
+<li id="line_11" class="odd"><span class="lineNumber">11&nbsp;</span><a name="line_11"></a></li>
+<li id="line_12" class="even"><span class="lineNumber">12&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;if&nbsp;we&nbsp;have&nbsp;a&nbsp;mix&nbsp;of&nbsp;positive&nbsp;and&nbsp;negative&nbsp;values,&nbsp;bubble&nbsp;down&nbsp;first<a name="line_12"></a></li>
+<li id="line_13" class="odd"><span class="lineNumber">13&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;check:&nbsp;https://github.com/moment/moment/issues/2166<a name="line_13"></a></li>
+<li id="line_14" class="even"><span class="lineNumber">14&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(!((milliseconds&nbsp;&gt;=&nbsp;0&nbsp;&amp;&amp;&nbsp;days&nbsp;&gt;=&nbsp;0&nbsp;&amp;&amp;&nbsp;months&nbsp;&gt;=&nbsp;0)&nbsp;||<a name="line_14"></a></li>
+<li id="line_15" class="odd"><span class="lineNumber">15&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(milliseconds&nbsp;&lt;=&nbsp;0&nbsp;&amp;&amp;&nbsp;days&nbsp;&lt;=&nbsp;0&nbsp;&amp;&amp;&nbsp;months&nbsp;&lt;=&nbsp;0)))&nbsp;{<a name="line_15"></a></li>
+<li id="line_16" class="even"><span class="lineNumber">16&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;milliseconds&nbsp;+=&nbsp;absCeil(monthsToDays(months)&nbsp;+&nbsp;days)&nbsp;*&nbsp;864e5;<a name="line_16"></a></li>
+<li id="line_17" class="odd"><span class="lineNumber">17&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;days&nbsp;=&nbsp;0;<a name="line_17"></a></li>
+<li id="line_18" class="even"><span class="lineNumber">18&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;months&nbsp;=&nbsp;0;<a name="line_18"></a></li>
+<li id="line_19" class="odd"><span class="lineNumber">19&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;}<a name="line_19"></a></li>
+<li id="line_20" class="even"><span class="lineNumber">20&nbsp;</span><a name="line_20"></a></li>
+<li id="line_21" class="odd"><span class="lineNumber">21&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;The&nbsp;following&nbsp;code&nbsp;bubbles&nbsp;up&nbsp;values,&nbsp;see&nbsp;the&nbsp;tests&nbsp;for<a name="line_21"></a></li>
+<li id="line_22" class="even"><span class="lineNumber">22&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;examples&nbsp;of&nbsp;what&nbsp;that&nbsp;means.<a name="line_22"></a></li>
+<li id="line_23" class="odd"><span class="lineNumber">23&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;data.milliseconds&nbsp;=&nbsp;milliseconds&nbsp;%&nbsp;1000;<a name="line_23"></a></li>
+<li id="line_24" class="even"><span class="lineNumber">24&nbsp;</span><a name="line_24"></a></li>
+<li id="line_25" class="odd"><span class="lineNumber">25&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;seconds&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;absFloor(milliseconds&nbsp;/&nbsp;1000);<a name="line_25"></a></li>
+<li id="line_26" class="even"><span class="lineNumber">26&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;data.seconds&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;seconds&nbsp;%&nbsp;60;<a name="line_26"></a></li>
+<li id="line_27" class="odd"><span class="lineNumber">27&nbsp;</span><a name="line_27"></a></li>
+<li id="line_28" class="even"><span class="lineNumber">28&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;minutes&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;absFloor(seconds&nbsp;/&nbsp;60);<a name="line_28"></a></li>
+<li id="line_29" class="odd"><span class="lineNumber">29&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;data.minutes&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;minutes&nbsp;%&nbsp;60;<a name="line_29"></a></li>
+<li id="line_30" class="even"><span class="lineNumber">30&nbsp;</span><a name="line_30"></a></li>
+<li id="line_31" class="odd"><span class="lineNumber">31&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;hours&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;absFloor(minutes&nbsp;/&nbsp;60);<a name="line_31"></a></li>
+<li id="line_32" class="even"><span class="lineNumber">32&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;data.hours&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;hours&nbsp;%&nbsp;24;<a name="line_32"></a></li>
+<li id="line_33" class="odd"><span class="lineNumber">33&nbsp;</span><a name="line_33"></a></li>
+<li id="line_34" class="even"><span class="lineNumber">34&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;days&nbsp;+=&nbsp;absFloor(hours&nbsp;/&nbsp;24);<a name="line_34"></a></li>
+<li id="line_35" class="odd"><span class="lineNumber">35&nbsp;</span><a name="line_35"></a></li>
+<li id="line_36" class="even"><span class="lineNumber">36&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;convert&nbsp;days&nbsp;to&nbsp;months<a name="line_36"></a></li>
+<li id="line_37" class="odd"><span class="lineNumber">37&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;monthsFromDays&nbsp;=&nbsp;absFloor(daysToMonths(days));<a name="line_37"></a></li>
+<li id="line_38" class="even"><span class="lineNumber">38&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;months&nbsp;+=&nbsp;monthsFromDays;<a name="line_38"></a></li>
+<li id="line_39" class="odd"><span class="lineNumber">39&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;days&nbsp;-=&nbsp;absCeil(monthsToDays(monthsFromDays));<a name="line_39"></a></li>
+<li id="line_40" class="even"><span class="lineNumber">40&nbsp;</span><a name="line_40"></a></li>
+<li id="line_41" class="odd"><span class="lineNumber">41&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;12&nbsp;months&nbsp;-&gt;&nbsp;1&nbsp;year<a name="line_41"></a></li>
+<li id="line_42" class="even"><span class="lineNumber">42&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;years&nbsp;=&nbsp;absFloor(months&nbsp;/&nbsp;12);<a name="line_42"></a></li>
+<li id="line_43" class="odd"><span class="lineNumber">43&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;months&nbsp;%=&nbsp;12;<a name="line_43"></a></li>
+<li id="line_44" class="even"><span class="lineNumber">44&nbsp;</span><a name="line_44"></a></li>
+<li id="line_45" class="odd"><span class="lineNumber">45&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;data.days&nbsp;&nbsp;&nbsp;=&nbsp;days;<a name="line_45"></a></li>
+<li id="line_46" class="even"><span class="lineNumber">46&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;data.months&nbsp;=&nbsp;months;<a name="line_46"></a></li>
+<li id="line_47" class="odd"><span class="lineNumber">47&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;data.years&nbsp;&nbsp;=&nbsp;years;<a name="line_47"></a></li>
+<li id="line_48" class="even"><span class="lineNumber">48&nbsp;</span><a name="line_48"></a></li>
+<li id="line_49" class="odd"><span class="lineNumber">49&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;this;<a name="line_49"></a></li>
+<li id="line_50" class="even"><span class="lineNumber">50&nbsp;</span>}<a name="line_50"></a></li>
+<li id="line_51" class="odd"><span class="lineNumber">51&nbsp;</span><a name="line_51"></a></li>
+<li id="line_52" class="even"><span class="lineNumber">52&nbsp;</span>export&nbsp;function&nbsp;daysToMonths&nbsp;(days)&nbsp;{<a name="line_52"></a></li>
+<li id="line_53" class="odd"><span class="lineNumber">53&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;400&nbsp;years&nbsp;have&nbsp;146097&nbsp;days&nbsp;(taking&nbsp;into&nbsp;account&nbsp;leap&nbsp;year&nbsp;rules)<a name="line_53"></a></li>
+<li id="line_54" class="even"><span class="lineNumber">54&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;400&nbsp;years&nbsp;have&nbsp;12&nbsp;months&nbsp;===&nbsp;4800<a name="line_54"></a></li>
+<li id="line_55" class="odd"><span class="lineNumber">55&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;days&nbsp;*&nbsp;4800&nbsp;/&nbsp;146097;<a name="line_55"></a></li>
+<li id="line_56" class="even"><span class="lineNumber">56&nbsp;</span>}<a name="line_56"></a></li>
+<li id="line_57" class="odd"><span class="lineNumber">57&nbsp;</span><a name="line_57"></a></li>
+<li id="line_58" class="even"><span class="lineNumber">58&nbsp;</span>export&nbsp;function&nbsp;monthsToDays&nbsp;(months)&nbsp;{<a name="line_58"></a></li>
+<li id="line_59" class="odd"><span class="lineNumber">59&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;the&nbsp;reverse&nbsp;of&nbsp;daysToMonths<a name="line_59"></a></li>
+<li id="line_60" class="even"><span class="lineNumber">60&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;months&nbsp;*&nbsp;146097&nbsp;/&nbsp;4800;<a name="line_60"></a></li>
+<li id="line_61" class="odd"><span class="lineNumber">61&nbsp;</span>}<a name="line_61"></a></li></ol></div></body></html>
+                    </div>
+    </body>
+</html>

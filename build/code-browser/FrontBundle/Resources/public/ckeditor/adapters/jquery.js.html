@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>
+            Mayflower Code Browser - Source Code
+        </title>
+        <link rel="stylesheet" type="text/css" href="../../../../js/jquery.sidebar/css/codebrowser/sidebar.css" />
+        <link rel="stylesheet" type="text/css" href="../../../../css/global.css" />
+        <link rel="stylesheet" type="text/css" href="../../../../css/cruisecontrol.css" />
+        <link rel="stylesheet" type="text/css" href="../../../../css/review.css" />
+
+        <script type="text/javascript" src="../../../../js/jquery-1.4.2.min.js"></script>
+        <script type="text/javascript" src="../../../../js/jquery.sidebar/jquery-ui-1.7.2.custom.min.js"></script>
+        <script type="text/javascript" src="../../../../js/jquery.sidebar/jquery.sidebar.js"></script>
+        <script type="text/javascript" src="../../../../js/jquery.cluetip/lib/jquery.hoverIntent.js"></script>
+        <script type="text/javascript" src="../../../../js/jquery.cluetip/lib/jquery.bgiframe.min.js"></script>
+        <script type="text/javascript" src="../../../../js/jquery.cluetip/jquery.cluetip.min.js"></script>
+
+        <script type="text/javascript" src="../../../../js/review.js"></script>
+    </head>
+    <body class="codebrowser">
+        <div class="header">
+            <a href="./../../../../index.html">Go back to index</a> |
+            <a href="https://github.com/Mayflower/PHP_CodeBrowser">PHP CodeBrowser</a>
+        </div>
+        <hr/>
+        <div id="review">
+            <div class="filepath">
+                FrontBundle/Resources/public/ckeditor/adapters/jquery.js            </div>
+
+            <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><div class="code"><ol class="code"><li id="line_1" class="odd"><span class="lineNumber">&nbsp;1&nbsp;</span>&iuml;&raquo;&iquest;/*<a name="line_1"></a></li>
+<li id="line_2" class="even"><span class="lineNumber">&nbsp;2&nbsp;</span>&nbsp;Copyright&nbsp;(c)&nbsp;2003-2016,&nbsp;CKSource&nbsp;-&nbsp;Frederico&nbsp;Knabben.&nbsp;All&nbsp;rights&nbsp;reserved.<a name="line_2"></a></li>
+<li id="line_3" class="odd"><span class="lineNumber">&nbsp;3&nbsp;</span>&nbsp;For&nbsp;licensing,&nbsp;see&nbsp;LICENSE.md&nbsp;or&nbsp;http://ckeditor.com/license<a name="line_3"></a></li>
+<li id="line_4" class="even"><span class="lineNumber">&nbsp;4&nbsp;</span>*/<a name="line_4"></a></li>
+<li id="line_5" class="odd"><span class="lineNumber">&nbsp;5&nbsp;</span>(function(a){if("undefined"==typeof&nbsp;a)throw&nbsp;Error("jQuery&nbsp;should&nbsp;be&nbsp;loaded&nbsp;before&nbsp;CKEditor&nbsp;jQuery&nbsp;adapter.");if("undefined"==typeof&nbsp;CKEDITOR)throw&nbsp;Error("CKEditor&nbsp;should&nbsp;be&nbsp;loaded&nbsp;before&nbsp;CKEditor&nbsp;jQuery&nbsp;adapter.");CKEDITOR.config.jqueryOverrideVal="undefined"==typeof&nbsp;CKEDITOR.config.jqueryOverrideVal?!0:CKEDITOR.config.jqueryOverrideVal;a.extend(a.fn,{ckeditorGet:function(){var&nbsp;a=this.eq(0).data("ckeditorInstance");if(!a)throw"CKEditor&nbsp;is&nbsp;not&nbsp;initialized&nbsp;yet,&nbsp;use&nbsp;ckeditor()&nbsp;with&nbsp;a&nbsp;callback.";return&nbsp;a},<a name="line_5"></a></li>
+<li id="line_6" class="even"><span class="lineNumber">&nbsp;6&nbsp;</span>ckeditor:function(g,d){if(!CKEDITOR.env.isCompatible)throw&nbsp;Error("The&nbsp;environment&nbsp;is&nbsp;incompatible.");if(!a.isFunction(g)){var&nbsp;m=d;d=g;g=m}var&nbsp;k=[];d=d||{};this.each(function(){var&nbsp;b=a(this),c=b.data("ckeditorInstance"),f=b.data("_ckeditorInstanceLock"),h=this,l=new&nbsp;a.Deferred;k.push(l.promise());if(c&amp;&amp;!f)g&amp;&amp;g.apply(c,[this]),l.resolve();else&nbsp;if(f)c.once("instanceReady",function(){setTimeout(function(){c.element?(c.element.$==h&amp;&amp;g&amp;&amp;g.apply(c,[h]),l.resolve()):setTimeout(arguments.callee,100)},0)},<a name="line_6"></a></li>
+<li id="line_7" class="odd"><span class="lineNumber">&nbsp;7&nbsp;</span>null,null,9999);else{if(d.autoUpdateElement||"undefined"==typeof&nbsp;d.autoUpdateElement&amp;&amp;CKEDITOR.config.autoUpdateElement)d.autoUpdateElementJquery=!0;d.autoUpdateElement=!1;b.data("_ckeditorInstanceLock",!0);c=a(this).is("textarea")?CKEDITOR.replace(h,d):CKEDITOR.inline(h,d);b.data("ckeditorInstance",c);c.on("instanceReady",function(d){var&nbsp;e=d.editor;setTimeout(function(){if(e.element){d.removeListener();e.on("dataReady",function(){b.trigger("dataReady.ckeditor",[e])});e.on("setData",function(a){b.trigger("setData.ckeditor",<a name="line_7"></a></li>
+<li id="line_8" class="even"><span class="lineNumber">&nbsp;8&nbsp;</span>[e,a.data])});e.on("getData",function(a){b.trigger("getData.ckeditor",[e,a.data])},999);e.on("destroy",function(){b.trigger("destroy.ckeditor",[e])});e.on("save",function(){a(h.form).submit();return!1},null,null,20);if(e.config.autoUpdateElementJquery&amp;&amp;b.is("textarea")&amp;&amp;a(h.form).length){var&nbsp;c=function(){b.ckeditor(function(){e.updateElement()})};a(h.form).submit(c);a(h.form).bind("form-pre-serialize",c);b.bind("destroy.ckeditor",function(){a(h.form).unbind("submit",c);a(h.form).unbind("form-pre-serialize",<a name="line_8"></a></li>
+<li id="line_9" class="odd"><span class="lineNumber">&nbsp;9&nbsp;</span>c)})}e.on("destroy",function(){b.removeData("ckeditorInstance")});b.removeData("_ckeditorInstanceLock");b.trigger("instanceReady.ckeditor",[e]);g&amp;&amp;g.apply(e,[h]);l.resolve()}else&nbsp;setTimeout(arguments.callee,100)},0)},null,null,9999)}});var&nbsp;f=new&nbsp;a.Deferred;this.promise=f.promise();a.when.apply(this,k).then(function(){f.resolve()});this.editor=this.eq(0).data("ckeditorInstance");return&nbsp;this}});CKEDITOR.config.jqueryOverrideVal&amp;&amp;(a.fn.val=CKEDITOR.tools.override(a.fn.val,function(g){return&nbsp;function(d){if(arguments.length){var&nbsp;m=<a name="line_9"></a></li>
+<li id="line_10" class="even"><span class="lineNumber">10&nbsp;</span>this,k=[],f=this.each(function(){var&nbsp;b=a(this),c=b.data("ckeditorInstance");if(b.is("textarea")&amp;&amp;c){var&nbsp;f=new&nbsp;a.Deferred;c.setData(d,function(){f.resolve()});k.push(f.promise());return!0}return&nbsp;g.call(b,d)});if(k.length){var&nbsp;b=new&nbsp;a.Deferred;a.when.apply(this,k).done(function(){b.resolveWith(m)});return&nbsp;b.promise()}return&nbsp;f}var&nbsp;f=a(this).eq(0),c=f.data("ckeditorInstance");return&nbsp;f.is("textarea")&amp;&amp;c?c.getData():g.call(f)}}))})(window.jQuery);<a name="line_10"></a></li></ol></div></body></html>
+                    </div>
+    </body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>
+            Mayflower Code Browser - Source Code
+        </title>
+        <link rel="stylesheet" type="text/css" href="../../../../../../js/jquery.sidebar/css/codebrowser/sidebar.css" />
+        <link rel="stylesheet" type="text/css" href="../../../../../../css/global.css" />
+        <link rel="stylesheet" type="text/css" href="../../../../../../css/cruisecontrol.css" />
+        <link rel="stylesheet" type="text/css" href="../../../../../../css/review.css" />
+
+        <script type="text/javascript" src="../../../../../../js/jquery-1.4.2.min.js"></script>
+        <script type="text/javascript" src="../../../../../../js/jquery.sidebar/jquery-ui-1.7.2.custom.min.js"></script>
+        <script type="text/javascript" src="../../../../../../js/jquery.sidebar/jquery.sidebar.js"></script>
+        <script type="text/javascript" src="../../../../../../js/jquery.cluetip/lib/jquery.hoverIntent.js"></script>
+        <script type="text/javascript" src="../../../../../../js/jquery.cluetip/lib/jquery.bgiframe.min.js"></script>
+        <script type="text/javascript" src="../../../../../../js/jquery.cluetip/jquery.cluetip.min.js"></script>
+
+        <script type="text/javascript" src="../../../../../../js/review.js"></script>
+    </head>
+    <body class="codebrowser">
+        <div class="header">
+            <a href="./../../../../../../index.html">Go back to index</a> |
+            <a href="https://github.com/Mayflower/PHP_CodeBrowser">PHP CodeBrowser</a>
+        </div>
+        <hr/>
+        <div id="review">
+            <div class="filepath">
+                FrontBundle/Resources/public/plugins/moment/src/locale/tzl.js            </div>
+
+            <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><div class="code"><ol class="code"><li id="line_1" class="odd"><span class="lineNumber">&nbsp;1&nbsp;</span>//!&nbsp;moment.js&nbsp;locale&nbsp;configuration<a name="line_1"></a></li>
+<li id="line_2" class="even"><span class="lineNumber">&nbsp;2&nbsp;</span>//!&nbsp;locale&nbsp;:&nbsp;talossan&nbsp;(tzl)<a name="line_2"></a></li>
+<li id="line_3" class="odd"><span class="lineNumber">&nbsp;3&nbsp;</span>//!&nbsp;author&nbsp;:&nbsp;Robin&nbsp;van&nbsp;der&nbsp;Vliet&nbsp;:&nbsp;https://github.com/robin0van0der0v&nbsp;with&nbsp;the&nbsp;help&nbsp;of&nbsp;Iust&igrave;&nbsp;Canun<a name="line_3"></a></li>
+<li id="line_4" class="even"><span class="lineNumber">&nbsp;4&nbsp;</span><a name="line_4"></a></li>
+<li id="line_5" class="odd"><span class="lineNumber">&nbsp;5&nbsp;</span><a name="line_5"></a></li>
+<li id="line_6" class="even"><span class="lineNumber">&nbsp;6&nbsp;</span>import&nbsp;moment&nbsp;from&nbsp;'../moment';<a name="line_6"></a></li>
+<li id="line_7" class="odd"><span class="lineNumber">&nbsp;7&nbsp;</span><a name="line_7"></a></li>
+<li id="line_8" class="even"><span class="lineNumber">&nbsp;8&nbsp;</span>//&nbsp;After&nbsp;the&nbsp;year&nbsp;there&nbsp;should&nbsp;be&nbsp;a&nbsp;slash&nbsp;and&nbsp;the&nbsp;amount&nbsp;of&nbsp;years&nbsp;since&nbsp;December&nbsp;26,&nbsp;1979&nbsp;in&nbsp;Roman&nbsp;numerals.<a name="line_8"></a></li>
+<li id="line_9" class="odd"><span class="lineNumber">&nbsp;9&nbsp;</span>//&nbsp;This&nbsp;is&nbsp;currently&nbsp;too&nbsp;difficult&nbsp;(maybe&nbsp;even&nbsp;impossible)&nbsp;to&nbsp;add.<a name="line_9"></a></li>
+<li id="line_10" class="even"><span class="lineNumber">10&nbsp;</span>export&nbsp;default&nbsp;moment.defineLocale('tzl',&nbsp;{<a name="line_10"></a></li>
+<li id="line_11" class="odd"><span class="lineNumber">11&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;months&nbsp;:&nbsp;'Januar_Fevraglh_Mar&ccedil;_Avr&iuml;u_Mai_G&uuml;n_Julia_Guscht_Setemvar_Listop&auml;ts_Noemvar_Zecemvar'.split('_'),<a name="line_11"></a></li>
+<li id="line_12" class="even"><span class="lineNumber">12&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;monthsShort&nbsp;:&nbsp;'Jan_Fev_Mar_Avr_Mai_G&uuml;n_Jul_Gus_Set_Lis_Noe_Zec'.split('_'),<a name="line_12"></a></li>
+<li id="line_13" class="odd"><span class="lineNumber">13&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;weekdays&nbsp;:&nbsp;'S&uacute;ladi_L&uacute;ne&ccedil;i_Maitzi_M&aacute;rcuri_Xh&uacute;adi_Vi&eacute;ner&ccedil;i_S&aacute;turi'.split('_'),<a name="line_13"></a></li>
+<li id="line_14" class="even"><span class="lineNumber">14&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;weekdaysShort&nbsp;:&nbsp;'S&uacute;l_L&uacute;n_Mai_M&aacute;r_Xh&uacute;_Vi&eacute;_S&aacute;t'.split('_'),<a name="line_14"></a></li>
+<li id="line_15" class="odd"><span class="lineNumber">15&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;weekdaysMin&nbsp;:&nbsp;'S&uacute;_L&uacute;_Ma_M&aacute;_Xh_Vi_S&aacute;'.split('_'),<a name="line_15"></a></li>
+<li id="line_16" class="even"><span class="lineNumber">16&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;longDateFormat&nbsp;:&nbsp;{<a name="line_16"></a></li>
+<li id="line_17" class="odd"><span class="lineNumber">17&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LT&nbsp;:&nbsp;'HH.mm',<a name="line_17"></a></li>
+<li id="line_18" class="even"><span class="lineNumber">18&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LTS&nbsp;:&nbsp;'LT.ss',<a name="line_18"></a></li>
+<li id="line_19" class="odd"><span class="lineNumber">19&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;L&nbsp;:&nbsp;'DD.MM.YYYY',<a name="line_19"></a></li>
+<li id="line_20" class="even"><span class="lineNumber">20&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LL&nbsp;:&nbsp;'D.&nbsp;MMMM&nbsp;[dallas]&nbsp;YYYY',<a name="line_20"></a></li>
+<li id="line_21" class="odd"><span class="lineNumber">21&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LLL&nbsp;:&nbsp;'D.&nbsp;MMMM&nbsp;[dallas]&nbsp;YYYY&nbsp;LT',<a name="line_21"></a></li>
+<li id="line_22" class="even"><span class="lineNumber">22&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LLLL&nbsp;:&nbsp;'dddd,&nbsp;[li]&nbsp;D.&nbsp;MMMM&nbsp;[dallas]&nbsp;YYYY&nbsp;LT'<a name="line_22"></a></li>
+<li id="line_23" class="odd"><span class="lineNumber">23&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;},<a name="line_23"></a></li>
+<li id="line_24" class="even"><span class="lineNumber">24&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;meridiem&nbsp;:&nbsp;function&nbsp;(hours,&nbsp;minutes,&nbsp;isLower)&nbsp;{<a name="line_24"></a></li>
+<li id="line_25" class="odd"><span class="lineNumber">25&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(hours&nbsp;&gt;&nbsp;11)&nbsp;{<a name="line_25"></a></li>
+<li id="line_26" class="even"><span class="lineNumber">26&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;isLower&nbsp;?&nbsp;'d\'o'&nbsp;:&nbsp;'D\'O';<a name="line_26"></a></li>
+<li id="line_27" class="odd"><span class="lineNumber">27&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<a name="line_27"></a></li>
+<li id="line_28" class="even"><span class="lineNumber">28&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;isLower&nbsp;?&nbsp;'d\'a'&nbsp;:&nbsp;'D\'A';<a name="line_28"></a></li>
+<li id="line_29" class="odd"><span class="lineNumber">29&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<a name="line_29"></a></li>
+<li id="line_30" class="even"><span class="lineNumber">30&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;},<a name="line_30"></a></li>
+<li id="line_31" class="odd"><span class="lineNumber">31&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;calendar&nbsp;:&nbsp;{<a name="line_31"></a></li>
+<li id="line_32" class="even"><span class="lineNumber">32&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sameDay&nbsp;:&nbsp;'[oxhi&nbsp;&agrave;]&nbsp;LT',<a name="line_32"></a></li>
+<li id="line_33" class="odd"><span class="lineNumber">33&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nextDay&nbsp;:&nbsp;'[dem&agrave;&nbsp;&agrave;]&nbsp;LT',<a name="line_33"></a></li>
+<li id="line_34" class="even"><span class="lineNumber">34&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nextWeek&nbsp;:&nbsp;'dddd&nbsp;[&agrave;]&nbsp;LT',<a name="line_34"></a></li>
+<li id="line_35" class="odd"><span class="lineNumber">35&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lastDay&nbsp;:&nbsp;'[ieiri&nbsp;&agrave;]&nbsp;LT',<a name="line_35"></a></li>
+<li id="line_36" class="even"><span class="lineNumber">36&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lastWeek&nbsp;:&nbsp;'[s&uuml;r&nbsp;el]&nbsp;dddd&nbsp;[lasteu&nbsp;&agrave;]&nbsp;LT',<a name="line_36"></a></li>
+<li id="line_37" class="odd"><span class="lineNumber">37&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sameElse&nbsp;:&nbsp;'L'<a name="line_37"></a></li>
+<li id="line_38" class="even"><span class="lineNumber">38&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;},<a name="line_38"></a></li>
+<li id="line_39" class="odd"><span class="lineNumber">39&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;relativeTime&nbsp;:&nbsp;{<a name="line_39"></a></li>
+<li id="line_40" class="even"><span class="lineNumber">40&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;future&nbsp;:&nbsp;'osprei&nbsp;%s',<a name="line_40"></a></li>
+<li id="line_41" class="odd"><span class="lineNumber">41&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;past&nbsp;:&nbsp;'ja%s',<a name="line_41"></a></li>
+<li id="line_42" class="even"><span class="lineNumber">42&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;s&nbsp;:&nbsp;processRelativeTime,<a name="line_42"></a></li>
+<li id="line_43" class="odd"><span class="lineNumber">43&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;m&nbsp;:&nbsp;processRelativeTime,<a name="line_43"></a></li>
+<li id="line_44" class="even"><span class="lineNumber">44&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mm&nbsp;:&nbsp;processRelativeTime,<a name="line_44"></a></li>
+<li id="line_45" class="odd"><span class="lineNumber">45&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;h&nbsp;:&nbsp;processRelativeTime,<a name="line_45"></a></li>
+<li id="line_46" class="even"><span class="lineNumber">46&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hh&nbsp;:&nbsp;processRelativeTime,<a name="line_46"></a></li>
+<li id="line_47" class="odd"><span class="lineNumber">47&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;d&nbsp;:&nbsp;processRelativeTime,<a name="line_47"></a></li>
+<li id="line_48" class="even"><span class="lineNumber">48&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dd&nbsp;:&nbsp;processRelativeTime,<a name="line_48"></a></li>
+<li id="line_49" class="odd"><span class="lineNumber">49&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;M&nbsp;:&nbsp;processRelativeTime,<a name="line_49"></a></li>
+<li id="line_50" class="even"><span class="lineNumber">50&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MM&nbsp;:&nbsp;processRelativeTime,<a name="line_50"></a></li>
+<li id="line_51" class="odd"><span class="lineNumber">51&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;y&nbsp;:&nbsp;processRelativeTime,<a name="line_51"></a></li>
+<li id="line_52" class="even"><span class="lineNumber">52&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;yy&nbsp;:&nbsp;processRelativeTime<a name="line_52"></a></li>
+<li id="line_53" class="odd"><span class="lineNumber">53&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;},<a name="line_53"></a></li>
+<li id="line_54" class="even"><span class="lineNumber">54&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;ordinalParse:&nbsp;/\d{1,2}\./,<a name="line_54"></a></li>
+<li id="line_55" class="odd"><span class="lineNumber">55&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;ordinal&nbsp;:&nbsp;'%d.',<a name="line_55"></a></li>
+<li id="line_56" class="even"><span class="lineNumber">56&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;week&nbsp;:&nbsp;{<a name="line_56"></a></li>
+<li id="line_57" class="odd"><span class="lineNumber">57&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dow&nbsp;:&nbsp;1,&nbsp;//&nbsp;Monday&nbsp;is&nbsp;the&nbsp;first&nbsp;day&nbsp;of&nbsp;the&nbsp;week.<a name="line_57"></a></li>
+<li id="line_58" class="even"><span class="lineNumber">58&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;doy&nbsp;:&nbsp;4&nbsp;&nbsp;//&nbsp;The&nbsp;week&nbsp;that&nbsp;contains&nbsp;Jan&nbsp;4th&nbsp;is&nbsp;the&nbsp;first&nbsp;week&nbsp;of&nbsp;the&nbsp;year.<a name="line_58"></a></li>
+<li id="line_59" class="odd"><span class="lineNumber">59&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;}<a name="line_59"></a></li>
+<li id="line_60" class="even"><span class="lineNumber">60&nbsp;</span>});<a name="line_60"></a></li>
+<li id="line_61" class="odd"><span class="lineNumber">61&nbsp;</span><a name="line_61"></a></li>
+<li id="line_62" class="even"><span class="lineNumber">62&nbsp;</span>function&nbsp;processRelativeTime(number,&nbsp;withoutSuffix,&nbsp;key,&nbsp;isFuture)&nbsp;{<a name="line_62"></a></li>
+<li id="line_63" class="odd"><span class="lineNumber">63&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;format&nbsp;=&nbsp;{<a name="line_63"></a></li>
+<li id="line_64" class="even"><span class="lineNumber">64&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'s':&nbsp;['viensas&nbsp;secunds',&nbsp;'\'iensas&nbsp;secunds'],<a name="line_64"></a></li>
+<li id="line_65" class="odd"><span class="lineNumber">65&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'m':&nbsp;['\'n&nbsp;m&iacute;ut',&nbsp;'\'iens&nbsp;m&iacute;ut'],<a name="line_65"></a></li>
+<li id="line_66" class="even"><span class="lineNumber">66&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'mm':&nbsp;[number&nbsp;+&nbsp;'&nbsp;m&iacute;uts',&nbsp;'&nbsp;'&nbsp;+&nbsp;number&nbsp;+&nbsp;'&nbsp;m&iacute;uts'],<a name="line_66"></a></li>
+<li id="line_67" class="odd"><span class="lineNumber">67&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'h':&nbsp;['\'n&nbsp;&thorn;ora',&nbsp;'\'iensa&nbsp;&thorn;ora'],<a name="line_67"></a></li>
+<li id="line_68" class="even"><span class="lineNumber">68&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'hh':&nbsp;[number&nbsp;+&nbsp;'&nbsp;&thorn;oras',&nbsp;'&nbsp;'&nbsp;+&nbsp;number&nbsp;+&nbsp;'&nbsp;&thorn;oras'],<a name="line_68"></a></li>
+<li id="line_69" class="odd"><span class="lineNumber">69&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'d':&nbsp;['\'n&nbsp;ziua',&nbsp;'\'iensa&nbsp;ziua'],<a name="line_69"></a></li>
+<li id="line_70" class="even"><span class="lineNumber">70&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'dd':&nbsp;[number&nbsp;+&nbsp;'&nbsp;ziuas',&nbsp;'&nbsp;'&nbsp;+&nbsp;number&nbsp;+&nbsp;'&nbsp;ziuas'],<a name="line_70"></a></li>
+<li id="line_71" class="odd"><span class="lineNumber">71&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'M':&nbsp;['\'n&nbsp;mes',&nbsp;'\'iens&nbsp;mes'],<a name="line_71"></a></li>
+<li id="line_72" class="even"><span class="lineNumber">72&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'MM':&nbsp;[number&nbsp;+&nbsp;'&nbsp;mesen',&nbsp;'&nbsp;'&nbsp;+&nbsp;number&nbsp;+&nbsp;'&nbsp;mesen'],<a name="line_72"></a></li>
+<li id="line_73" class="odd"><span class="lineNumber">73&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'y':&nbsp;['\'n&nbsp;ar',&nbsp;'\'iens&nbsp;ar'],<a name="line_73"></a></li>
+<li id="line_74" class="even"><span class="lineNumber">74&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'yy':&nbsp;[number&nbsp;+&nbsp;'&nbsp;ars',&nbsp;'&nbsp;'&nbsp;+&nbsp;number&nbsp;+&nbsp;'&nbsp;ars']<a name="line_74"></a></li>
+<li id="line_75" class="odd"><span class="lineNumber">75&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;};<a name="line_75"></a></li>
+<li id="line_76" class="even"><span class="lineNumber">76&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;isFuture&nbsp;?&nbsp;format[key][0]&nbsp;:&nbsp;(withoutSuffix&nbsp;?&nbsp;format[key][0]&nbsp;:&nbsp;format[key][1].trim());<a name="line_76"></a></li>
+<li id="line_77" class="odd"><span class="lineNumber">77&nbsp;</span>}<a name="line_77"></a></li></ol></div></body></html>
+                    </div>
+    </body>
+</html>

@@ -1,0 +1,86 @@
+{% extends 'FrontBundle:layout:layout.html.twig' %}
+
+{% block nextpage %}
+    {{ path('stat_2') }}
+{% endblock %}
+
+{% block content %}
+
+
+
+    <div class="row">
+        <div class="col-md-12"  align="center">
+            <div class="title">
+                <h2>
+                    Nombre de recrutements : {{ date|date("d/m/Y")  }} : {{ nbrRecretement }}
+                </h2>
+            </div>
+        </div>
+    </div>
+    <div class="row day">
+        <div class="col-md-12 stat" align="center">
+            <div id="chart-container"></div>
+
+
+        </div>
+    </div>
+
+    {{ include ("FrontBundle:layout:vignette.html.twig") }}
+    <script type="text/javascript" src="http://static.fusioncharts.com/code/latest/fusioncharts.js"></script>
+    <script type="text/javascript" src="http://static.fusioncharts.com/code/latest/themes/fusioncharts.theme.fint.js?cacheBust=56"></script>
+
+
+
+    <script>
+        FusionCharts.ready(function(){
+            var fusioncharts = new FusionCharts({
+                    type: 'hlineargauge',
+                    renderAt: 'chart-container',
+                    id: 'cpu-linear-gauge',
+                    width: '900',
+                    height: '260',
+                    dataFormat: 'json',
+                    dataSource: {
+                        "chart": {
+                            "theme": "fint",
+                            "caption":  "Semaine : {{ semaine }}",
+                            "lowerLimit": "0",
+                            "upperLimit": "{{ nbrObjRecretement }}",
+                            "numberSuffix": " recrutements",
+                            "chartBottomMargin": "40",
+                            "valueFontSize": "18",
+                            "valueFontBold": "1"
+                        },
+                        "colorRange": {
+                            "color": [{
+                                "minValue": "",
+                                "maxValue": "{{ nbrRecretementSemaine }}",
+                                "label": "{{ nbrRecretementSemaine }} /{{ nbrObjRecretement }}",
+                                "code": "#1ee410"
+
+                            }, {
+                                "minValue": "",
+                                "maxValue": "20",
+                                "label": "Objectifs de recrutement",
+                                "code": "#e46b4d",
+                                "padding":"20"
+                            }]
+                        },
+                        "pointers": {
+                            "pointer": [{
+                                "value": "{{ nbrRecretementSemaine }}",
+                                "label":""
+                            }]
+                        }
+
+                    }
+                }
+            );
+            fusioncharts.render();
+        });
+    </script>
+
+
+
+
+{% endblock %}

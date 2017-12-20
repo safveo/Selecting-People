@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>
+            Mayflower Code Browser - Source Code
+        </title>
+        <link rel="stylesheet" type="text/css" href="../../../../../../../js/jquery.sidebar/css/codebrowser/sidebar.css" />
+        <link rel="stylesheet" type="text/css" href="../../../../../../../css/global.css" />
+        <link rel="stylesheet" type="text/css" href="../../../../../../../css/cruisecontrol.css" />
+        <link rel="stylesheet" type="text/css" href="../../../../../../../css/review.css" />
+
+        <script type="text/javascript" src="../../../../../../../js/jquery-1.4.2.min.js"></script>
+        <script type="text/javascript" src="../../../../../../../js/jquery.sidebar/jquery-ui-1.7.2.custom.min.js"></script>
+        <script type="text/javascript" src="../../../../../../../js/jquery.sidebar/jquery.sidebar.js"></script>
+        <script type="text/javascript" src="../../../../../../../js/jquery.cluetip/lib/jquery.hoverIntent.js"></script>
+        <script type="text/javascript" src="../../../../../../../js/jquery.cluetip/lib/jquery.bgiframe.min.js"></script>
+        <script type="text/javascript" src="../../../../../../../js/jquery.cluetip/jquery.cluetip.min.js"></script>
+
+        <script type="text/javascript" src="../../../../../../../js/review.js"></script>
+    </head>
+    <body class="codebrowser">
+        <div class="header">
+            <a href="./../../../../../../../index.html">Go back to index</a> |
+            <a href="https://github.com/Mayflower/PHP_CodeBrowser">PHP CodeBrowser</a>
+        </div>
+        <hr/>
+        <div id="review">
+            <div class="filepath">
+                FrontBundle/Resources/public/plugins/moment/src/lib/duration/as.js            </div>
+
+            <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><div class="code"><ol class="code"><li id="line_1" class="odd"><span class="lineNumber">&nbsp;1&nbsp;</span>import&nbsp;{&nbsp;daysToMonths,&nbsp;monthsToDays&nbsp;}&nbsp;from&nbsp;'./bubble';<a name="line_1"></a></li>
+<li id="line_2" class="even"><span class="lineNumber">&nbsp;2&nbsp;</span>import&nbsp;{&nbsp;normalizeUnits&nbsp;}&nbsp;from&nbsp;'../units/aliases';<a name="line_2"></a></li>
+<li id="line_3" class="odd"><span class="lineNumber">&nbsp;3&nbsp;</span>import&nbsp;toInt&nbsp;from&nbsp;'../utils/to-int';<a name="line_3"></a></li>
+<li id="line_4" class="even"><span class="lineNumber">&nbsp;4&nbsp;</span><a name="line_4"></a></li>
+<li id="line_5" class="odd"><span class="lineNumber">&nbsp;5&nbsp;</span>export&nbsp;function&nbsp;as&nbsp;(units)&nbsp;{<a name="line_5"></a></li>
+<li id="line_6" class="even"><span class="lineNumber">&nbsp;6&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;days;<a name="line_6"></a></li>
+<li id="line_7" class="odd"><span class="lineNumber">&nbsp;7&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;months;<a name="line_7"></a></li>
+<li id="line_8" class="even"><span class="lineNumber">&nbsp;8&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;milliseconds&nbsp;=&nbsp;this._milliseconds;<a name="line_8"></a></li>
+<li id="line_9" class="odd"><span class="lineNumber">&nbsp;9&nbsp;</span><a name="line_9"></a></li>
+<li id="line_10" class="even"><span class="lineNumber">10&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;units&nbsp;=&nbsp;normalizeUnits(units);<a name="line_10"></a></li>
+<li id="line_11" class="odd"><span class="lineNumber">11&nbsp;</span><a name="line_11"></a></li>
+<li id="line_12" class="even"><span class="lineNumber">12&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(units&nbsp;===&nbsp;'month'&nbsp;||&nbsp;units&nbsp;===&nbsp;'year')&nbsp;{<a name="line_12"></a></li>
+<li id="line_13" class="odd"><span class="lineNumber">13&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;days&nbsp;&nbsp;&nbsp;=&nbsp;this._days&nbsp;&nbsp;&nbsp;+&nbsp;milliseconds&nbsp;/&nbsp;864e5;<a name="line_13"></a></li>
+<li id="line_14" class="even"><span class="lineNumber">14&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;months&nbsp;=&nbsp;this._months&nbsp;+&nbsp;daysToMonths(days);<a name="line_14"></a></li>
+<li id="line_15" class="odd"><span class="lineNumber">15&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;units&nbsp;===&nbsp;'month'&nbsp;?&nbsp;months&nbsp;:&nbsp;months&nbsp;/&nbsp;12;<a name="line_15"></a></li>
+<li id="line_16" class="even"><span class="lineNumber">16&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<a name="line_16"></a></li>
+<li id="line_17" class="odd"><span class="lineNumber">17&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;handle&nbsp;milliseconds&nbsp;separately&nbsp;because&nbsp;of&nbsp;floating&nbsp;point&nbsp;math&nbsp;errors&nbsp;(issue&nbsp;#1867)<a name="line_17"></a></li>
+<li id="line_18" class="even"><span class="lineNumber">18&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;days&nbsp;=&nbsp;this._days&nbsp;+&nbsp;Math.round(monthsToDays(this._months));<a name="line_18"></a></li>
+<li id="line_19" class="odd"><span class="lineNumber">19&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;switch&nbsp;(units)&nbsp;{<a name="line_19"></a></li>
+<li id="line_20" class="even"><span class="lineNumber">20&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;case&nbsp;'week'&nbsp;&nbsp;&nbsp;:&nbsp;return&nbsp;days&nbsp;/&nbsp;7&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+&nbsp;milliseconds&nbsp;/&nbsp;6048e5;<a name="line_20"></a></li>
+<li id="line_21" class="odd"><span class="lineNumber">21&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;case&nbsp;'day'&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;return&nbsp;days&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+&nbsp;milliseconds&nbsp;/&nbsp;864e5;<a name="line_21"></a></li>
+<li id="line_22" class="even"><span class="lineNumber">22&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;case&nbsp;'hour'&nbsp;&nbsp;&nbsp;:&nbsp;return&nbsp;days&nbsp;*&nbsp;24&nbsp;&nbsp;&nbsp;&nbsp;+&nbsp;milliseconds&nbsp;/&nbsp;36e5;<a name="line_22"></a></li>
+<li id="line_23" class="odd"><span class="lineNumber">23&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;case&nbsp;'minute'&nbsp;:&nbsp;return&nbsp;days&nbsp;*&nbsp;1440&nbsp;&nbsp;+&nbsp;milliseconds&nbsp;/&nbsp;6e4;<a name="line_23"></a></li>
+<li id="line_24" class="even"><span class="lineNumber">24&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;case&nbsp;'second'&nbsp;:&nbsp;return&nbsp;days&nbsp;*&nbsp;86400&nbsp;+&nbsp;milliseconds&nbsp;/&nbsp;1000;<a name="line_24"></a></li>
+<li id="line_25" class="odd"><span class="lineNumber">25&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;Math.floor&nbsp;prevents&nbsp;floating&nbsp;point&nbsp;math&nbsp;errors&nbsp;here<a name="line_25"></a></li>
+<li id="line_26" class="even"><span class="lineNumber">26&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;case&nbsp;'millisecond':&nbsp;return&nbsp;Math.floor(days&nbsp;*&nbsp;864e5)&nbsp;+&nbsp;milliseconds;<a name="line_26"></a></li>
+<li id="line_27" class="odd"><span class="lineNumber">27&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;default:&nbsp;throw&nbsp;new&nbsp;Error('Unknown&nbsp;unit&nbsp;'&nbsp;+&nbsp;units);<a name="line_27"></a></li>
+<li id="line_28" class="even"><span class="lineNumber">28&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<a name="line_28"></a></li>
+<li id="line_29" class="odd"><span class="lineNumber">29&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;}<a name="line_29"></a></li>
+<li id="line_30" class="even"><span class="lineNumber">30&nbsp;</span>}<a name="line_30"></a></li>
+<li id="line_31" class="odd"><span class="lineNumber">31&nbsp;</span><a name="line_31"></a></li>
+<li id="line_32" class="even"><span class="lineNumber">32&nbsp;</span>//&nbsp;TODO:&nbsp;Use&nbsp;this.as('ms')?<a name="line_32"></a></li>
+<li id="line_33" class="odd"><span class="lineNumber">33&nbsp;</span>export&nbsp;function&nbsp;valueOf&nbsp;()&nbsp;{<a name="line_33"></a></li>
+<li id="line_34" class="even"><span class="lineNumber">34&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;(<a name="line_34"></a></li>
+<li id="line_35" class="odd"><span class="lineNumber">35&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this._milliseconds&nbsp;+<a name="line_35"></a></li>
+<li id="line_36" class="even"><span class="lineNumber">36&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this._days&nbsp;*&nbsp;864e5&nbsp;+<a name="line_36"></a></li>
+<li id="line_37" class="odd"><span class="lineNumber">37&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(this._months&nbsp;%&nbsp;12)&nbsp;*&nbsp;2592e6&nbsp;+<a name="line_37"></a></li>
+<li id="line_38" class="even"><span class="lineNumber">38&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;toInt(this._months&nbsp;/&nbsp;12)&nbsp;*&nbsp;31536e6<a name="line_38"></a></li>
+<li id="line_39" class="odd"><span class="lineNumber">39&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;);<a name="line_39"></a></li>
+<li id="line_40" class="even"><span class="lineNumber">40&nbsp;</span>}<a name="line_40"></a></li>
+<li id="line_41" class="odd"><span class="lineNumber">41&nbsp;</span><a name="line_41"></a></li>
+<li id="line_42" class="even"><span class="lineNumber">42&nbsp;</span>function&nbsp;makeAs&nbsp;(alias)&nbsp;{<a name="line_42"></a></li>
+<li id="line_43" class="odd"><span class="lineNumber">43&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;function&nbsp;()&nbsp;{<a name="line_43"></a></li>
+<li id="line_44" class="even"><span class="lineNumber">44&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;this.as(alias);<a name="line_44"></a></li>
+<li id="line_45" class="odd"><span class="lineNumber">45&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;};<a name="line_45"></a></li>
+<li id="line_46" class="even"><span class="lineNumber">46&nbsp;</span>}<a name="line_46"></a></li>
+<li id="line_47" class="odd"><span class="lineNumber">47&nbsp;</span><a name="line_47"></a></li>
+<li id="line_48" class="even"><span class="lineNumber">48&nbsp;</span>export&nbsp;var&nbsp;asMilliseconds&nbsp;=&nbsp;makeAs('ms');<a name="line_48"></a></li>
+<li id="line_49" class="odd"><span class="lineNumber">49&nbsp;</span>export&nbsp;var&nbsp;asSeconds&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;makeAs('s');<a name="line_49"></a></li>
+<li id="line_50" class="even"><span class="lineNumber">50&nbsp;</span>export&nbsp;var&nbsp;asMinutes&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;makeAs('m');<a name="line_50"></a></li>
+<li id="line_51" class="odd"><span class="lineNumber">51&nbsp;</span>export&nbsp;var&nbsp;asHours&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;makeAs('h');<a name="line_51"></a></li>
+<li id="line_52" class="even"><span class="lineNumber">52&nbsp;</span>export&nbsp;var&nbsp;asDays&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;makeAs('d');<a name="line_52"></a></li>
+<li id="line_53" class="odd"><span class="lineNumber">53&nbsp;</span>export&nbsp;var&nbsp;asWeeks&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;makeAs('w');<a name="line_53"></a></li>
+<li id="line_54" class="even"><span class="lineNumber">54&nbsp;</span>export&nbsp;var&nbsp;asMonths&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;makeAs('M');<a name="line_54"></a></li>
+<li id="line_55" class="odd"><span class="lineNumber">55&nbsp;</span>export&nbsp;var&nbsp;asYears&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;makeAs('y');<a name="line_55"></a></li></ol></div></body></html>
+                    </div>
+    </body>
+</html>

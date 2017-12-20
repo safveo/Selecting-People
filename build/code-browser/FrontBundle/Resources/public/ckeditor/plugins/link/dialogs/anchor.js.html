@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>
+            Mayflower Code Browser - Source Code
+        </title>
+        <link rel="stylesheet" type="text/css" href="../../../../../../js/jquery.sidebar/css/codebrowser/sidebar.css" />
+        <link rel="stylesheet" type="text/css" href="../../../../../../css/global.css" />
+        <link rel="stylesheet" type="text/css" href="../../../../../../css/cruisecontrol.css" />
+        <link rel="stylesheet" type="text/css" href="../../../../../../css/review.css" />
+
+        <script type="text/javascript" src="../../../../../../js/jquery-1.4.2.min.js"></script>
+        <script type="text/javascript" src="../../../../../../js/jquery.sidebar/jquery-ui-1.7.2.custom.min.js"></script>
+        <script type="text/javascript" src="../../../../../../js/jquery.sidebar/jquery.sidebar.js"></script>
+        <script type="text/javascript" src="../../../../../../js/jquery.cluetip/lib/jquery.hoverIntent.js"></script>
+        <script type="text/javascript" src="../../../../../../js/jquery.cluetip/lib/jquery.bgiframe.min.js"></script>
+        <script type="text/javascript" src="../../../../../../js/jquery.cluetip/jquery.cluetip.min.js"></script>
+
+        <script type="text/javascript" src="../../../../../../js/review.js"></script>
+    </head>
+    <body class="codebrowser">
+        <div class="header">
+            <a href="./../../../../../../index.html">Go back to index</a> |
+            <a href="https://github.com/Mayflower/PHP_CodeBrowser">PHP CodeBrowser</a>
+        </div>
+        <hr/>
+        <div id="review">
+            <div class="filepath">
+                FrontBundle/Resources/public/ckeditor/plugins/link/dialogs/anchor.js            </div>
+
+            <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><div class="code"><ol class="code"><li id="line_1" class="odd"><span class="lineNumber">1&nbsp;</span>&iuml;&raquo;&iquest;/*<a name="line_1"></a></li>
+<li id="line_2" class="even"><span class="lineNumber">2&nbsp;</span>&nbsp;Copyright&nbsp;(c)&nbsp;2003-2016,&nbsp;CKSource&nbsp;-&nbsp;Frederico&nbsp;Knabben.&nbsp;All&nbsp;rights&nbsp;reserved.<a name="line_2"></a></li>
+<li id="line_3" class="odd"><span class="lineNumber">3&nbsp;</span>&nbsp;For&nbsp;licensing,&nbsp;see&nbsp;LICENSE.md&nbsp;or&nbsp;http://ckeditor.com/license<a name="line_3"></a></li>
+<li id="line_4" class="even"><span class="lineNumber">4&nbsp;</span>*/<a name="line_4"></a></li>
+<li id="line_5" class="odd"><span class="lineNumber">5&nbsp;</span>CKEDITOR.dialog.add("anchor",function(c){function&nbsp;d(a,b){return&nbsp;a.createFakeElement(a.document.createElement("a",{attributes:b}),"cke_anchor","anchor")}return{title:c.lang.link.anchor.title,minWidth:300,minHeight:60,onOk:function(){var&nbsp;a=CKEDITOR.tools.trim(this.getValueOf("info","txtName")),a={id:a,name:a,"data-cke-saved-name":a};if(this._.selectedElement)this._.selectedElement.data("cke-realelement")?(a=d(c,a),a.replace(this._.selectedElement),CKEDITOR.env.ie&amp;&amp;c.getSelection().selectElement(a)):<a name="line_5"></a></li>
+<li id="line_6" class="even"><span class="lineNumber">6&nbsp;</span>this._.selectedElement.setAttributes(a);else{var&nbsp;b=c.getSelection(),b=b&amp;&amp;b.getRanges()[0];b.collapsed?(a=d(c,a),b.insertNode(a)):(CKEDITOR.env.ie&amp;&amp;9&gt;CKEDITOR.env.version&amp;&amp;(a["class"]="cke_anchor"),a=new&nbsp;CKEDITOR.style({element:"a",attributes:a}),a.type=CKEDITOR.STYLE_INLINE,c.applyStyle(a))}},onHide:function(){delete&nbsp;this._.selectedElement},onShow:function(){var&nbsp;a=c.getSelection(),b=a.getSelectedElement(),d=b&amp;&amp;b.data("cke-realelement"),e=d?CKEDITOR.plugins.link.tryRestoreFakeAnchor(c,b):CKEDITOR.plugins.link.getSelectedLink(c);<a name="line_6"></a></li>
+<li id="line_7" class="odd"><span class="lineNumber">7&nbsp;</span>if(e){this._.selectedElement=e;var&nbsp;f=e.data("cke-saved-name");this.setValueOf("info","txtName",f||"");!d&amp;&amp;a.selectElement(e);b&amp;&amp;(this._.selectedElement=b)}this.getContentElement("info","txtName").focus()},contents:[{id:"info",label:c.lang.link.anchor.title,accessKey:"I",elements:[{type:"text",id:"txtName",label:c.lang.link.anchor.name,required:!0,validate:function(){return&nbsp;this.getValue()?!0:(alert(c.lang.link.anchor.errorName),!1)}}]}]}});<a name="line_7"></a></li></ol></div></body></html>
+                    </div>
+    </body>
+</html>

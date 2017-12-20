@@ -1,0 +1,7 @@
+back_ecran:
+    resource: "@BackBundle/Resources/config/routing/ecran.yml"
+    prefix:   /ecran
+
+back_homepage:
+    path:     /
+    defaults: { _controller: BackBundle:Default:index }

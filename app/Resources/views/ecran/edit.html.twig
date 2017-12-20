@@ -1,0 +1,81 @@
+{% extends 'base.html.twig' %}
+{% form_theme edit_form 'BackBundle:Form:fields.html.twig' %}
+
+ {% block pageContent %}
+     {% include "BackBundle:Form:croppable_image_modal.html.twig" with {'include_jquery': false, 'include_bootstrap': false} %}
+
+     <div class="card-box">
+
+         {% for flashMessage in app.session.flashbag.get('notice') %}
+             <div class="alert alert-danger fade in block-inner">
+                 <button type="button" class="close" data-dismiss="alert">×</button>
+                 {{ flashMessage }}
+             </div>
+         {% endfor %}
+         <div class="dropdown pull-right">
+             <a class="btn btn-default" href="{{ path('ecran_index') }}"> <span>Retour </span> </a>
+         </div>
+
+         <div class="row content">
+             <div class="col-md-12">
+                 <h4 class="header-title m-t-0 m-b-30">Ecran </h4>
+                 <div class="panel panel-border panel-primary panel-white no-radius ">
+                     <div class="panel-heading">
+                         <div class="col-xs-12">
+                             <h4 class="primary"> Modification des données</h4>
+
+                         </div>
+                     </div>
+                     <div class="panel-body">
+                         <div class="col-md-12">
+                             {{ form_start(edit_form) }}
+                             {{ form_widget(edit_form) }}
+                             <div class="form-actions right">
+                                 <button id="submit" class=" btn btn-primary" name="submit" type="submit">
+                                     <span class="text">Modifier</span>
+                                 </button>
+                             </div>
+                             {{ form_end(edit_form) }}
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+
+ {% endblock %}
+
+{% block javaScripts %}
+    <script type="text/javascript"
+            src="{{ asset('bundles/front/js/jquery.validate.js') }}"></script>
+    <script src="{{ asset('bundles/fosjsrouting/js/router.js') }}"></script>
+    <script src="{{ path('fos_js_routing_js', {"callback": "fos.Router.setData"}) }}"></script>
+    <script type="text/javascript" src="{{ asset('bundles/front/ckeditor/ckeditor.js') }}"></script>
+
+
+    <script>
+        $(function () {
+            var validator = $("#form").submit(function () {
+            }).validate({
+                ignore: "",
+                rules: {
+                    "backbundle_ecran[titre]": "required",
+                    "backbundle_ecran[contenu]": "required"
+
+                },
+                messages: {
+                    "backbundle_ecran[titre]": "Veuillez saisir le titre de l'ecran ",
+                    "backbundle_ecran[contenu]": "Veuillez saisir le contenu de l'ecran "
+                }
+            });
+        })
+    </script>
+
+{% endblock javaScripts %}
+
+
+
+
+
+
+

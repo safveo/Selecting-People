@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'ooredoobold';
+  src: url('../fonts/ooredoofont/ooredoo-Bold-webfont.eot');
+  src: url('../fonts/ooredoofont/ooredoo-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/ooredoofont/ooredoo-Bold-webfont.woff2') format('woff2'),
+  url('../fonts/ooredoofont/ooredoo-Bold-webfont.woff') format('woff'),
+  url('../fonts/ooredoofont/ooredoo-Bold-webfont.ttf') format('truetype'),
+  url('../fonts/ooredoofont/ooredoo-Bold-webfont.svg#ooredoobold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ooredooregular';
+  src: url('../fonts/ooredoofont/ooredoo-Regular-webfont.eot');
+  src: url('../fonts/ooredoofont/ooredoo-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/ooredoofont/ooredoo-Regular-webfont.woff2') format('woff2'),
+  url('../fonts/ooredoofont/ooredoo-Regular-webfont.woff') format('woff'),
+  url('../fonts/ooredoofont/ooredoo-Regular-webfont.ttf') format('truetype'),
+  url('../fonts/ooredoofont/ooredoo-Regular-webfont.svg#ooredooregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

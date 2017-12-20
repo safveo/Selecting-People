@@ -1,0 +1,111 @@
+{% block form_row %}
+    {% spaceless %}
+        <div class="form-group  {{ errors|length > 0 ? 'has-error' : '' }}">
+            {{ form_label(form) }}
+            <div class="col-sm-10">
+                {{ form_widget(form) }}
+                {{ form_errors(form) }}
+            </div>
+
+        </div>
+    {% endspaceless %}
+{% endblock form_row %}
+{# Puis on modifie très simplement nos input et textarea
+les plus importants pour y ajouter le class imposée par Bootstrap 3 #}
+{% block form_label -%}
+    {% if label is not sameas(false) -%}
+        {% if label is empty -%}
+            {%- if label_format is not empty -%}
+                {% set label = label_format|replace({
+                '%name%': name,
+                '%id%': id,
+                }) %}
+            {%- else -%}
+                {% set label = name|humanize %}
+            {%- endif -%}
+        {%- endif -%}
+        {% set label_attr = label_attr|merge({'class': (label_attr.class|default('') ~ 'col-sm-2 control-label')|trim}) %}
+        <label{% for attrname, attrvalue in label_attr %} {{ attrname }}="{{ attrvalue }}"{% endfor %}>{{ label|trans({}, translation_domain) }}</label>
+    {% endif %}
+{% endblock form_label -%}
+
+{%- block textarea_widget -%}
+    {% set attr = attr|merge({'class': attr.class|default('') ~ ' form-control'}) %}
+    <textarea {{ block('widget_attributes') }}>{{ value }}</textarea>
+{%- endblock textarea_widget -%}
+
+{%- block form_widget_simple -%}
+    {%- set type = type|default('text') -%}
+    <input type="{{ type }}" {{ block('widget_attributes') }} {% if value is not empty %}value="{{ value }}" {% endif %} class="form-control"/>
+{%- endblock form_widget_simple -%}
+
+{%- block submit_widget -%}
+    <div class="form-actions text-right">
+        {% set attr = attr|merge({'class': attr.class|default('') ~ ' btn btn-primary'}) %}
+        {%- set type = type|default('submit') -%}
+        {{ block('button_widget') }}
+    </div>
+{%- endblock submit_widget -%}
+
+{%- block form_start -%}
+    {% set method = method|upper %}
+    {%- if method in ["GET", "POST"] -%}
+        {% set form_method = method %}
+    {%- else -%}
+        {% set form_method = "POST" %}
+    {%- endif -%}
+    <form class="form-horizontal" name="{{ name }}" method="{{ form_method|lower }}" action="{{ action }}"{% for attrname, attrvalue in attr %} {{ attrname }}="{{ attrvalue }}"{% endfor %}{% if multipart %} enctype="multipart/form-data"{% endif %}>
+    {%- if form_method != method -%}
+        <input type="hidden" name="_method" value="{{ method }}" />
+    {%- endif -%}
+{%- endblock form_start -%}
+
+{%- block checkbox_widget -%}
+<div class="block-inner">
+    <div class="checkbox checkbox-success">
+        <input class="styled"
+               type="checkbox" {{ block('widget_attributes') }}{% if value is defined %} value="{{ value }}"{% endif %}{% if checked %} checked="checked"{% endif %} />
+        <label for="checkbox">
+        </label>
+    </div>
+    {%- endblock checkbox_widget -%}
+
+{%- block datetime_widget -%}
+        {% if widget == 'single_text' %}
+            {{- block('form_widget_simple') -}}
+        {%- else -%}
+            <div {{ block('widget_container_attributes') }}>
+                {{- form_errors(form.date) -}}
+                {{- form_errors(form.time) -}}
+                {{- form_widget(form.date) -}}
+                {{- form_widget(form.time) -}}
+            </div>
+        {%- endif -%}
+    {%- endblock datetime_widget -%}
+
+{% block file_widget %}
+        {% spaceless %}
+            <td>{% set type = type|default('file') %}
+                <input type="{{ type }}" {{ block('widget_attributes') }} />
+            </td>
+        {% endspaceless %}
+    {% endblock file_widget %}
+
+{% block choice_widget_collapsed %}
+    {% spaceless %}
+        <select data-placeholder="Choisir ..." class="chosen-select" tabindex="2" {{ block('widget_attributes') }}{% if multiple %} multiple="multiple"{% endif %}>
+            {% if placeholder is not none %}
+                <option value="">{{ placeholder|trans({}, translation_domain) }}</option>
+            {% endif %}
+            {% if preferred_choices|length > 0 %}
+                {% set options = preferred_choices %}
+                {{ block('choice_widget_options') }}
+                {% if choices|length > 0 and separator is not none %}
+                    <option disabled="disabled">{{ separator }}</option>
+                {% endif %}
+            {% endif %}
+            {% set options = choices %}
+            {{ block('choice_widget_options') }}
+        </select>
+    {% endspaceless %}
+{% endblock choice_widget_collapsed %}

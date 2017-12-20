@@ -1,0 +1,135 @@
+.sidebar {
+    width: 290px;
+    background-color: #0e728d;
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 100%;
+    z-index: 10000;
+}
+
+.sidebar-content {
+    padding: 30px;
+}
+
+.sidebar-header {
+    text-align: center;
+    padding: 40px 12px 25px;
+    background: #fff;
+    display: table;
+    width: 100%;
+}
+
+.sidebar-narrow .sidebar-header, .sidebar-narrow .sidebar-content {
+    padding: 40px 0 25px;
+}
+
+.sidebar-toggle {
+    color: #8b3c8c;
+    font-size: 26px;
+}
+
+.sidebar-toggle:hover, .sidebar-toggle:focus {
+    color: #8b3c8c;
+    font-size: 26px;
+    background-color: #fff;
+}
+
+.sidebar-header > div {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.block-toggle {
+
+}
+
+.sidebar-narrow .block-logo, .sidebar-narrow .block-connect, .sidebar-narrow .sidebar-footer {
+    display: none;
+}
+
+.connect {
+    background: #32bf80;
+    color: #fff;
+    padding: 5px;
+    border-radius: 20px;
+    width: 70%;
+    margin: 0 auto;
+    font-family: "AvenirLTStd-Light";
+    font-size: 16px;
+}
+
+.connect > i {
+    float: left;
+    padding: 3px;
+}
+
+.navigation > li > a {
+    padding: 20px 0 10px 0;
+    color: #fff;
+    font-size: 18px;
+    font-family: "AvenirLTStd-Light";
+}
+
+.navigation > li.active > a, .navigation > li.active:hover > a, .navigation > li.active:focus > a {
+    color: #0c4e30;
+
+}
+
+.navigation > li:hover > a {
+    color: #0c4e30;
+
+}
+.navigation > li > a > img {
+    width:24px;
+    float: right;
+}
+.navigation > li > a > i {
+    bottom: 10px;
+}
+
+.sidebar-footer {
+    bottom: 0;
+    position: fixed;
+    padding: 15px;
+    text-align: center;
+    width: 290px;
+    color: #fff;
+    background: #0b566a;
+    font-size: 14px;
+    font-family: 'AvenirLTStd-Medium';
+}
+
+.sidebar-footer > a {
+    color: #fff;
+}
+
+@media (max-width: 991px) {
+
+    .sidebar {
+        left:-290px;
+    }
+    .sidebar-narrow .sidebar {
+        left: 0;
+        width:290px
+    }
+    .sidebar-narrow .block-logo, .sidebar-narrow .block-connect, .sidebar-narrow .sidebar-footer {
+        display: block;
+    }
+    .sidebar-narrow .navigation > li > a > span {
+        display: block;
+    }
+    .sidebar-narrow .navigation > li > a > i {
+        position: absolute;
+    }
+    .sidebar-narrow .navigation > li > a {
+        text-align: left;
+    }
+    .sidebar-content {
+        padding: 30px;
+    }
+    .sidebar-narrow .sidebar-header, .sidebar-narrow .sidebar-content{
+        padding: 30px;
+    }
+
+}

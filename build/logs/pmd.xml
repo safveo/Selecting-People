@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pmd version="@project.version@" timestamp="2017-10-04T21:55:24+00:00">
+  <file name="C:\Program Files (x86)\Jenkins\workspace\test\src\BackBundle\Entity\DemandeRecrutementDmd.php">
+    <violation beginline="13" endline="651" rule="ExcessivePublicCount" ruleset="Code Size Rules" package="BackBundle\Entity" externalInfoUrl="http://phpmd.org/rules/codesize.html#excessivepubliccount" class="DemandeRecrutementDmd" priority="3">
+      The class DemandeRecrutementDmd has 54 public methods and attributes. Consider reducing the number of public items to less than 45.
+    </violation>
+    <violation beginline="13" endline="651" rule="TooManyFields" ruleset="Code Size Rules" package="BackBundle\Entity" externalInfoUrl="http://phpmd.org/rules/codesize.html#toomanyfields" class="DemandeRecrutementDmd" priority="3">
+      The class DemandeRecrutementDmd has 27 fields. Consider redesigning DemandeRecrutementDmd to keep the number of fields under 15.
+    </violation>
+    <violation beginline="13" endline="651" rule="ExcessiveClassComplexity" ruleset="Code Size Rules" package="BackBundle\Entity" externalInfoUrl="http://phpmd.org/rules/codesize.html#excessiveclasscomplexity" class="DemandeRecrutementDmd" priority="3">
+      The class DemandeRecrutementDmd has an overall complexity of 54 which is very high. The configured complexity threshold is 50.
+    </violation>
+  </file>
+  <file name="C:\Program Files (x86)\Jenkins\workspace\test\src\BackBundle\Entity\ReportingRecrutement.php">
+    <violation beginline="13" endline="186" rule="TooManyFields" ruleset="Code Size Rules" package="BackBundle\Entity" externalInfoUrl="http://phpmd.org/rules/codesize.html#toomanyfields" class="ReportingRecrutement" priority="3">
+      The class ReportingRecrutement has 24 fields. Consider redesigning ReportingRecrutement to keep the number of fields under 15.
+    </violation>
+  </file>
+  <file name="C:\Program Files (x86)\Jenkins\workspace\test\src\BackBundle\Entity\VueDemandeRecrutement.php">
+    <violation beginline="13" endline="305" rule="TooManyFields" ruleset="Code Size Rules" package="BackBundle\Entity" externalInfoUrl="http://phpmd.org/rules/codesize.html#toomanyfields" class="VueDemandeRecrutement" priority="3">
+      The class VueDemandeRecrutement has 41 fields. Consider redesigning VueDemandeRecrutement to keep the number of fields under 15.
+    </violation>
+  </file>
+  <file name="C:\Program Files (x86)\Jenkins\workspace\test\src\FrontBundle\Controller\StatController.php">
+    <violation beginline="91" endline="205" rule="ExcessiveMethodLength" ruleset="Code Size Rules" package="FrontBundle\Controller" externalInfoUrl="http://phpmd.org/rules/codesize.html#excessivemethodlength" class="StatController" method="indexWeekAction" priority="3">
+      The method indexWeekAction() has 115 lines of code. Current threshold is set to 100. Avoid really long methods.
+    </violation>
+    <violation beginline="216" endline="355" rule="CyclomaticComplexity" ruleset="Code Size Rules" package="FrontBundle\Controller" externalInfoUrl="http://phpmd.org/rules/codesize.html#cyclomaticcomplexity" class="StatController" method="indexYearAction" priority="3">
+      The method indexYearAction() has a Cyclomatic Complexity of 13. The configured cyclomatic complexity threshold is 10.
+    </violation>
+    <violation beginline="216" endline="355" rule="NPathComplexity" ruleset="Code Size Rules" package="FrontBundle\Controller" externalInfoUrl="http://phpmd.org/rules/codesize.html#npathcomplexity" class="StatController" method="indexYearAction" priority="3">
+      The method indexYearAction() has an NPath complexity of 225. The configured NPath complexity threshold is 200.
+    </violation>
+    <violation beginline="216" endline="355" rule="ExcessiveMethodLength" ruleset="Code Size Rules" package="FrontBundle\Controller" externalInfoUrl="http://phpmd.org/rules/codesize.html#excessivemethodlength" class="StatController" method="indexYearAction" priority="3">
+      The method indexYearAction() has 140 lines of code. Current threshold is set to 100. Avoid really long methods.
+    </violation>
+  </file>
+  <file name="C:\Program Files (x86)\Jenkins\workspace\test\src\FrontBundle\Resources\public\ckeditor\plugins\imageuploader\function.php">
+    <violation beginline="10" endline="92" rule="CyclomaticComplexity" ruleset="Code Size Rules" package="+global" externalInfoUrl="http://phpmd.org/rules/codesize.html#cyclomaticcomplexity" function="loadImages" priority="3">
+      The function loadImages() has a Cyclomatic Complexity of 11. The configured cyclomatic complexity threshold is 10.
+    </violation>
+  </file>
+</pmd>

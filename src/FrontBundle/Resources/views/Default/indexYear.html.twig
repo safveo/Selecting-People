@@ -1,0 +1,222 @@
+{% extends 'FrontBundle:layout:layout.html.twig' %}
+
+{% block nextpage %}
+    {% if ecran %}
+        {{ path('ecran_show', { 'id': ecran.id }) }}
+    {% else %}
+        {{ path('stat_1') }}
+    {% endif %}
+{% endblock %}
+
+{% block content %}
+
+
+    <div class="row">
+        <div class="col-md-12"  align="center">
+            <div class="titleYear">
+                <h2>
+                    {{ today|date("d/m/Y")  }}
+                </h2>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 stat" align="center">
+            <div id="chart-container"></div>
+
+            <br>
+            <div class="col-md-6">
+                <div id="containerCours" style="min-width: 150px; height: 400px; margin: 0 auto"></div>
+            </div>
+            <div class="col-md-6">
+                <div id="containerDiff" style="min-width: 150px; height: 400px; margin: 0 auto"></div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+    {{ include ("FrontBundle:layout:vignette.html.twig") }}
+    <script type="text/javascript" src="http://static.fusioncharts.com/code/latest/fusioncharts.js"></script>
+    <script type="text/javascript" src="http://static.fusioncharts.com/code/latest/themes/fusioncharts.theme.fint.js?cacheBust=56"></script>
+
+    <script type="text/javascript">
+        FusionCharts.ready(function(){
+            var fusioncharts = new FusionCharts({
+                    type: 'hlineargauge',
+                    renderAt: 'chart-container',
+                    id: 'cpu-linear-gauge',
+                    width: '900',
+                    height: '150',
+                    dataFormat: 'json',
+                    dataSource: {
+                        "chart": {
+                            "theme": "fint",
+                            "caption": "Nombre de recrutement en {{ year }}",
+                            "subcaption": "",
+                            "lowerLimit": "0",
+                            "upperLimit": "{{ nbrRecretementSPYear + nbrRecretementSTYear}}",
+                            "numberSuffix": " recrutements",
+                            "chartBottomMargin": "10",
+                            "valueFontSize": "18",
+                            "valueFontBold": "0"
+                        },
+                        "colorRange": {
+                            "color": [{
+                                "minValue": "0",
+                                "maxValue": "{{ nbrRecretementSPYear }}",
+                                "label": "{{ nbrRecretementSPYear }} (SP)/{{ nbrRecretementSTYear }} (ST)",
+                                "code": "#18a9e4"
+                            }, {
+                                "minValue": "{{ nbrRecretementSPYear }}",
+                                "maxValue": "{{ nbrRecretementSPYear }}",
+                                "label": "",
+                                "code": "#16e473"
+                            }]
+                        },
+                        "pointers": {
+                            "pointer": [{
+                                "value": "{{ nbrRecretementSPYear }}"
+                            }]
+                        }
+                    }
+                }
+            );
+            fusioncharts.render();
+        });
+    </script>
+
+
+    <script>
+        Highcharts.setOptions({
+            chart: {
+                backgroundColor: 'rgb(240, 240, 255)',
+                plotBackgroundColor: 'rgba(255, 255, 255, .9)',
+                plotShadow: true
+            }
+        });
+
+
+        Highcharts.chart('containerCours', {
+            chart: {
+                type: 'column'
+            },
+            title: {
+                text: 'Missions en cours',
+                verticalAlign: "bottom"
+            },
+            xAxis: {
+                categories: ['OCT {{ yearBefore }}', 'NEV {{ yearBefore }}', 'DEC {{ yearBefore }}','JAN {{ year }}','FEV {{ year }}','MAR {{ year }}','AVR {{ year }}','MAI {{ year }}','JUI {{ year }}','JUL {{ year }}']
+            },
+            yAxis: {
+                min: 0,
+                title: {
+                    text: 'Nombre de missions en cours '
+                },
+                stackLabels: {
+                    enabled: true,
+                    style: {
+                        fontWeight: 'bold',
+                        color: (Highcharts.theme && Highcharts.theme.textColor) || 'gray'
+                    }
+                }
+            },
+            legend: {
+                align: 'right',
+                x: -30,
+                verticalAlign: 'top',
+                y: 25,
+                floating: false,
+                backgroundColor: (Highcharts.theme && Highcharts.theme.background2) || 'white',
+                borderColor: '#CCC',
+                borderWidth: 1,
+                shadow: false
+            },
+            tooltip: {
+                headerFormat: '<b>{point.x}</b><br/>',
+                pointFormat: '{series.name}: {point.y}<br/>Total: {point.stackTotal}'
+            },
+            plotOptions: {
+                column: {
+                    stacking: 'normal',
+                    dataLabels: {
+                        enabled: true,
+                        color: (Highcharts.theme && Highcharts.theme.dataLabelsColor) || 'white'
+                    }
+                }
+            },
+            series: [{
+                name: 'Nbr missions en cours chez Selecting People',
+                data: {{ listMissionSPParMois }},
+                color: "#2ac00c"
+            }, {
+                name: 'Nbr missions en cours sous traités',
+                data: {{ listMissionSTParMois }}
+            }]
+        });
+
+
+        Highcharts.chart('containerDiff', {
+            chart: {
+                type: 'column'
+            },
+            title: {
+                text: 'Missions difficiles',
+                verticalAlign: "bottom"
+            },
+            xAxis: {
+                categories: ['OCT {{ yearBefore }}', 'NEV {{ yearBefore }}', 'DEC {{ yearBefore }}','JAN {{ year }}','FEV {{ year }}','MAR {{ year }}','AVR {{ year }}','MAI {{ year }}','JUI {{ year }}','JUL {{ year }}']
+            },
+            yAxis: {
+                min: 0,
+                title: {
+                    text: 'Nombre de missions difficile '
+                },
+                stackLabels: {
+                    enabled: true,
+                    style: {
+                        fontWeight: 'bold',
+                        color: (Highcharts.theme && Highcharts.theme.textColor) || 'gray'
+                    }
+                }
+            },
+            legend: {
+                align: 'right',
+                x: -30,
+                verticalAlign: 'top',
+                y: 25,
+                floating: false,
+                backgroundColor: (Highcharts.theme && Highcharts.theme.background2) || 'white',
+                borderColor: '#CCC',
+                borderWidth: 1,
+                shadow: false
+            },
+            tooltip: {
+                headerFormat: '<b>{point.x}</b><br/>',
+                pointFormat: '{series.name}: {point.y}<br/>Total: {point.stackTotal}'
+            },
+            plotOptions: {
+                column: {
+                    stacking: 'normal',
+                    dataLabels: {
+                        enabled: true,
+                        color: (Highcharts.theme && Highcharts.theme.dataLabelsColor) || 'white'
+                    }
+                }
+            },
+            series: [{
+                name: 'Nbr de mission difficiles chez Selecting People',
+                data: {{ listMissionDiffSPParMois }},
+                color: "#2ac00c"
+            }, {
+                name: 'Nbr mission difficiles sous traités',
+                data: {{ listMissionDiffSTParMois }}
+            }]
+        });
+
+    </script>
+
+
+{% endblock %}

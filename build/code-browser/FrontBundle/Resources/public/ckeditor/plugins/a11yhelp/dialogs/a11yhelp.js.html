@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>
+            Mayflower Code Browser - Source Code
+        </title>
+        <link rel="stylesheet" type="text/css" href="../../../../../../js/jquery.sidebar/css/codebrowser/sidebar.css" />
+        <link rel="stylesheet" type="text/css" href="../../../../../../css/global.css" />
+        <link rel="stylesheet" type="text/css" href="../../../../../../css/cruisecontrol.css" />
+        <link rel="stylesheet" type="text/css" href="../../../../../../css/review.css" />
+
+        <script type="text/javascript" src="../../../../../../js/jquery-1.4.2.min.js"></script>
+        <script type="text/javascript" src="../../../../../../js/jquery.sidebar/jquery-ui-1.7.2.custom.min.js"></script>
+        <script type="text/javascript" src="../../../../../../js/jquery.sidebar/jquery.sidebar.js"></script>
+        <script type="text/javascript" src="../../../../../../js/jquery.cluetip/lib/jquery.hoverIntent.js"></script>
+        <script type="text/javascript" src="../../../../../../js/jquery.cluetip/lib/jquery.bgiframe.min.js"></script>
+        <script type="text/javascript" src="../../../../../../js/jquery.cluetip/jquery.cluetip.min.js"></script>
+
+        <script type="text/javascript" src="../../../../../../js/review.js"></script>
+    </head>
+    <body class="codebrowser">
+        <div class="header">
+            <a href="./../../../../../../index.html">Go back to index</a> |
+            <a href="https://github.com/Mayflower/PHP_CodeBrowser">PHP CodeBrowser</a>
+        </div>
+        <hr/>
+        <div id="review">
+            <div class="filepath">
+                FrontBundle/Resources/public/ckeditor/plugins/a11yhelp/dialogs/a11yhelp.js            </div>
+
+            <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><div class="code"><ol class="code"><li id="line_1" class="odd"><span class="lineNumber">&nbsp;1&nbsp;</span>&iuml;&raquo;&iquest;/*<a name="line_1"></a></li>
+<li id="line_2" class="even"><span class="lineNumber">&nbsp;2&nbsp;</span>&nbsp;Copyright&nbsp;(c)&nbsp;2003-2016,&nbsp;CKSource&nbsp;-&nbsp;Frederico&nbsp;Knabben.&nbsp;All&nbsp;rights&nbsp;reserved.<a name="line_2"></a></li>
+<li id="line_3" class="odd"><span class="lineNumber">&nbsp;3&nbsp;</span>&nbsp;For&nbsp;licensing,&nbsp;see&nbsp;LICENSE.md&nbsp;or&nbsp;http://ckeditor.com/license<a name="line_3"></a></li>
+<li id="line_4" class="even"><span class="lineNumber">&nbsp;4&nbsp;</span>*/<a name="line_4"></a></li>
+<li id="line_5" class="odd"><span class="lineNumber">&nbsp;5&nbsp;</span>CKEDITOR.dialog.add("a11yHelp",function(l){var&nbsp;a=l.lang.a11yhelp,n=CKEDITOR.tools.getNextId(),e={8:a.backspace,9:a.tab,13:a.enter,16:a.shift,17:a.ctrl,18:a.alt,19:a.pause,20:a.capslock,27:a.escape,33:a.pageUp,34:a.pageDown,35:a.end,36:a.home,37:a.leftArrow,38:a.upArrow,39:a.rightArrow,40:a.downArrow,45:a.insert,46:a["delete"],91:a.leftWindowKey,92:a.rightWindowKey,93:a.selectKey,96:a.numpad0,97:a.numpad1,98:a.numpad2,99:a.numpad3,100:a.numpad4,101:a.numpad5,102:a.numpad6,103:a.numpad7,104:a.numpad8,<a name="line_5"></a></li>
+<li id="line_6" class="even"><span class="lineNumber">&nbsp;6&nbsp;</span>105:a.numpad9,106:a.multiply,107:a.add,109:a.subtract,110:a.decimalPoint,111:a.divide,112:a.f1,113:a.f2,114:a.f3,115:a.f4,116:a.f5,117:a.f6,118:a.f7,119:a.f8,120:a.f9,121:a.f10,122:a.f11,123:a.f12,144:a.numLock,145:a.scrollLock,186:a.semiColon,187:a.equalSign,188:a.comma,189:a.dash,190:a.period,191:a.forwardSlash,192:a.graveAccent,219:a.openBracket,220:a.backSlash,221:a.closeBracket,222:a.singleQuote};e[CKEDITOR.ALT]=a.alt;e[CKEDITOR.SHIFT]=a.shift;e[CKEDITOR.CTRL]=a.ctrl;var&nbsp;f=[CKEDITOR.ALT,CKEDITOR.SHIFT,<a name="line_6"></a></li>
+<li id="line_7" class="odd"><span class="lineNumber">&nbsp;7&nbsp;</span>CKEDITOR.CTRL],p=/\$\{(.*?)\}/g,t=function(){var&nbsp;a=l.keystrokeHandler.keystrokes,g={},c;for(c&nbsp;in&nbsp;a)g[a[c]]=c;return&nbsp;function(a,c){var&nbsp;b;if(g[c]){b=g[c];for(var&nbsp;h,k,m=[],d=0;d&lt;f.length;d++)k=f[d],h=b/f[d],1&lt;h&amp;&amp;2&gt;=h&amp;&amp;(b-=k,m.push(e[k]));m.push(e[b]||String.fromCharCode(b));b=m.join("+")}else&nbsp;b=a;return&nbsp;b}}();return{title:a.title,minWidth:600,minHeight:400,contents:[{id:"info",label:l.lang.common.generalTab,expand:!0,elements:[{type:"html",id:"legends",style:"white-space:normal;",focus:function(){this.getElement().focus()},<a name="line_7"></a></li>
+<li id="line_8" class="even"><span class="lineNumber">&nbsp;8&nbsp;</span>html:function(){for(var&nbsp;e='\x3cdiv&nbsp;class\x3d"cke_accessibility_legend"&nbsp;role\x3d"document"&nbsp;aria-labelledby\x3d"'+n+'_arialbl"&nbsp;tabIndex\x3d"-1"\x3e%1\x3c/div\x3e\x3cspan&nbsp;id\x3d"'+n+'_arialbl"&nbsp;class\x3d"cke_voice_label"\x3e'+a.contents+"&nbsp;\x3c/span\x3e",g=[],c=a.legend,l=c.length,f=0;f&lt;l;f++){for(var&nbsp;b=c[f],h=[],k=b.items,m=k.length,d=0;d&lt;m;d++){var&nbsp;q=k[d],r=q.legend.replace(p,t);r.match(p)||h.push("\x3cdt\x3e%1\x3c/dt\x3e\x3cdd\x3e%2\x3c/dd\x3e".replace("%1",q.name).replace("%2",r))}g.push("\x3ch1\x3e%1\x3c/h1\x3e\x3cdl\x3e%2\x3c/dl\x3e".replace("%1",<a name="line_8"></a></li>
+<li id="line_9" class="odd"><span class="lineNumber">&nbsp;9&nbsp;</span>b.name).replace("%2",h.join("")))}return&nbsp;e.replace("%1",g.join(""))}()+'\x3cstyle&nbsp;type\x3d"text/css"\x3e.cke_accessibility_legend{width:600px;height:400px;padding-right:5px;overflow-y:auto;overflow-x:hidden;}.cke_browser_quirks&nbsp;.cke_accessibility_legend,{height:390px}.cke_accessibility_legend&nbsp;*{white-space:normal;}.cke_accessibility_legend&nbsp;h1{font-size:&nbsp;20px;border-bottom:&nbsp;1px&nbsp;solid&nbsp;#AAA;margin:&nbsp;5px&nbsp;0px&nbsp;15px;}.cke_accessibility_legend&nbsp;dl{margin-left:&nbsp;5px;}.cke_accessibility_legend&nbsp;dt{font-size:&nbsp;13px;font-weight:&nbsp;bold;}.cke_accessibility_legend&nbsp;dd{margin:10px}\x3c/style\x3e'}]}],<a name="line_9"></a></li>
+<li id="line_10" class="even"><span class="lineNumber">10&nbsp;</span>buttons:[CKEDITOR.dialog.cancelButton]}});<a name="line_10"></a></li></ol></div></body></html>
+                    </div>
+    </body>
+</html>

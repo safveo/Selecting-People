@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>
+            Mayflower Code Browser - Source Code
+        </title>
+        <link rel="stylesheet" type="text/css" href="../../../../../js/jquery.sidebar/css/codebrowser/sidebar.css" />
+        <link rel="stylesheet" type="text/css" href="../../../../../css/global.css" />
+        <link rel="stylesheet" type="text/css" href="../../../../../css/cruisecontrol.css" />
+        <link rel="stylesheet" type="text/css" href="../../../../../css/review.css" />
+
+        <script type="text/javascript" src="../../../../../js/jquery-1.4.2.min.js"></script>
+        <script type="text/javascript" src="../../../../../js/jquery.sidebar/jquery-ui-1.7.2.custom.min.js"></script>
+        <script type="text/javascript" src="../../../../../js/jquery.sidebar/jquery.sidebar.js"></script>
+        <script type="text/javascript" src="../../../../../js/jquery.cluetip/lib/jquery.hoverIntent.js"></script>
+        <script type="text/javascript" src="../../../../../js/jquery.cluetip/lib/jquery.bgiframe.min.js"></script>
+        <script type="text/javascript" src="../../../../../js/jquery.cluetip/jquery.cluetip.min.js"></script>
+
+        <script type="text/javascript" src="../../../../../js/review.js"></script>
+    </head>
+    <body class="codebrowser">
+        <div class="header">
+            <a href="./../../../../../index.html">Go back to index</a> |
+            <a href="https://github.com/Mayflower/PHP_CodeBrowser">PHP CodeBrowser</a>
+        </div>
+        <hr/>
+        <div id="review">
+            <div class="filepath">
+                FrontBundle/Resources/public/js/plugins/forms/autosize.js            </div>
+
+            <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><div class="code"><ol class="code"><li id="line_1" class="odd"><span class="lineNumber">1&nbsp;</span>/*!<a name="line_1"></a></li>
+<li id="line_2" class="even"><span class="lineNumber">2&nbsp;</span>	Autosize&nbsp;v1.18.4&nbsp;-&nbsp;2014-01-11<a name="line_2"></a></li>
+<li id="line_3" class="odd"><span class="lineNumber">3&nbsp;</span>	Automatically&nbsp;adjust&nbsp;textarea&nbsp;height&nbsp;based&nbsp;on&nbsp;user&nbsp;input.<a name="line_3"></a></li>
+<li id="line_4" class="even"><span class="lineNumber">4&nbsp;</span>	(c)&nbsp;2014&nbsp;Jack&nbsp;Moore&nbsp;-&nbsp;http://www.jacklmoore.com/autosize<a name="line_4"></a></li>
+<li id="line_5" class="odd"><span class="lineNumber">5&nbsp;</span>	license:&nbsp;http://www.opensource.org/licenses/mit-license.php<a name="line_5"></a></li>
+<li id="line_6" class="even"><span class="lineNumber">6&nbsp;</span>*/<a name="line_6"></a></li>
+<li id="line_7" class="odd"><span class="lineNumber">7&nbsp;</span>!function(a){var&nbsp;b,c={className:"autosizejs",append:"",callback:!1,resizeDelay:10,placeholder:!0},d='&lt;textarea&nbsp;tabindex="-1"&nbsp;style="position:absolute;&nbsp;top:-999px;&nbsp;left:0;&nbsp;right:auto;&nbsp;bottom:auto;&nbsp;border:0;&nbsp;padding:&nbsp;0;&nbsp;-moz-box-sizing:content-box;&nbsp;-webkit-box-sizing:content-box;&nbsp;box-sizing:content-box;&nbsp;word-wrap:break-word;&nbsp;height:0&nbsp;!important;&nbsp;min-height:0&nbsp;!important;&nbsp;overflow:hidden;&nbsp;transition:none;&nbsp;-webkit-transition:none;&nbsp;-moz-transition:none;"/&gt;',e=["fontFamily","fontSize","fontWeight","fontStyle","letterSpacing","textTransform","wordSpacing","textIndent"],f=a(d).data("autosize",!0)[0];f.style.lineHeight="99px","99px"===a(f).css("lineHeight")&amp;&amp;e.push("lineHeight"),f.style.lineHeight="",a.fn.autosize=function(d){return&nbsp;this.length?(d=a.extend({},c,d||{}),f.parentNode!==document.body&amp;&amp;a(document.body).append(f),this.each(function(){function&nbsp;c(){var&nbsp;b,c=window.getComputedStyle?window.getComputedStyle(m,null):!1;c?(b=m.getBoundingClientRect().width,0===b&amp;&amp;(b=parseInt(c.width,10)),a.each(["paddingLeft","paddingRight","borderLeftWidth","borderRightWidth"],function(a,d){b-=parseInt(c[d],10)})):b=Math.max(n.width(),0),f.style.width=b+"px"}function&nbsp;g(){var&nbsp;g={};if(b=m,f.className=d.className,j=parseInt(n.css("maxHeight"),10),a.each(e,function(a,b){g[b]=n.css(b)}),a(f).css(g),c(),window.chrome){var&nbsp;h=m.style.width;m.style.width="0px";{m.offsetWidth}m.style.width=h}}function&nbsp;h(){var&nbsp;e,h;b!==m?g():c(),f.value=!m.value&amp;&amp;d.placeholder?(a(m).attr("placeholder")||"")+d.append:m.value+d.append,f.style.overflowY=m.style.overflowY,h=parseInt(m.style.height,10),f.scrollTop=0,f.scrollTop=9e4,e=f.scrollTop,j&amp;&amp;e&gt;j?(m.style.overflowY="scroll",e=j):(m.style.overflowY="hidden",k&gt;e&amp;&amp;(e=k)),e+=o,h!==e&amp;&amp;(m.style.height=e+"px",p&amp;&amp;d.callback.call(m,m))}function&nbsp;i(){clearTimeout(l),l=setTimeout(function(){var&nbsp;a=n.width();a!==r&amp;&amp;(r=a,h())},parseInt(d.resizeDelay,10))}var&nbsp;j,k,l,m=this,n=a(m),o=0,p=a.isFunction(d.callback),q={height:m.style.height,overflow:m.style.overflow,overflowY:m.style.overflowY,wordWrap:m.style.wordWrap,resize:m.style.resize},r=n.width();n.data("autosize")||(n.data("autosize",!0),("border-box"===n.css("box-sizing")||"border-box"===n.css("-moz-box-sizing")||"border-box"===n.css("-webkit-box-sizing"))&amp;&amp;(o=n.outerHeight()-n.height()),k=Math.max(parseInt(n.css("minHeight"),10)-o||0,n.height()),n.css({overflow:"hidden",overflowY:"hidden",wordWrap:"break-word",resize:"none"===n.css("resize")||"vertical"===n.css("resize")?"none":"horizontal"}),"onpropertychange"in&nbsp;m?"oninput"in&nbsp;m?n.on("input.autosize&nbsp;keyup.autosize",h):n.on("propertychange.autosize",function(){"value"===event.propertyName&amp;&amp;h()}):n.on("input.autosize",h),d.resizeDelay!==!1&amp;&amp;a(window).on("resize.autosize",i),n.on("autosize.resize",h),n.on("autosize.resizeIncludeStyle",function(){b=null,h()}),n.on("autosize.destroy",function(){b=null,clearTimeout(l),a(window).off("resize",i),n.off("autosize").off(".autosize").css(q).removeData("autosize")}),h())})):this}}(window.jQuery||window.$);<a name="line_7"></a></li></ol></div></body></html>
+                    </div>
+    </body>
+</html>

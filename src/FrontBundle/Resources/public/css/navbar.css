@@ -1,0 +1,115 @@
+/**
+ * navbar.css | file style css for navigation menu
+ * Monoprix  v1.1
+ * author samir.chandoul@mdsoft-in.com
+ * (c) Mdweb Solution
+ * http://www.mdsoft-int.com/
+===================================================================*/
+.navbar {
+    border-bottom: 1px solid #cac6c0;
+    padding:40px 0 10px;
+}
+
+.navbar-nav > li > a {
+    padding: 0 !important;
+    display: table;
+}
+
+.nav > li > a:hover, .nav > li > a:focus {
+    background-color: transparent;
+}
+
+.user.dropdown > a > img {
+    margin: 0 10px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.user.dropdown > a > span {
+    margin: 15px 10px;
+    color: #ee1515;
+    font-size: 18px;
+    font-family: "AvenirLTStd-Light";
+}
+
+.nav .caret, .nav a:hover .caret {
+    border-top-color: #ee1515;
+    border-bottom-color: #ee1515;
+}
+
+.bjr-user {
+    float: left;
+    line-height: 49px;
+}
+
+.bjr-user > span {
+    color: #8b3c8c;
+    font-size: 27px;
+    font-family: "AvenirLTStd-Light";
+}
+.navbar-toggle {
+    float: left;
+}
+.navbar .bjr-user .block-toggle{
+    float: left;
+    display: none;
+    margin-right: 20px;
+}
+div#navbar-icons{
+    display: table;
+}
+div#navbar-icons > img,div#navbar-icons > div {
+    display: table-cell;
+    vertical-align: middle;
+}
+div#navbar-icons > div {
+    padding-left: 15px;
+    line-height: 25px;
+}
+div#navbar-icons > div > span{
+    display: block;
+    color: #0e728d;
+    font-size: 18px;
+    font-family: 'AvenirLTStd-Roman';
+}
+div#navbar-icons > div > a{
+    color: #ee1515;
+    font-size: 16px;
+    font-family: 'AvenirLTStd-Light';
+}
+
+@media (max-width: 991px) {
+    .navbar .bjr-user .block-toggle{
+        display: block;
+    }
+    .navbar-nav {
+        text-align: center;
+        font-size: 0;
+        position: absolute;
+        /* width: 100%; */
+         display: block;
+        /* float: right !important; */
+        right: 0;
+        /* right: -82px; */
+    }
+    .navbar-nav > li > .dropdown-menu {
+        margin: 2px 0;
+    }
+
+
+}
+.sidebar-narrow .navigation > li > a > img{
+    float: initial;
+}
+@media (max-width: 478px) {
+    .user.dropdown > a > img{
+        display: none;
+    }
+}
+
+@media (max-width: 478px) {
+
+    .bjr-user > span {
+        font-size: 20px;
+    }
+}

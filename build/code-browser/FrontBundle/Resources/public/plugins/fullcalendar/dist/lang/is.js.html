@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>
+            Mayflower Code Browser - Source Code
+        </title>
+        <link rel="stylesheet" type="text/css" href="../../../../../../js/jquery.sidebar/css/codebrowser/sidebar.css" />
+        <link rel="stylesheet" type="text/css" href="../../../../../../css/global.css" />
+        <link rel="stylesheet" type="text/css" href="../../../../../../css/cruisecontrol.css" />
+        <link rel="stylesheet" type="text/css" href="../../../../../../css/review.css" />
+
+        <script type="text/javascript" src="../../../../../../js/jquery-1.4.2.min.js"></script>
+        <script type="text/javascript" src="../../../../../../js/jquery.sidebar/jquery-ui-1.7.2.custom.min.js"></script>
+        <script type="text/javascript" src="../../../../../../js/jquery.sidebar/jquery.sidebar.js"></script>
+        <script type="text/javascript" src="../../../../../../js/jquery.cluetip/lib/jquery.hoverIntent.js"></script>
+        <script type="text/javascript" src="../../../../../../js/jquery.cluetip/lib/jquery.bgiframe.min.js"></script>
+        <script type="text/javascript" src="../../../../../../js/jquery.cluetip/jquery.cluetip.min.js"></script>
+
+        <script type="text/javascript" src="../../../../../../js/review.js"></script>
+    </head>
+    <body class="codebrowser">
+        <div class="header">
+            <a href="./../../../../../../index.html">Go back to index</a> |
+            <a href="https://github.com/Mayflower/PHP_CodeBrowser">PHP CodeBrowser</a>
+        </div>
+        <hr/>
+        <div id="review">
+            <div class="filepath">
+                FrontBundle/Resources/public/plugins/fullcalendar/dist/lang/is.js            </div>
+
+            <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><div class="code"><ol class="code"><li id="line_1" class="odd"><span class="lineNumber">1&nbsp;</span>!function(a){"function"==typeof&nbsp;define&amp;&amp;define.amd?define(["jquery","moment"],a):a(jQuery,moment)}(function(a,b){function&nbsp;c(a){return&nbsp;a%100===11?!0:a%10===1?!1:!0}function&nbsp;d(a,b,d,e){var&nbsp;f=a+"&nbsp;";switch(d){case"s":return&nbsp;b||e?"nokkrar&nbsp;sek&uacute;ndur":"nokkrum&nbsp;sek&uacute;ndum";case"m":return&nbsp;b?"m&iacute;n&uacute;ta":"m&iacute;n&uacute;tu";case"mm":return&nbsp;c(a)?f+(b||e?"m&iacute;n&uacute;tur":"m&iacute;n&uacute;tum"):b?f+"m&iacute;n&uacute;ta":f+"m&iacute;n&uacute;tu";case"hh":return&nbsp;c(a)?f+(b||e?"klukkustundir":"klukkustundum"):f+"klukkustund";case"d":return&nbsp;b?"dagur":e?"dag":"degi";case"dd":return&nbsp;c(a)?b?f+"dagar":f+(e?"daga":"d&ouml;gum"):b?f+"dagur":f+(e?"dag":"degi");case"M":return&nbsp;b?"m&aacute;nu&eth;ur":e?"m&aacute;nu&eth;":"m&aacute;nu&eth;i";case"MM":return&nbsp;c(a)?b?f+"m&aacute;nu&eth;ir":f+(e?"m&aacute;nu&eth;i":"m&aacute;nu&eth;um"):b?f+"m&aacute;nu&eth;ur":f+(e?"m&aacute;nu&eth;":"m&aacute;nu&eth;i");case"y":return&nbsp;b||e?"&aacute;r":"&aacute;ri";case"yy":return&nbsp;c(a)?f+(b||e?"&aacute;r":"&aacute;rum"):f+(b||e?"&aacute;r":"&aacute;ri")}}(b.defineLocale||b.lang).call(b,"is",{months:"jan&uacute;ar_febr&uacute;ar_mars_apr&iacute;l_ma&iacute;_j&uacute;n&iacute;_j&uacute;l&iacute;_&aacute;g&uacute;st_september_okt&oacute;ber_n&oacute;vember_desember".split("_"),monthsShort:"jan_feb_mar_apr_ma&iacute;_j&uacute;n_j&uacute;l_&aacute;g&uacute;_sep_okt_n&oacute;v_des".split("_"),weekdays:"sunnudagur_m&aacute;nudagur_&thorn;ri&eth;judagur_mi&eth;vikudagur_fimmtudagur_f&ouml;studagur_laugardagur".split("_"),weekdaysShort:"sun_m&aacute;n_&thorn;ri_mi&eth;_fim_f&ouml;s_lau".split("_"),weekdaysMin:"Su_M&aacute;_&THORN;r_Mi_Fi_F&ouml;_La".split("_"),longDateFormat:{LT:"H:mm",LTS:"LT:ss",L:"DD/MM/YYYY",LL:"D.&nbsp;MMMM&nbsp;YYYY",LLL:"D.&nbsp;MMMM&nbsp;YYYY&nbsp;[kl.]&nbsp;LT",LLLL:"dddd,&nbsp;D.&nbsp;MMMM&nbsp;YYYY&nbsp;[kl.]&nbsp;LT"},calendar:{sameDay:"[&iacute;&nbsp;dag&nbsp;kl.]&nbsp;LT",nextDay:"[&aacute;&nbsp;morgun&nbsp;kl.]&nbsp;LT",nextWeek:"dddd&nbsp;[kl.]&nbsp;LT",lastDay:"[&iacute;&nbsp;g&aelig;r&nbsp;kl.]&nbsp;LT",lastWeek:"[s&iacute;&eth;asta]&nbsp;dddd&nbsp;[kl.]&nbsp;LT",sameElse:"L"},relativeTime:{future:"eftir&nbsp;%s",past:"fyrir&nbsp;%s&nbsp;s&iacute;&eth;an",s:d,m:d,mm:d,h:"klukkustund",hh:d,d:d,dd:d,M:d,MM:d,y:d,yy:d},ordinalParse:/\d{1,2}\./,ordinal:"%d.",week:{dow:1,doy:4}}),a.fullCalendar.datepickerLang("is","is",{closeText:"Loka",prevText:"&amp;#x3C;&nbsp;Fyrri",nextText:"N&aelig;sti&nbsp;&amp;#x3E;",currentText:"&Iacute;&nbsp;dag",monthNames:["Jan&uacute;ar","Febr&uacute;ar","Mars","Apr&iacute;l","Ma&iacute;","J&uacute;n&iacute;","J&uacute;l&iacute;","&Aacute;g&uacute;st","September","Okt&oacute;ber","N&oacute;vember","Desember"],monthNamesShort:["Jan","Feb","Mar","Apr","Ma&iacute;","J&uacute;n","J&uacute;l","&Aacute;g&uacute;","Sep","Okt","N&oacute;v","Des"],dayNames:["Sunnudagur","M&aacute;nudagur","&THORN;ri&eth;judagur","Mi&eth;vikudagur","Fimmtudagur","F&ouml;studagur","Laugardagur"],dayNamesShort:["Sun","M&aacute;n","&THORN;ri","Mi&eth;","Fim","F&ouml;s","Lau"],dayNamesMin:["Su","M&aacute;","&THORN;r","Mi","Fi","F&ouml;","La"],weekHeader:"Vika",dateFormat:"dd.mm.yy",firstDay:0,isRTL:!1,showMonthAfterYear:!1,yearSuffix:""}),a.fullCalendar.lang("is",{buttonText:{month:"M&aacute;nu&eth;ur",week:"Vika",day:"Dagur",list:"Dagskr&aacute;"},allDayHtml:"Allan&lt;br/&gt;daginn",eventLimitText:"meira"})});<a name="line_1"></a></li></ol></div></body></html>
+                    </div>
+    </body>
+</html>

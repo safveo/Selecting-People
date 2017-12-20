@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>
+            Mayflower Code Browser - Source Code
+        </title>
+        <link rel="stylesheet" type="text/css" href="../../../../../../js/jquery.sidebar/css/codebrowser/sidebar.css" />
+        <link rel="stylesheet" type="text/css" href="../../../../../../css/global.css" />
+        <link rel="stylesheet" type="text/css" href="../../../../../../css/cruisecontrol.css" />
+        <link rel="stylesheet" type="text/css" href="../../../../../../css/review.css" />
+
+        <script type="text/javascript" src="../../../../../../js/jquery-1.4.2.min.js"></script>
+        <script type="text/javascript" src="../../../../../../js/jquery.sidebar/jquery-ui-1.7.2.custom.min.js"></script>
+        <script type="text/javascript" src="../../../../../../js/jquery.sidebar/jquery.sidebar.js"></script>
+        <script type="text/javascript" src="../../../../../../js/jquery.cluetip/lib/jquery.hoverIntent.js"></script>
+        <script type="text/javascript" src="../../../../../../js/jquery.cluetip/lib/jquery.bgiframe.min.js"></script>
+        <script type="text/javascript" src="../../../../../../js/jquery.cluetip/jquery.cluetip.min.js"></script>
+
+        <script type="text/javascript" src="../../../../../../js/review.js"></script>
+    </head>
+    <body class="codebrowser">
+        <div class="header">
+            <a href="./../../../../../../index.html">Go back to index</a> |
+            <a href="https://github.com/Mayflower/PHP_CodeBrowser">PHP CodeBrowser</a>
+        </div>
+        <hr/>
+        <div id="review">
+            <div class="filepath">
+                FrontBundle/Resources/public/plugins/fullcalendar/dist/lang/lt.js            </div>
+
+            <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><div class="code"><ol class="code"><li id="line_1" class="odd"><span class="lineNumber">1&nbsp;</span>!function(a){"function"==typeof&nbsp;define&amp;&amp;define.amd?define(["jquery","moment"],a):a(jQuery,moment)}(function(a,b){function&nbsp;c(a,b,c,d){return&nbsp;b?"kelios&nbsp;sekund&Auml;&#151;s":d?"keli&Aring;&sup3;&nbsp;sekund&Aring;&frac34;i&Aring;&sup3;":"kelias&nbsp;sekundes"}function&nbsp;d(a,b,c,d){return&nbsp;b?f(c)[0]:d?f(c)[1]:f(c)[2]}function&nbsp;e(a){return&nbsp;a%10===0||a&gt;10&amp;&amp;20&gt;a}function&nbsp;f(a){return&nbsp;i[a].split("_")}function&nbsp;g(a,b,c,g){var&nbsp;h=a+"&nbsp;";return&nbsp;1===a?h+d(a,b,c[0],g):b?h+(e(a)?f(c)[1]:f(c)[0]):g?h+f(c)[1]:h+(e(a)?f(c)[1]:f(c)[2])}function&nbsp;h(a,b){var&nbsp;c=-1===b.indexOf("dddd&nbsp;HH:mm"),d=j[a.day()];return&nbsp;c?d:d.substring(0,d.length-2)+"&Auml;&macr;"}var&nbsp;i={m:"minut&Auml;&#151;_minut&Auml;&#151;s_minut&Auml;&#153;",mm:"minut&Auml;&#151;s_minu&Auml;&#141;i&Aring;&sup3;_minutes",h:"valanda_valandos_valand&Auml;&#133;",hh:"valandos_valand&Aring;&sup3;_valandas",d:"diena_dienos_dien&Auml;&#133;",dd:"dienos_dien&Aring;&sup3;_dienas",M:"m&Auml;&#151;nuo_m&Auml;&#151;nesio_m&Auml;&#151;nes&Auml;&macr;",MM:"m&Auml;&#151;nesiai_m&Auml;&#151;nesi&Aring;&sup3;_m&Auml;&#151;nesius",y:"metai_met&Aring;&sup3;_metus",yy:"metai_met&Aring;&sup3;_metus"},j="sekmadienis_pirmadienis_antradienis_tre&Auml;&#141;iadienis_ketvirtadienis_penktadienis_&scaron;e&scaron;tadienis".split("_");(b.defineLocale||b.lang).call(b,"lt",{months:"sausio_vasario_kovo_baland&Aring;&frac34;io_gegu&Aring;&frac34;&Auml;&#151;s_bir&Aring;&frac34;elio_liepos_rugpj&Aring;&laquo;&Auml;&#141;io_rugs&Auml;&#151;jo_spalio_lapkri&Auml;&#141;io_gruod&Aring;&frac34;io".split("_"),monthsShort:"sau_vas_kov_bal_geg_bir_lie_rgp_rgs_spa_lap_grd".split("_"),weekdays:h,weekdaysShort:"Sek_Pir_Ant_Tre_Ket_Pen_&Scaron;e&scaron;".split("_"),weekdaysMin:"S_P_A_T_K_Pn_&Scaron;".split("_"),longDateFormat:{LT:"HH:mm",LTS:"LT:ss",L:"YYYY-MM-DD",LL:"YYYY&nbsp;[m.]&nbsp;MMMM&nbsp;D&nbsp;[d.]",LLL:"YYYY&nbsp;[m.]&nbsp;MMMM&nbsp;D&nbsp;[d.],&nbsp;LT&nbsp;[val.]",LLLL:"YYYY&nbsp;[m.]&nbsp;MMMM&nbsp;D&nbsp;[d.],&nbsp;dddd,&nbsp;LT&nbsp;[val.]",l:"YYYY-MM-DD",ll:"YYYY&nbsp;[m.]&nbsp;MMMM&nbsp;D&nbsp;[d.]",lll:"YYYY&nbsp;[m.]&nbsp;MMMM&nbsp;D&nbsp;[d.],&nbsp;LT&nbsp;[val.]",llll:"YYYY&nbsp;[m.]&nbsp;MMMM&nbsp;D&nbsp;[d.],&nbsp;ddd,&nbsp;LT&nbsp;[val.]"},calendar:{sameDay:"[&Scaron;iandien]&nbsp;LT",nextDay:"[Rytoj]&nbsp;LT",nextWeek:"dddd&nbsp;LT",lastDay:"[Vakar]&nbsp;LT",lastWeek:"[Pra&Auml;&#151;jus&Auml;&macr;]&nbsp;dddd&nbsp;LT",sameElse:"L"},relativeTime:{future:"po&nbsp;%s",past:"prie&scaron;&nbsp;%s",s:c,m:d,mm:g,h:d,hh:g,d:d,dd:g,M:d,MM:g,y:d,yy:g},ordinalParse:/\d{1,2}-oji/,ordinal:function(a){return&nbsp;a+"-oji"},week:{dow:1,doy:4}}),a.fullCalendar.datepickerLang("lt","lt",{closeText:"U&Aring;&frac34;daryti",prevText:"&amp;#x3C;Atgal",nextText:"Pirmyn&amp;#x3E;",currentText:"&Scaron;iandien",monthNames:["Sausis","Vasaris","Kovas","Balandis","Gegu&Aring;&frac34;&Auml;&#151;","Bir&Aring;&frac34;elis","Liepa","Rugpj&Aring;&laquo;tis","Rugs&Auml;&#151;jis","Spalis","Lapkritis","Gruodis"],monthNamesShort:["Sau","Vas","Kov","Bal","Geg","Bir","Lie","Rugp","Rugs","Spa","Lap","Gru"],dayNames:["sekmadienis","pirmadienis","antradienis","tre&Auml;&#141;iadienis","ketvirtadienis","penktadienis","&scaron;e&scaron;tadienis"],dayNamesShort:["sek","pir","ant","tre","ket","pen","&scaron;e&scaron;"],dayNamesMin:["Se","Pr","An","Tr","Ke","Pe","&Scaron;e"],weekHeader:"SAV",dateFormat:"yy-mm-dd",firstDay:1,isRTL:!1,showMonthAfterYear:!0,yearSuffix:""}),a.fullCalendar.lang("lt",{buttonText:{month:"M&Auml;&#151;nuo",week:"Savait&Auml;&#151;",day:"Diena",list:"Darbotvark&Auml;&#151;"},allDayText:"Vis&Auml;&#133;&nbsp;dien&Auml;&#133;",eventLimitText:"daugiau"})});<a name="line_1"></a></li></ol></div></body></html>
+                    </div>
+    </body>
+</html>

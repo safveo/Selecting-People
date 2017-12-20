@@ -1,0 +1,135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>
+            Mayflower Code Browser - Source Code
+        </title>
+        <link rel="stylesheet" type="text/css" href="../../../js/jquery.sidebar/css/codebrowser/sidebar.css" />
+        <link rel="stylesheet" type="text/css" href="../../../css/global.css" />
+        <link rel="stylesheet" type="text/css" href="../../../css/cruisecontrol.css" />
+        <link rel="stylesheet" type="text/css" href="../../../css/review.css" />
+
+        <script type="text/javascript" src="../../../js/jquery-1.4.2.min.js"></script>
+        <script type="text/javascript" src="../../../js/jquery.sidebar/jquery-ui-1.7.2.custom.min.js"></script>
+        <script type="text/javascript" src="../../../js/jquery.sidebar/jquery.sidebar.js"></script>
+        <script type="text/javascript" src="../../../js/jquery.cluetip/lib/jquery.hoverIntent.js"></script>
+        <script type="text/javascript" src="../../../js/jquery.cluetip/lib/jquery.bgiframe.min.js"></script>
+        <script type="text/javascript" src="../../../js/jquery.cluetip/jquery.cluetip.min.js"></script>
+
+        <script type="text/javascript" src="../../../js/review.js"></script>
+    </head>
+    <body class="codebrowser">
+        <div class="header">
+            <a href="./../../../index.html">Go back to index</a> |
+            <a href="https://github.com/Mayflower/PHP_CodeBrowser">PHP CodeBrowser</a>
+        </div>
+        <hr/>
+        <div id="review">
+            <div class="filepath">
+                FrontBundle/Resources/public/ckeditor/build-config.js            </div>
+
+            <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><div class="code"><ol class="code"><li id="line_1" class="odd"><span class="lineNumber">&nbsp;&nbsp;1&nbsp;</span>&iuml;&raquo;&iquest;/**<a name="line_1"></a></li>
+<li id="line_2" class="even"><span class="lineNumber">&nbsp;&nbsp;2&nbsp;</span>&nbsp;*&nbsp;@license&nbsp;Copyright&nbsp;(c)&nbsp;2003-2016,&nbsp;CKSource&nbsp;-&nbsp;Frederico&nbsp;Knabben.&nbsp;All&nbsp;rights&nbsp;reserved.<a name="line_2"></a></li>
+<li id="line_3" class="odd"><span class="lineNumber">&nbsp;&nbsp;3&nbsp;</span>&nbsp;*&nbsp;For&nbsp;licensing,&nbsp;see&nbsp;LICENSE.md&nbsp;or&nbsp;http://ckeditor.com/license<a name="line_3"></a></li>
+<li id="line_4" class="even"><span class="lineNumber">&nbsp;&nbsp;4&nbsp;</span>&nbsp;*/<a name="line_4"></a></li>
+<li id="line_5" class="odd"><span class="lineNumber">&nbsp;&nbsp;5&nbsp;</span><a name="line_5"></a></li>
+<li id="line_6" class="even"><span class="lineNumber">&nbsp;&nbsp;6&nbsp;</span>/**<a name="line_6"></a></li>
+<li id="line_7" class="odd"><span class="lineNumber">&nbsp;&nbsp;7&nbsp;</span>&nbsp;*&nbsp;This&nbsp;file&nbsp;was&nbsp;added&nbsp;automatically&nbsp;by&nbsp;CKEditor&nbsp;builder.<a name="line_7"></a></li>
+<li id="line_8" class="even"><span class="lineNumber">&nbsp;&nbsp;8&nbsp;</span>&nbsp;*&nbsp;You&nbsp;may&nbsp;re-use&nbsp;it&nbsp;at&nbsp;any&nbsp;time&nbsp;to&nbsp;build&nbsp;CKEditor&nbsp;again.<a name="line_8"></a></li>
+<li id="line_9" class="odd"><span class="lineNumber">&nbsp;&nbsp;9&nbsp;</span>&nbsp;*<a name="line_9"></a></li>
+<li id="line_10" class="even"><span class="lineNumber">&nbsp;10&nbsp;</span>&nbsp;*&nbsp;If&nbsp;you&nbsp;would&nbsp;like&nbsp;to&nbsp;build&nbsp;CKEditor&nbsp;online&nbsp;again<a name="line_10"></a></li>
+<li id="line_11" class="odd"><span class="lineNumber">&nbsp;11&nbsp;</span>&nbsp;*&nbsp;(for&nbsp;example&nbsp;to&nbsp;upgrade),&nbsp;visit&nbsp;one&nbsp;the&nbsp;following&nbsp;links:<a name="line_11"></a></li>
+<li id="line_12" class="even"><span class="lineNumber">&nbsp;12&nbsp;</span>&nbsp;*<a name="line_12"></a></li>
+<li id="line_13" class="odd"><span class="lineNumber">&nbsp;13&nbsp;</span>&nbsp;*&nbsp;(1)&nbsp;http://ckeditor.com/builder<a name="line_13"></a></li>
+<li id="line_14" class="even"><span class="lineNumber">&nbsp;14&nbsp;</span>&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Visit&nbsp;online&nbsp;builder&nbsp;to&nbsp;build&nbsp;CKEditor&nbsp;from&nbsp;scratch.<a name="line_14"></a></li>
+<li id="line_15" class="odd"><span class="lineNumber">&nbsp;15&nbsp;</span>&nbsp;*<a name="line_15"></a></li>
+<li id="line_16" class="even"><span class="lineNumber">&nbsp;16&nbsp;</span>&nbsp;*&nbsp;(2)&nbsp;http://ckeditor.com/builder/a30852dfa22ef70b89c0201377b785ea<a name="line_16"></a></li>
+<li id="line_17" class="odd"><span class="lineNumber">&nbsp;17&nbsp;</span>&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Visit&nbsp;online&nbsp;builder&nbsp;to&nbsp;build&nbsp;CKEditor,&nbsp;starting&nbsp;with&nbsp;the&nbsp;same&nbsp;setup&nbsp;as&nbsp;before.<a name="line_17"></a></li>
+<li id="line_18" class="even"><span class="lineNumber">&nbsp;18&nbsp;</span>&nbsp;*<a name="line_18"></a></li>
+<li id="line_19" class="odd"><span class="lineNumber">&nbsp;19&nbsp;</span>&nbsp;*&nbsp;(3)&nbsp;http://ckeditor.com/builder/download/a30852dfa22ef70b89c0201377b785ea<a name="line_19"></a></li>
+<li id="line_20" class="even"><span class="lineNumber">&nbsp;20&nbsp;</span>&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Straight&nbsp;download&nbsp;link&nbsp;to&nbsp;the&nbsp;latest&nbsp;version&nbsp;of&nbsp;CKEditor&nbsp;(Optimized)&nbsp;with&nbsp;the&nbsp;same&nbsp;setup&nbsp;as&nbsp;before.<a name="line_20"></a></li>
+<li id="line_21" class="odd"><span class="lineNumber">&nbsp;21&nbsp;</span>&nbsp;*<a name="line_21"></a></li>
+<li id="line_22" class="even"><span class="lineNumber">&nbsp;22&nbsp;</span>&nbsp;*&nbsp;NOTE:<a name="line_22"></a></li>
+<li id="line_23" class="odd"><span class="lineNumber">&nbsp;23&nbsp;</span>&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;This&nbsp;file&nbsp;is&nbsp;not&nbsp;used&nbsp;by&nbsp;CKEditor,&nbsp;you&nbsp;may&nbsp;remove&nbsp;it.<a name="line_23"></a></li>
+<li id="line_24" class="even"><span class="lineNumber">&nbsp;24&nbsp;</span>&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;Changing&nbsp;this&nbsp;file&nbsp;will&nbsp;not&nbsp;change&nbsp;your&nbsp;CKEditor&nbsp;configuration.<a name="line_24"></a></li>
+<li id="line_25" class="odd"><span class="lineNumber">&nbsp;25&nbsp;</span>&nbsp;*/<a name="line_25"></a></li>
+<li id="line_26" class="even"><span class="lineNumber">&nbsp;26&nbsp;</span><a name="line_26"></a></li>
+<li id="line_27" class="odd"><span class="lineNumber">&nbsp;27&nbsp;</span>var&nbsp;CKBUILDER_CONFIG&nbsp;=&nbsp;{<a name="line_27"></a></li>
+<li id="line_28" class="even"><span class="lineNumber">&nbsp;28&nbsp;</span>	skin:&nbsp;'moono',<a name="line_28"></a></li>
+<li id="line_29" class="odd"><span class="lineNumber">&nbsp;29&nbsp;</span>	preset:&nbsp;'standard',<a name="line_29"></a></li>
+<li id="line_30" class="even"><span class="lineNumber">&nbsp;30&nbsp;</span>	ignore:&nbsp;[<a name="line_30"></a></li>
+<li id="line_31" class="odd"><span class="lineNumber">&nbsp;31&nbsp;</span>		'.bender',<a name="line_31"></a></li>
+<li id="line_32" class="even"><span class="lineNumber">&nbsp;32&nbsp;</span>		'bender.js',<a name="line_32"></a></li>
+<li id="line_33" class="odd"><span class="lineNumber">&nbsp;33&nbsp;</span>		'bender-err.log',<a name="line_33"></a></li>
+<li id="line_34" class="even"><span class="lineNumber">&nbsp;34&nbsp;</span>		'bender-out.log',<a name="line_34"></a></li>
+<li id="line_35" class="odd"><span class="lineNumber">&nbsp;35&nbsp;</span>		'dev',<a name="line_35"></a></li>
+<li id="line_36" class="even"><span class="lineNumber">&nbsp;36&nbsp;</span>		'.DS_Store',<a name="line_36"></a></li>
+<li id="line_37" class="odd"><span class="lineNumber">&nbsp;37&nbsp;</span>		'.editorconfig',<a name="line_37"></a></li>
+<li id="line_38" class="even"><span class="lineNumber">&nbsp;38&nbsp;</span>		'.gitattributes',<a name="line_38"></a></li>
+<li id="line_39" class="odd"><span class="lineNumber">&nbsp;39&nbsp;</span>		'.gitignore',<a name="line_39"></a></li>
+<li id="line_40" class="even"><span class="lineNumber">&nbsp;40&nbsp;</span>		'gruntfile.js',<a name="line_40"></a></li>
+<li id="line_41" class="odd"><span class="lineNumber">&nbsp;41&nbsp;</span>		'.idea',<a name="line_41"></a></li>
+<li id="line_42" class="even"><span class="lineNumber">&nbsp;42&nbsp;</span>		'.jscsrc',<a name="line_42"></a></li>
+<li id="line_43" class="odd"><span class="lineNumber">&nbsp;43&nbsp;</span>		'.jshintignore',<a name="line_43"></a></li>
+<li id="line_44" class="even"><span class="lineNumber">&nbsp;44&nbsp;</span>		'.jshintrc',<a name="line_44"></a></li>
+<li id="line_45" class="odd"><span class="lineNumber">&nbsp;45&nbsp;</span>		'less',<a name="line_45"></a></li>
+<li id="line_46" class="even"><span class="lineNumber">&nbsp;46&nbsp;</span>		'.mailmap',<a name="line_46"></a></li>
+<li id="line_47" class="odd"><span class="lineNumber">&nbsp;47&nbsp;</span>		'node_modules',<a name="line_47"></a></li>
+<li id="line_48" class="even"><span class="lineNumber">&nbsp;48&nbsp;</span>		'package.json',<a name="line_48"></a></li>
+<li id="line_49" class="odd"><span class="lineNumber">&nbsp;49&nbsp;</span>		'README.md',<a name="line_49"></a></li>
+<li id="line_50" class="even"><span class="lineNumber">&nbsp;50&nbsp;</span>		'tests'<a name="line_50"></a></li>
+<li id="line_51" class="odd"><span class="lineNumber">&nbsp;51&nbsp;</span>	],<a name="line_51"></a></li>
+<li id="line_52" class="even"><span class="lineNumber">&nbsp;52&nbsp;</span>	plugins&nbsp;:&nbsp;{<a name="line_52"></a></li>
+<li id="line_53" class="odd"><span class="lineNumber">&nbsp;53&nbsp;</span>		'a11yhelp'&nbsp;:&nbsp;1,<a name="line_53"></a></li>
+<li id="line_54" class="even"><span class="lineNumber">&nbsp;54&nbsp;</span>		'about'&nbsp;:&nbsp;1,<a name="line_54"></a></li>
+<li id="line_55" class="odd"><span class="lineNumber">&nbsp;55&nbsp;</span>		'basicstyles'&nbsp;:&nbsp;1,<a name="line_55"></a></li>
+<li id="line_56" class="even"><span class="lineNumber">&nbsp;56&nbsp;</span>		'blockquote'&nbsp;:&nbsp;1,<a name="line_56"></a></li>
+<li id="line_57" class="odd"><span class="lineNumber">&nbsp;57&nbsp;</span>		'clipboard'&nbsp;:&nbsp;1,<a name="line_57"></a></li>
+<li id="line_58" class="even"><span class="lineNumber">&nbsp;58&nbsp;</span>		'contextmenu'&nbsp;:&nbsp;1,<a name="line_58"></a></li>
+<li id="line_59" class="odd"><span class="lineNumber">&nbsp;59&nbsp;</span>		'elementspath'&nbsp;:&nbsp;1,<a name="line_59"></a></li>
+<li id="line_60" class="even"><span class="lineNumber">&nbsp;60&nbsp;</span>		'enterkey'&nbsp;:&nbsp;1,<a name="line_60"></a></li>
+<li id="line_61" class="odd"><span class="lineNumber">&nbsp;61&nbsp;</span>		'entities'&nbsp;:&nbsp;1,<a name="line_61"></a></li>
+<li id="line_62" class="even"><span class="lineNumber">&nbsp;62&nbsp;</span>		'filebrowser'&nbsp;:&nbsp;1,<a name="line_62"></a></li>
+<li id="line_63" class="odd"><span class="lineNumber">&nbsp;63&nbsp;</span>		'floatingspace'&nbsp;:&nbsp;1,<a name="line_63"></a></li>
+<li id="line_64" class="even"><span class="lineNumber">&nbsp;64&nbsp;</span>		'format'&nbsp;:&nbsp;1,<a name="line_64"></a></li>
+<li id="line_65" class="odd"><span class="lineNumber">&nbsp;65&nbsp;</span>		'horizontalrule'&nbsp;:&nbsp;1,<a name="line_65"></a></li>
+<li id="line_66" class="even"><span class="lineNumber">&nbsp;66&nbsp;</span>		'htmlwriter'&nbsp;:&nbsp;1,<a name="line_66"></a></li>
+<li id="line_67" class="odd"><span class="lineNumber">&nbsp;67&nbsp;</span>		'image'&nbsp;:&nbsp;1,<a name="line_67"></a></li>
+<li id="line_68" class="even"><span class="lineNumber">&nbsp;68&nbsp;</span>		'imageresponsive'&nbsp;:&nbsp;1,<a name="line_68"></a></li>
+<li id="line_69" class="odd"><span class="lineNumber">&nbsp;69&nbsp;</span>		'imageuploader'&nbsp;:&nbsp;1,<a name="line_69"></a></li>
+<li id="line_70" class="even"><span class="lineNumber">&nbsp;70&nbsp;</span>		'indentlist'&nbsp;:&nbsp;1,<a name="line_70"></a></li>
+<li id="line_71" class="odd"><span class="lineNumber">&nbsp;71&nbsp;</span>		'justify'&nbsp;:&nbsp;1,<a name="line_71"></a></li>
+<li id="line_72" class="even"><span class="lineNumber">&nbsp;72&nbsp;</span>		'lineheight'&nbsp;:&nbsp;1,<a name="line_72"></a></li>
+<li id="line_73" class="odd"><span class="lineNumber">&nbsp;73&nbsp;</span>		'link'&nbsp;:&nbsp;1,<a name="line_73"></a></li>
+<li id="line_74" class="even"><span class="lineNumber">&nbsp;74&nbsp;</span>		'list'&nbsp;:&nbsp;1,<a name="line_74"></a></li>
+<li id="line_75" class="odd"><span class="lineNumber">&nbsp;75&nbsp;</span>		'magicline'&nbsp;:&nbsp;1,<a name="line_75"></a></li>
+<li id="line_76" class="even"><span class="lineNumber">&nbsp;76&nbsp;</span>		'maximize'&nbsp;:&nbsp;1,<a name="line_76"></a></li>
+<li id="line_77" class="odd"><span class="lineNumber">&nbsp;77&nbsp;</span>		'pastefromword'&nbsp;:&nbsp;1,<a name="line_77"></a></li>
+<li id="line_78" class="even"><span class="lineNumber">&nbsp;78&nbsp;</span>		'pastetext'&nbsp;:&nbsp;1,<a name="line_78"></a></li>
+<li id="line_79" class="odd"><span class="lineNumber">&nbsp;79&nbsp;</span>		'removeformat'&nbsp;:&nbsp;1,<a name="line_79"></a></li>
+<li id="line_80" class="even"><span class="lineNumber">&nbsp;80&nbsp;</span>		'resize'&nbsp;:&nbsp;1,<a name="line_80"></a></li>
+<li id="line_81" class="odd"><span class="lineNumber">&nbsp;81&nbsp;</span>		'scayt'&nbsp;:&nbsp;1,<a name="line_81"></a></li>
+<li id="line_82" class="even"><span class="lineNumber">&nbsp;82&nbsp;</span>		'showborders'&nbsp;:&nbsp;1,<a name="line_82"></a></li>
+<li id="line_83" class="odd"><span class="lineNumber">&nbsp;83&nbsp;</span>		'sourcearea'&nbsp;:&nbsp;1,<a name="line_83"></a></li>
+<li id="line_84" class="even"><span class="lineNumber">&nbsp;84&nbsp;</span>		'specialchar'&nbsp;:&nbsp;1,<a name="line_84"></a></li>
+<li id="line_85" class="odd"><span class="lineNumber">&nbsp;85&nbsp;</span>		'stylescombo'&nbsp;:&nbsp;1,<a name="line_85"></a></li>
+<li id="line_86" class="even"><span class="lineNumber">&nbsp;86&nbsp;</span>		'tab'&nbsp;:&nbsp;1,<a name="line_86"></a></li>
+<li id="line_87" class="odd"><span class="lineNumber">&nbsp;87&nbsp;</span>		'table'&nbsp;:&nbsp;1,<a name="line_87"></a></li>
+<li id="line_88" class="even"><span class="lineNumber">&nbsp;88&nbsp;</span>		'tabletools'&nbsp;:&nbsp;1,<a name="line_88"></a></li>
+<li id="line_89" class="odd"><span class="lineNumber">&nbsp;89&nbsp;</span>		'toolbar'&nbsp;:&nbsp;1,<a name="line_89"></a></li>
+<li id="line_90" class="even"><span class="lineNumber">&nbsp;90&nbsp;</span>		'undo'&nbsp;:&nbsp;1,<a name="line_90"></a></li>
+<li id="line_91" class="odd"><span class="lineNumber">&nbsp;91&nbsp;</span>		'uploadimage'&nbsp;:&nbsp;1,<a name="line_91"></a></li>
+<li id="line_92" class="even"><span class="lineNumber">&nbsp;92&nbsp;</span>		'wsc'&nbsp;:&nbsp;1,<a name="line_92"></a></li>
+<li id="line_93" class="odd"><span class="lineNumber">&nbsp;93&nbsp;</span>		'wysiwygarea'&nbsp;:&nbsp;1,<a name="line_93"></a></li>
+<li id="line_94" class="even"><span class="lineNumber">&nbsp;94&nbsp;</span>		'youtube'&nbsp;:&nbsp;1<a name="line_94"></a></li>
+<li id="line_95" class="odd"><span class="lineNumber">&nbsp;95&nbsp;</span>	},<a name="line_95"></a></li>
+<li id="line_96" class="even"><span class="lineNumber">&nbsp;96&nbsp;</span>	languages&nbsp;:&nbsp;{<a name="line_96"></a></li>
+<li id="line_97" class="odd"><span class="lineNumber">&nbsp;97&nbsp;</span>		'en'&nbsp;:&nbsp;1,<a name="line_97"></a></li>
+<li id="line_98" class="even"><span class="lineNumber">&nbsp;98&nbsp;</span>		'fr'&nbsp;:&nbsp;1<a name="line_98"></a></li>
+<li id="line_99" class="odd"><span class="lineNumber">&nbsp;99&nbsp;</span>	}<a name="line_99"></a></li>
+<li id="line_100" class="even"><span class="lineNumber">100&nbsp;</span>};<a name="line_100"></a></li></ol></div></body></html>
+                    </div>
+    </body>
+</html>

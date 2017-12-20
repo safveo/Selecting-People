@@ -1,0 +1,46 @@
+{% extends 'FrontBundle:layout:layout.html.twig' %}
+
+{% block nextpage %}
+    {% if ecran %}
+        {{ path('ecran_show', { 'id': ecran.id }) }}
+    {% else %}
+        {{ path('stat_1') }}
+    {% endif %}
+{% endblock %}
+
+{% block content %}
+
+    {% if ConditionBoocle == 1 %}
+    <div class="dropdown pull-right">
+        <a class="btn btn-default" href="{{ path('ecran_index') }}"> <span>Retour </span> </a>
+    </div>
+{% endif %}
+
+    <div class="row">
+        <div class="col-md-12"  align="center">
+            <div class="title">
+                <h2>
+                    {{  ecran.titre  }}
+                </h2>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 stat panel-heading" >
+
+            {% if(ecran.image !=null) %}
+                <div style="text-align: center">
+                    <img style="width: 300px;height: 200px;" src="{{ app.request.basepath() }}/{{ ecran.getWebPath }}"/>
+                    <hr>
+                </div>
+            {% endif %}
+
+            {{  ecran.contenu|raw  }}
+        </div>
+    </div>
+
+    {{ include ("FrontBundle:layout:vignette.html.twig") }}
+
+
+
+{% endblock %}

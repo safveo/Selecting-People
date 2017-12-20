@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>
+            Mayflower Code Browser - Source Code
+        </title>
+        <link rel="stylesheet" type="text/css" href="../../../../../../js/jquery.sidebar/css/codebrowser/sidebar.css" />
+        <link rel="stylesheet" type="text/css" href="../../../../../../css/global.css" />
+        <link rel="stylesheet" type="text/css" href="../../../../../../css/cruisecontrol.css" />
+        <link rel="stylesheet" type="text/css" href="../../../../../../css/review.css" />
+
+        <script type="text/javascript" src="../../../../../../js/jquery-1.4.2.min.js"></script>
+        <script type="text/javascript" src="../../../../../../js/jquery.sidebar/jquery-ui-1.7.2.custom.min.js"></script>
+        <script type="text/javascript" src="../../../../../../js/jquery.sidebar/jquery.sidebar.js"></script>
+        <script type="text/javascript" src="../../../../../../js/jquery.cluetip/lib/jquery.hoverIntent.js"></script>
+        <script type="text/javascript" src="../../../../../../js/jquery.cluetip/lib/jquery.bgiframe.min.js"></script>
+        <script type="text/javascript" src="../../../../../../js/jquery.cluetip/jquery.cluetip.min.js"></script>
+
+        <script type="text/javascript" src="../../../../../../js/review.js"></script>
+    </head>
+    <body class="codebrowser">
+        <div class="header">
+            <a href="./../../../../../../index.html">Go back to index</a> |
+            <a href="https://github.com/Mayflower/PHP_CodeBrowser">PHP CodeBrowser</a>
+        </div>
+        <hr/>
+        <div id="review">
+            <div class="filepath">
+                FrontBundle/Resources/public/ckeditor/plugins/image2/dialogs/image2.js            </div>
+
+            <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><div class="code"><ol class="code"><li id="line_1" class="odd"><span class="lineNumber">&nbsp;1&nbsp;</span>&iuml;&raquo;&iquest;/*<a name="line_1"></a></li>
+<li id="line_2" class="even"><span class="lineNumber">&nbsp;2&nbsp;</span>&nbsp;Copyright&nbsp;(c)&nbsp;2003-2016,&nbsp;CKSource&nbsp;-&nbsp;Frederico&nbsp;Knabben.&nbsp;All&nbsp;rights&nbsp;reserved.<a name="line_2"></a></li>
+<li id="line_3" class="odd"><span class="lineNumber">&nbsp;3&nbsp;</span>&nbsp;For&nbsp;licensing,&nbsp;see&nbsp;LICENSE.md&nbsp;or&nbsp;http://ckeditor.com/license<a name="line_3"></a></li>
+<li id="line_4" class="even"><span class="lineNumber">&nbsp;4&nbsp;</span>*/<a name="line_4"></a></li>
+<li id="line_5" class="odd"><span class="lineNumber">&nbsp;5&nbsp;</span>CKEDITOR.dialog.add("image2",function(k){function&nbsp;D(){var&nbsp;a=this.getValue().match(E);(a=!(!a||0===parseInt(a[1],10)))||alert(c["invalid"+CKEDITOR.tools.capitalize(this.id)]);return&nbsp;a}function&nbsp;O(){function&nbsp;a(a,b){d.push(l.once(a,function(a){for(var&nbsp;l;l=d.pop();)l.removeListener();b(a)}))}var&nbsp;l=t.createElement("img"),d=[];return&nbsp;function(d,b,c){a("load",function(){var&nbsp;a=F(l);b.call(c,l,a.width,a.height)});a("error",function(){b(null)});a("abort",function(){b(null)});l.setAttribute("src",(x.baseHref||<a name="line_5"></a></li>
+<li id="line_6" class="even"><span class="lineNumber">&nbsp;6&nbsp;</span>"")+d+"?"+Math.random().toString(16).substring(2))}}function&nbsp;G(){var&nbsp;a=this.getValue();u(!1);a!==y.data.src?(H(a,function(a,d,b){u(!0);if(!a)return&nbsp;m(!1);g.setValue(!1===k.config.image2_prefillDimensions?0:d);h.setValue(!1===k.config.image2_prefillDimensions?0:b);v=d;w=b;m(I.checkHasNaturalRatio(a))}),n=!0):n?(u(!0),g.setValue(p),h.setValue(q),n=!1):u(!0)}function&nbsp;J(){if(e){var&nbsp;a=this.getValue();if(a&amp;&amp;(a.match(E)||m(!1),"0"!==a)){var&nbsp;b="width"==this.id,d=p||v,c=q||w,a=b?Math.round(a/d*c):Math.round(a/<a name="line_6"></a></li>
+<li id="line_7" class="odd"><span class="lineNumber">&nbsp;7&nbsp;</span>c*d);isNaN(a)||(b?h:g).setValue(a)}}}function&nbsp;m(a){if(f){if("boolean"==typeof&nbsp;a){if(z)return;e=a}else&nbsp;a=g.getValue(),z=!0,(e=!e)&amp;&amp;a&amp;&amp;(a*=q/p,isNaN(a)||h.setValue(Math.round(a)));f[e?"removeClass":"addClass"]("cke_btn_unlocked");f.setAttribute("aria-checked",e);CKEDITOR.env.hc&amp;&amp;f.getChild(0).setHtml(e?CKEDITOR.env.ie?"&acirc;&#150;&nbsp;":"&acirc;&#150;&pound;":CKEDITOR.env.ie?"&acirc;&#150;&iexcl;":"&acirc;&#150;&cent;")}}function&nbsp;u(a){a=a?"enable":"disable";g[a]();h[a]()}var&nbsp;E=/(^\s*(\d+)(px)?\s*$)|^$/i,K=CKEDITOR.tools.getNextId(),L=CKEDITOR.tools.getNextId(),b=k.lang.image2,<a name="line_7"></a></li>
+<li id="line_8" class="even"><span class="lineNumber">&nbsp;8&nbsp;</span>c=k.lang.common,P=(new&nbsp;CKEDITOR.template('\x3cdiv\x3e\x3ca&nbsp;href\x3d"javascript:void(0)"&nbsp;tabindex\x3d"-1"&nbsp;title\x3d"'+b.lockRatio+'"&nbsp;class\x3d"cke_btn_locked"&nbsp;id\x3d"{lockButtonId}"&nbsp;role\x3d"checkbox"\x3e\x3cspan&nbsp;class\x3d"cke_icon"\x3e\x3c/span\x3e\x3cspan&nbsp;class\x3d"cke_label"\x3e'+b.lockRatio+'\x3c/span\x3e\x3c/a\x3e\x3ca&nbsp;href\x3d"javascript:void(0)"&nbsp;tabindex\x3d"-1"&nbsp;title\x3d"'+b.resetSize+'"&nbsp;class\x3d"cke_btn_reset"&nbsp;id\x3d"{resetButtonId}"&nbsp;role\x3d"button"\x3e\x3cspan&nbsp;class\x3d"cke_label"\x3e'+<a name="line_8"></a></li>
+<li id="line_9" class="odd"><span class="lineNumber">&nbsp;9&nbsp;</span>b.resetSize+"\x3c/span\x3e\x3c/a\x3e\x3c/div\x3e")).output({lockButtonId:K,resetButtonId:L}),I=CKEDITOR.plugins.image2,x=k.config,A=k.widgets.registered.image.features,F=I.getNatural,t,y,M,H,p,q,v,w,n,e,z,f,r,g,h,B,C=!(!x.filebrowserImageBrowseUrl&amp;&amp;!x.filebrowserBrowseUrl),N=[{id:"src",type:"text",label:c.url,onKeyup:G,onChange:G,setup:function(a){this.setValue(a.data.src)},commit:function(a){a.setData("src",this.getValue())},validate:CKEDITOR.dialog.validate.notEmpty(b.urlMissing)}];C&amp;&amp;N.push({type:"button",<a name="line_9"></a></li>
+<li id="line_10" class="even"><span class="lineNumber">10&nbsp;</span>id:"browse",style:"display:inline-block;margin-top:14px;",align:"center",label:k.lang.common.browseServer,hidden:!0,filebrowser:"info:src"});return{title:b.title,minWidth:250,minHeight:100,onLoad:function(){t=this._.element.getDocument();H=O()},onShow:function(){y=this.widget;M=y.parts.image;n=z=e=!1;B=F(M);v=p=B.width;w=q=B.height},contents:[{id:"info",label:b.infoTab,elements:[{type:"vbox",padding:0,children:[{type:"hbox",widths:["100%"],children:N}]},{id:"alt",type:"text",label:b.alt,setup:function(a){this.setValue(a.data.alt)},<a name="line_10"></a></li>
+<li id="line_11" class="odd"><span class="lineNumber">11&nbsp;</span>commit:function(a){a.setData("alt",this.getValue())}},{type:"hbox",widths:["25%","25%","50%"],requiredContent:A.dimension.requiredContent,children:[{type:"text",width:"45px",id:"width",label:c.width,validate:D,onKeyUp:J,onLoad:function(){g=this},setup:function(a){this.setValue(a.data.width)},commit:function(a){a.setData("width",this.getValue())}},{type:"text",id:"height",width:"45px",label:c.height,validate:D,onKeyUp:J,onLoad:function(){h=this},setup:function(a){this.setValue(a.data.height)},commit:function(a){a.setData("height",<a name="line_11"></a></li>
+<li id="line_12" class="even"><span class="lineNumber">12&nbsp;</span>this.getValue())}},{id:"lock",type:"html",style:"margin-top:18px;width:40px;height:20px;",onLoad:function(){function&nbsp;a(a){a.on("mouseover",function(){this.addClass("cke_btn_over")},a);a.on("mouseout",function(){this.removeClass("cke_btn_over")},a)}var&nbsp;b=this.getDialog();f=t.getById(K);r=t.getById(L);f&amp;&amp;(b.addFocusable(f,4+C),f.on("click",function(a){m();a.data&amp;&amp;a.data.preventDefault()},this.getDialog()),a(f));r&amp;&amp;(b.addFocusable(r,5+C),r.on("click",function(a){n?(g.setValue(v),h.setValue(w)):(g.setValue(p),<a name="line_12"></a></li>
+<li id="line_13" class="odd"><span class="lineNumber">13&nbsp;</span>h.setValue(q));a.data&amp;&amp;a.data.preventDefault()},this),a(r))},setup:function(a){m(a.data.lock)},commit:function(a){a.setData("lock",e)},html:P}]},{type:"hbox",id:"alignment",requiredContent:A.align.requiredContent,children:[{id:"align",type:"radio",items:[[c.alignNone,"none"],[c.alignLeft,"left"],[c.alignCenter,"center"],[c.alignRight,"right"]],label:c.align,setup:function(a){this.setValue(a.data.align)},commit:function(a){a.setData("align",this.getValue())}}]},{id:"hasCaption",type:"checkbox",label:b.captioned,<a name="line_13"></a></li>
+<li id="line_14" class="even"><span class="lineNumber">14&nbsp;</span>requiredContent:A.caption.requiredContent,setup:function(a){this.setValue(a.data.hasCaption)},commit:function(a){a.setData("hasCaption",this.getValue())}}]},{id:"Upload",hidden:!0,filebrowser:"uploadButton",label:b.uploadTab,elements:[{type:"file",id:"upload",label:b.btnUpload,style:"height:40px"},{type:"fileButton",id:"uploadButton",filebrowser:"info:src",label:b.btnUpload,"for":["Upload","upload"]}]}]}});<a name="line_14"></a></li></ol></div></body></html>
+                    </div>
+    </body>
+</html>

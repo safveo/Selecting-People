@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="3.1.0">
+<file name="C:\Program Files (x86)\Jenkins\workspace\test\src\BackBundle\BackBundle.php">
+ <error line="1" column="1" severity="error" message="End of line character is invalid; expected &quot;\n&quot; but found &quot;\r\n&quot;" source="Generic.Files.LineEndings.InvalidEOLChar"/>
+</file>
+<file name="C:\Program Files (x86)\Jenkins\workspace\test\src\BackBundle\Controller\EcranController.php">
+ <error line="1" column="1" severity="error" message="End of line character is invalid; expected &quot;\n&quot; but found &quot;\r\n&quot;" source="Generic.Files.LineEndings.InvalidEOLChar"/>
+ <error line="119" column="5" severity="error" message="Function closing brace must go on the next line following the body; found 1 blank lines before brace" source="PSR2.Methods.FunctionClosingBrace.SpacingBeforeClose"/>
+ <error line="157" column="5" severity="error" message="Function closing brace must go on the next line following the body; found 1 blank lines before brace" source="PSR2.Methods.FunctionClosingBrace.SpacingBeforeClose"/>
+ <error line="275" column="5" severity="error" message="Scope keyword &quot;public&quot; must be followed by a single space" source="Squiz.WhiteSpace.ScopeKeywordSpacing.Incorrect"/>
+ <error line="275" column="40" severity="error" message="Opening brace should be on a new line" source="Squiz.Functions.MultiLineFunctionDeclaration.BraceOnSameLine"/>
+ <error line="298" column="5" severity="error" message="Function closing brace must go on the next line following the body; found 2 blank lines before brace" source="PSR2.Methods.FunctionClosingBrace.SpacingBeforeClose"/>
+ <error line="306" column="1" severity="error" message="The closing brace for the class must go on the next line after the body" source="PSR2.Classes.ClassDeclaration.CloseBraceAfterBody"/>
+</file>
+<file name="C:\Program Files (x86)\Jenkins\workspace\test\src\BackBundle\Entity\AffectationDemandeAff.php">
+ <error line="1" column="1" severity="error" message="End of line character is invalid; expected &quot;\n&quot; but found &quot;\r\n&quot;" source="Generic.Files.LineEndings.InvalidEOLChar"/>
+ <error line="162" column="1" severity="error" message="Expected 1 blank line at end of file; 2 found" source="PSR2.Files.EndFileNewline.TooMany"/>
+ <error line="162" column="1" severity="error" message="The closing brace for the class must go on the next line after the body" source="PSR2.Classes.ClassDeclaration.CloseBraceAfterBody"/>
+</file>
+<file name="C:\Program Files (x86)\Jenkins\workspace\test\src\BackBundle\Entity\CabinetRecrutementCar.php">
+ <error line="1" column="1" severity="error" message="End of line character is invalid; expected &quot;\n&quot; but found &quot;\r\n&quot;" source="Generic.Files.LineEndings.InvalidEOLChar"/>
+ <error line="46" column="1" severity="error" message="Expected 1 blank line at end of file; 2 found" source="PSR2.Files.EndFileNewline.TooMany"/>
+ <error line="46" column="1" severity="error" message="The closing brace for the class must go on the next line after the body" source="PSR2.Classes.ClassDeclaration.CloseBraceAfterBody"/>
+</file>
+<file name="C:\Program Files (x86)\Jenkins\workspace\test\src\BackBundle\Entity\ChargeRechercheCre.php">
+ <error line="1" column="1" severity="error" message="End of line character is invalid; expected &quot;\n&quot; but found &quot;\r\n&quot;" source="Generic.Files.LineEndings.InvalidEOLChar"/>
+ <error line="10" column="44" severity="warning" message="Line exceeds 120 characters; contains 134 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="25" column="1" severity="error" message="Expected 1 blank line at end of file; 2 found" source="PSR2.Files.EndFileNewline.TooMany"/>
+ <error line="25" column="1" severity="error" message="The closing brace for the class must go on the next line after the body" source="PSR2.Classes.ClassDeclaration.CloseBraceAfterBody"/>
+</file>
+<file name="C:\Program Files (x86)\Jenkins\workspace\test\src\BackBundle\Entity\ChargeRecrutementChr.php">
+ <error line="1" column="1" severity="error" message="End of line character is invalid; expected &quot;\n&quot; but found &quot;\r\n&quot;" source="Generic.Files.LineEndings.InvalidEOLChar"/>
+ <error line="39" column="1" severity="error" message="Expected 1 blank line at end of file; 2 found" source="PSR2.Files.EndFileNewline.TooMany"/>
+ <error line="39" column="1" severity="error" message="The closing brace for the class must go on the next line after the body" source="PSR2.Classes.ClassDeclaration.CloseBraceAfterBody"/>
+</file>
+<file name="C:\Program Files (x86)\Jenkins\workspace\test\src\BackBundle\Entity\DemandeRecrutementDmd.php">
+ <error line="1" column="1" severity="error" message="End of line character is invalid; expected &quot;\n&quot; but found &quot;\r\n&quot;" source="Generic.Files.LineEndings.InvalidEOLChar"/>
+ <error line="10" column="47" severity="warning" message="Line exceeds 120 characters; contains 318 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="651" column="1" severity="error" message="Expected 1 blank line at end of file; 2 found" source="PSR2.Files.EndFileNewline.TooMany"/>
+ <error line="651" column="1" severity="error" message="The closing brace for the class must go on the next line after the body" source="PSR2.Classes.ClassDeclaration.CloseBraceAfterBody"/>
+</file>
+<file name="C:\Program Files (x86)\Jenkins\workspace\test\src\BackBundle\Entity\Ecran.php">
+ <error line="1" column="1" severity="error" message="End of line character is invalid; expected &quot;\n&quot; but found &quot;\r\n&quot;" source="Generic.Files.LineEndings.InvalidEOLChar"/>
+ <error line="162" column="1" severity="error" message="Line indented incorrectly; expected at least 4 spaces, found 0" source="Generic.WhiteSpace.ScopeIndent.Incorrect"/>
+ <error line="162" column="1" severity="error" message="Opening brace indented incorrectly; expected 4 spaces, found 0" source="Squiz.Functions.MultiLineFunctionDeclaration.BraceIndent"/>
+ <error line="164" column="5" severity="error" message="Line indented incorrectly; expected at least 8 spaces, found 4" source="Generic.WhiteSpace.ScopeIndent.Incorrect"/>
+ <error line="167" column="5" severity="error" message="Line indented incorrectly; expected at least 8 spaces, found 4" source="Generic.WhiteSpace.ScopeIndent.Incorrect"/>
+ <error line="169" column="5" severity="error" message="Line indented incorrectly; expected at least 8 spaces, found 4" source="Generic.WhiteSpace.ScopeIndent.Incorrect"/>
+ <error line="170" column="5" severity="error" message="Line indented incorrectly; expected at least 8 spaces, found 4" source="Generic.WhiteSpace.ScopeIndent.Incorrect"/>
+ <error line="170" column="56" severity="error" message="No space found after comma in function call" source="Generic.Functions.FunctionCallArgumentSpacing.NoSpaceAfterComma"/>
+ <error line="170" column="58" severity="error" message="No space found after comma in function call" source="Generic.Functions.FunctionCallArgumentSpacing.NoSpaceAfterComma"/>
+ <error line="171" column="1" severity="error" message="Line indented incorrectly; expected 4 spaces, found 0" source="Generic.WhiteSpace.ScopeIndent.IncorrectExact"/>
+ <error line="171" column="1" severity="error" message="Closing brace indented incorrectly; expected 4 spaces, found 0" source="Squiz.WhiteSpace.ScopeClosingBrace.Indent"/>
+ <error line="182" column="60" severity="error" message="No space found after comma in function call" source="Generic.Functions.FunctionCallArgumentSpacing.NoSpaceAfterComma"/>
+ <error line="182" column="62" severity="error" message="No space found after comma in function call" source="Generic.Functions.FunctionCallArgumentSpacing.NoSpaceAfterComma"/>
+ <error line="254" column="1" severity="error" message="Expected 1 blank line at end of file; 2 found" source="PSR2.Files.EndFileNewline.TooMany"/>
+ <error line="254" column="1" severity="error" message="The closing brace for the class must go on the next line after the body" source="PSR2.Classes.ClassDeclaration.CloseBraceAfterBody"/>
+</file>
+<file name="C:\Program Files (x86)\Jenkins\workspace\test\src\BackBundle\Entity\FamilleProduitPrd.php">
+ <error line="1" column="1" severity="error" message="End of line character is invalid; expected &quot;\n&quot; but found &quot;\r\n&quot;" source="Generic.Files.LineEndings.InvalidEOLChar"/>
+ <error line="39" column="60" severity="error" message="No space found after comma in function call" source="Generic.Functions.FunctionCallArgumentSpacing.NoSpaceAfterComma"/>
+ <error line="39" column="62" severity="error" message="No space found after comma in function call" source="Generic.Functions.FunctionCallArgumentSpacing.NoSpaceAfterComma"/>
+ <error line="42" column="1" severity="error" message="Expected 1 blank line at end of file; 2 found" source="PSR2.Files.EndFileNewline.TooMany"/>
+ <error line="42" column="1" severity="error" message="The closing brace for the class must go on the next line after the body" source="PSR2.Classes.ClassDeclaration.CloseBraceAfterBody"/>
+</file>
+<file name="C:\Program Files (x86)\Jenkins\workspace\test\src\BackBundle\Entity\IndicateursSp.php">
+ <error line="1" column="1" severity="error" message="End of line character is invalid; expected &quot;\n&quot; but found &quot;\r\n&quot;" source="Generic.Files.LineEndings.InvalidEOLChar"/>
+ <error line="182" column="1" severity="error" message="Expected 1 blank line at end of file; 2 found" source="PSR2.Files.EndFileNewline.TooMany"/>
+ <error line="182" column="1" severity="error" message="The closing brace for the class must go on the next line after the body" source="PSR2.Classes.ClassDeclaration.CloseBraceAfterBody"/>
+</file>
+<file name="C:\Program Files (x86)\Jenkins\workspace\test\src\BackBundle\Entity\PaysPys.php">
+ <error line="1" column="1" severity="error" message="End of line character is invalid; expected &quot;\n&quot; but found &quot;\r\n&quot;" source="Generic.Files.LineEndings.InvalidEOLChar"/>
+ <error line="32" column="1" severity="error" message="Expected 1 blank line at end of file; 2 found" source="PSR2.Files.EndFileNewline.TooMany"/>
+ <error line="32" column="1" severity="error" message="The closing brace for the class must go on the next line after the body" source="PSR2.Classes.ClassDeclaration.CloseBraceAfterBody"/>
+</file>
+<file name="C:\Program Files (x86)\Jenkins\workspace\test\src\BackBundle\Entity\RecrutementRct.php">
+ <error line="1" column="1" severity="error" message="End of line character is invalid; expected &quot;\n&quot; but found &quot;\r\n&quot;" source="Generic.Files.LineEndings.InvalidEOLChar"/>
+ <error line="299" column="1" severity="error" message="Expected 1 blank line at end of file; 2 found" source="PSR2.Files.EndFileNewline.TooMany"/>
+ <error line="299" column="1" severity="error" message="The closing brace for the class must go on the next line after the body" source="PSR2.Classes.ClassDeclaration.CloseBraceAfterBody"/>
+</file>
+<file name="C:\Program Files (x86)\Jenkins\workspace\test\src\BackBundle\Entity\ReportingRecrutement.php">
+ <error line="1" column="1" severity="error" message="End of line character is invalid; expected &quot;\n&quot; but found &quot;\r\n&quot;" source="Generic.Files.LineEndings.InvalidEOLChar"/>
+ <error line="186" column="1" severity="error" message="Expected 1 blank line at end of file; 2 found" source="PSR2.Files.EndFileNewline.TooMany"/>
+ <error line="186" column="1" severity="error" message="The closing brace for the class must go on the next line after the body" source="PSR2.Classes.ClassDeclaration.CloseBraceAfterBody"/>
+</file>
+<file name="C:\Program Files (x86)\Jenkins\workspace\test\src\BackBundle\Entity\SemainesSe.php">
+ <error line="1" column="1" severity="error" message="End of line character is invalid; expected &quot;\n&quot; but found &quot;\r\n&quot;" source="Generic.Files.LineEndings.InvalidEOLChar"/>
+ <error line="32" column="1" severity="error" message="Expected 1 blank line at end of file; 2 found" source="PSR2.Files.EndFileNewline.TooMany"/>
+ <error line="32" column="1" severity="error" message="The closing brace for the class must go on the next line after the body" source="PSR2.Classes.ClassDeclaration.CloseBraceAfterBody"/>
+</file>
+<file name="C:\Program Files (x86)\Jenkins\workspace\test\src\BackBundle\Entity\StatutCollaborateurSta.php">
+ <error line="1" column="1" severity="error" message="End of line character is invalid; expected &quot;\n&quot; but found &quot;\r\n&quot;" source="Generic.Files.LineEndings.InvalidEOLChar"/>
+ <error line="39" column="1" severity="error" message="Expected 1 blank line at end of file; 2 found" source="PSR2.Files.EndFileNewline.TooMany"/>
+ <error line="39" column="1" severity="error" message="The closing brace for the class must go on the next line after the body" source="PSR2.Classes.ClassDeclaration.CloseBraceAfterBody"/>
+</file>
+<file name="C:\Program Files (x86)\Jenkins\workspace\test\src\BackBundle\Entity\StatutMissionStm.php">
+ <error line="1" column="1" severity="error" message="End of line character is invalid; expected &quot;\n&quot; but found &quot;\r\n&quot;" source="Generic.Files.LineEndings.InvalidEOLChar"/>
+ <error line="39" column="1" severity="error" message="Expected 1 blank line at end of file; 2 found" source="PSR2.Files.EndFileNewline.TooMany"/>
+ <error line="39" column="1" severity="error" message="The closing brace for the class must go on the next line after the body" source="PSR2.Classes.ClassDeclaration.CloseBraceAfterBody"/>
+</file>
+<file name="C:\Program Files (x86)\Jenkins\workspace\test\src\BackBundle\Entity\TmpIdAff.php">
+ <error line="1" column="1" severity="error" message="End of line character is invalid; expected &quot;\n&quot; but found &quot;\r\n&quot;" source="Generic.Files.LineEndings.InvalidEOLChar"/>
+ <error line="25" column="1" severity="error" message="Expected 1 blank line at end of file; 2 found" source="PSR2.Files.EndFileNewline.TooMany"/>
+ <error line="25" column="1" severity="error" message="The closing brace for the class must go on the next line after the body" source="PSR2.Classes.ClassDeclaration.CloseBraceAfterBody"/>
+</file>
+<file name="C:\Program Files (x86)\Jenkins\workspace\test\src\BackBundle\Entity\TypeContratCtr.php">
+ <error line="1" column="1" severity="error" message="End of line character is invalid; expected &quot;\n&quot; but found &quot;\r\n&quot;" source="Generic.Files.LineEndings.InvalidEOLChar"/>
+ <error line="32" column="1" severity="error" message="Expected 1 blank line at end of file; 2 found" source="PSR2.Files.EndFileNewline.TooMany"/>
+ <error line="32" column="1" severity="error" message="The closing brace for the class must go on the next line after the body" source="PSR2.Classes.ClassDeclaration.CloseBraceAfterBody"/>
+</file>
+<file name="C:\Program Files (x86)\Jenkins\workspace\test\src\BackBundle\Entity\VueDemandeRecrutement.php">
+ <error line="1" column="1" severity="error" message="End of line character is invalid; expected &quot;\n&quot; but found &quot;\r\n&quot;" source="Generic.Files.LineEndings.InvalidEOLChar"/>
+ <error line="305" column="1" severity="error" message="Expected 1 blank line at end of file; 2 found" source="PSR2.Files.EndFileNewline.TooMany"/>
+ <error line="305" column="1" severity="error" message="The closing brace for the class must go on the next line after the body" source="PSR2.Classes.ClassDeclaration.CloseBraceAfterBody"/>
+</file>
+<file name="C:\Program Files (x86)\Jenkins\workspace\test\src\BackBundle\Form\EcranType.php">
+ <error line="1" column="1" severity="error" message="End of line character is invalid; expected &quot;\n&quot; but found &quot;\r\n&quot;" source="Generic.Files.LineEndings.InvalidEOLChar"/>
+ <error line="22" column="26" severity="error" message="No space found after comma in function call" source="Generic.Functions.FunctionCallArgumentSpacing.NoSpaceAfterComma"/>
+ <error line="22" column="42" severity="error" message="No space found after comma in function call" source="Generic.Functions.FunctionCallArgumentSpacing.NoSpaceAfterComma"/>
+ <error line="23" column="153" severity="warning" message="Line exceeds 120 characters; contains 153 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="61" column="1" severity="error" message="The closing brace for the class must go on the next line after the body" source="PSR2.Classes.ClassDeclaration.CloseBraceAfterBody"/>
+</file>
+<file name="C:\Program Files (x86)\Jenkins\workspace\test\src\BackBundle\Repository\AffectationDemandeAffRepository.php">
+ <error line="1" column="1" severity="error" message="End of line character is invalid; expected &quot;\n&quot; but found &quot;\r\n&quot;" source="Generic.Files.LineEndings.InvalidEOLChar"/>
+ <error line="9" column="1" severity="error" message="There must be one blank line after the namespace declaration" source="PSR2.Namespaces.NamespaceDeclaration.BlankLineAfter"/>
+ <error line="12" column="7" severity="error" message="Expected 1 space after class name; 2 found" source="PSR2.Classes.ClassDeclaration.SpaceAfterName"/>
+ <error line="12" column="40" severity="error" message="Expected 1 space before extends keyword; 2 found" source="PSR2.Classes.ClassDeclaration.SpaceBeforeExtends"/>
+ <error line="18" column="52" severity="error" message="Expected 1 space between comma and argument &quot;$year&quot;; 0 found" source="Squiz.Functions.FunctionDeclarationArgumentSpacing.NoSpaceBeforeArg"/>
+ <error line="26" column="15" severity="error" message="Expected 0 spaces before closing bracket; newline found" source="PSR2.Methods.FunctionCallSignature.SpaceBeforeCloseBracket"/>
+ <error line="30" column="1" severity="warning" message="Line exceeds 120 characters; contains 151 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="34" column="36" severity="error" message="No space found after comma in function call" source="Generic.Functions.FunctionCallArgumentSpacing.NoSpaceAfterComma"/>
+ <error line="50" column="43" severity="error" message="Opening brace should be on a new line" source="Squiz.Functions.MultiLineFunctionDeclaration.BraceOnSameLine"/>
+ <error line="56" column="34" severity="error" message="No space found after comma in function call" source="Generic.Functions.FunctionCallArgumentSpacing.NoSpaceAfterComma"/>
+ <error line="57" column="34" severity="error" message="No space found after comma in function call" source="Generic.Functions.FunctionCallArgumentSpacing.NoSpaceAfterComma"/>
+ <error line="62" column="5" severity="error" message="Function closing brace must go on the next line following the body; found 2 blank lines before brace" source="PSR2.Methods.FunctionClosingBrace.SpacingBeforeClose"/>
+ <error line="64" column="1" severity="error" message="Expected 1 newline at end of file; 0 found" source="PSR2.Files.EndFileNewline.NoneFound"/>
+ <error line="64" column="1" severity="error" message="The closing brace for the class must go on the next line after the body" source="PSR2.Classes.ClassDeclaration.CloseBraceAfterBody"/>
+</file>
+<file name="C:\Program Files (x86)\Jenkins\workspace\test\src\BackBundle\Repository\ChargeRecrutementChrRepository.php">
+ <error line="1" column="1" severity="error" message="End of line character is invalid; expected &quot;\n&quot; but found &quot;\r\n&quot;" source="Generic.Files.LineEndings.InvalidEOLChar"/>
+ <error line="9" column="1" severity="error" message="There must be one blank line after the namespace declaration" source="PSR2.Namespaces.NamespaceDeclaration.BlankLineAfter"/>
+ <error line="12" column="7" severity="error" message="Expected 1 space after class name; 2 found" source="PSR2.Classes.ClassDeclaration.SpaceAfterName"/>
+ <error line="12" column="39" severity="error" message="Expected 1 space before extends keyword; 2 found" source="PSR2.Classes.ClassDeclaration.SpaceBeforeExtends"/>
+ <error line="19" column="34" severity="error" message="Opening brace should be on a new line" source="Squiz.Functions.MultiLineFunctionDeclaration.BraceOnSameLine"/>
+ <error line="29" column="1" severity="error" message="Expected 1 newline at end of file; 0 found" source="PSR2.Files.EndFileNewline.NoneFound"/>
+ <error line="29" column="1" severity="error" message="The closing brace for the class must go on the next line after the body" source="PSR2.Classes.ClassDeclaration.CloseBraceAfterBody"/>
+</file>
+<file name="C:\Program Files (x86)\Jenkins\workspace\test\src\BackBundle\Repository\EcranRepository.php">
+ <error line="1" column="1" severity="error" message="End of line character is invalid; expected &quot;\n&quot; but found &quot;\r\n&quot;" source="Generic.Files.LineEndings.InvalidEOLChar"/>
+ <error line="17" column="35" severity="error" message="Opening brace should be on a new line" source="Squiz.Functions.MultiLineFunctionDeclaration.BraceOnSameLine"/>
+ <error line="28" column="1" severity="error" message="The closing brace for the class must go on the next line after the body" source="PSR2.Classes.ClassDeclaration.CloseBraceAfterBody"/>
+</file>
+<file name="C:\Program Files (x86)\Jenkins\workspace\test\src\BackBundle\Repository\RecrutementRctRepository.php">
+ <error line="1" column="1" severity="error" message="End of line character is invalid; expected &quot;\n&quot; but found &quot;\r\n&quot;" source="Generic.Files.LineEndings.InvalidEOLChar"/>
+ <error line="9" column="1" severity="error" message="There must be one blank line after the namespace declaration" source="PSR2.Namespaces.NamespaceDeclaration.BlankLineAfter"/>
+ <error line="27" column="15" severity="error" message="Expected 0 spaces before closing bracket; newline found" source="PSR2.Methods.FunctionCallSignature.SpaceBeforeCloseBracket"/>
+ <error line="50" column="15" severity="error" message="Expected 0 spaces before closing bracket; newline found" source="PSR2.Methods.FunctionCallSignature.SpaceBeforeCloseBracket"/>
+ <error line="64" column="1" severity="error" message="Expected 1 newline at end of file; 0 found" source="PSR2.Files.EndFileNewline.NoneFound"/>
+ <error line="64" column="1" severity="error" message="The closing brace for the class must go on the next line after the body" source="PSR2.Classes.ClassDeclaration.CloseBraceAfterBody"/>
+</file>
+<file name="C:\Program Files (x86)\Jenkins\workspace\test\src\BackBundle\Tests\Controller\EcranControllerTest.php">
+ <error line="1" column="1" severity="error" message="End of line character is invalid; expected &quot;\n&quot; but found &quot;\r\n&quot;" source="Generic.Files.LineEndings.InvalidEOLChar"/>
+ <error line="9" column="32" severity="error" message="Opening brace should be on a new line" source="Squiz.Functions.MultiLineFunctionDeclaration.BraceOnSameLine"/>
+ <error line="12" column="38" severity="error" message="No space found after comma in function call" source="Generic.Functions.FunctionCallArgumentSpacing.NoSpaceAfterComma"/>
+</file>
+<file name="C:\Program Files (x86)\Jenkins\workspace\test\src\BackBundle\Tests\Entity\EcranTest.php">
+ <error line="1" column="1" severity="error" message="End of line character is invalid; expected &quot;\n&quot; but found &quot;\r\n&quot;" source="Generic.Files.LineEndings.InvalidEOLChar"/>
+ <error line="9" column="1" severity="error" message="There must be one blank line after the namespace declaration" source="PSR2.Namespaces.NamespaceDeclaration.BlankLineAfter"/>
+ <error line="12" column="1" severity="error" message="There must be one blank line after the last USE statement; 2 found;" source="PSR2.Namespaces.UseDeclaration.SpaceAfterLastUse"/>
+ <error line="18" column="32" severity="error" message="Opening brace should be on a new line" source="Squiz.Functions.MultiLineFunctionDeclaration.BraceOnSameLine"/>
+ <error line="21" column="38" severity="error" message="No space found after comma in function call" source="Generic.Functions.FunctionCallArgumentSpacing.NoSpaceAfterComma"/>
+</file>
+<file name="C:\Program Files (x86)\Jenkins\workspace\test\src\BackBundle\Tests\Entity\PaysPysTest.php">
+ <error line="1" column="1" severity="error" message="End of line character is invalid; expected &quot;\n&quot; but found &quot;\r\n&quot;" source="Generic.Files.LineEndings.InvalidEOLChar"/>
+ <error line="9" column="1" severity="error" message="There must be one blank line after the namespace declaration" source="PSR2.Namespaces.NamespaceDeclaration.BlankLineAfter"/>
+ <error line="12" column="1" severity="error" message="There must be one blank line after the last USE statement; 2 found;" source="PSR2.Namespaces.UseDeclaration.SpaceAfterLastUse"/>
+ <error line="18" column="32" severity="error" message="Opening brace should be on a new line" source="Squiz.Functions.MultiLineFunctionDeclaration.BraceOnSameLine"/>
+ <error line="21" column="38" severity="error" message="No space found after comma in function call" source="Generic.Functions.FunctionCallArgumentSpacing.NoSpaceAfterComma"/>
+ <error line="24" column="1" severity="error" message="The closing brace for the class must go on the next line after the body" source="PSR2.Classes.ClassDeclaration.CloseBraceAfterBody"/>
+</file>
+<file name="C:\Program Files (x86)\Jenkins\workspace\test\src\FrontBundle\Controller\StatController.php">
+ <error line="1" column="1" severity="error" message="End of line character is invalid; expected &quot;\n&quot; but found &quot;\r\n&quot;" source="Generic.Files.LineEndings.InvalidEOLChar"/>
+ <error line="57" column="9" severity="warning" message="Line exceeds 120 characters; contains 125 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="72" column="216" severity="warning" message="Line exceeds 120 characters; contains 216 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="80" column="332" severity="warning" message="Line exceeds 120 characters; contains 332 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="86" column="8" severity="warning" message="Line exceeds 120 characters; contains 152 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="137" column="216" severity="warning" message="Line exceeds 120 characters; contains 216 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="141" column="216" severity="warning" message="Line exceeds 120 characters; contains 216 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="144" column="24" severity="warning" message="Line exceeds 120 characters; contains 136 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="146" column="185" severity="warning" message="Line exceeds 120 characters; contains 185 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="158" column="1" severity="error" message="Blank line found at end of control structure" source="Squiz.WhiteSpace.ControlStructureSpacing.SpacingBeforeClose"/>
+ <error line="198" column="23" severity="error" message="Expected 0 spaces before closing bracket; newline found" source="PSR2.Methods.FunctionCallSignature.SpaceBeforeCloseBracket"/>
+ <error line="198" column="235" severity="warning" message="Line exceeds 120 characters; contains 235 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="200" column="129" severity="warning" message="Line exceeds 120 characters; contains 129 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="201" column="145" severity="warning" message="Line exceeds 120 characters; contains 145 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="205" column="5" severity="error" message="Function closing brace must go on the next line following the body; found 1 blank lines before brace" source="PSR2.Methods.FunctionClosingBrace.SpacingBeforeClose"/>
+ <error line="211" column="8" severity="warning" message="Line exceeds 120 characters; contains 134 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="265" column="16" severity="warning" message="Line exceeds 120 characters; contains 127 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="267" column="183" severity="warning" message="Line exceeds 120 characters; contains 183 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="275" column="1" severity="error" message="Blank line found at end of control structure" source="Squiz.WhiteSpace.ControlStructureSpacing.SpacingBeforeClose"/>
+ <error line="312" column="127" severity="warning" message="Line exceeds 120 characters; contains 127 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="327" column="126" severity="warning" message="Line exceeds 120 characters; contains 126 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="335" column="127" severity="warning" message="Line exceeds 120 characters; contains 127 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="347" column="126" severity="warning" message="Line exceeds 120 characters; contains 126 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="349" column="158" severity="warning" message="Line exceeds 120 characters; contains 158 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="352" column="125" severity="warning" message="Line exceeds 120 characters; contains 125 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="428" column="49" severity="error" message="Blank line found at start of control structure" source="Squiz.WhiteSpace.ControlStructureSpacing.SpacingAfterOpen"/>
+ <error line="431" column="212" severity="warning" message="Line exceeds 120 characters; contains 212 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="435" column="17" severity="warning" message="Line exceeds 120 characters; contains 132 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="440" column="127" severity="warning" message="Line exceeds 120 characters; contains 127 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="457" column="5" severity="error" message="Function closing brace must go on the next line following the body; found 1 blank lines before brace" source="PSR2.Methods.FunctionClosingBrace.SpacingBeforeClose"/>
+ <error line="460" column="1" severity="error" message="The closing brace for the class must go on the next line after the body" source="PSR2.Classes.ClassDeclaration.CloseBraceAfterBody"/>
+</file>
+<file name="C:\Program Files (x86)\Jenkins\workspace\test\src\FrontBundle\FrontBundle.php">
+ <error line="1" column="1" severity="error" message="End of line character is invalid; expected &quot;\n&quot; but found &quot;\r\n&quot;" source="Generic.Files.LineEndings.InvalidEOLChar"/>
+</file>
+<file name="C:\Program Files (x86)\Jenkins\workspace\test\src\FrontBundle\Resources\public\ckeditor\plugins\imageuploader\check_permission.php">
+ <error line="1" column="1" severity="error" message="End of line character is invalid; expected &quot;\n&quot; but found &quot;\r\n&quot;" source="Generic.Files.LineEndings.InvalidEOLChar"/>
+ <error line="12" column="1" severity="error" message="Expected 1 space after FOREACH keyword; 0 found" source="Squiz.ControlStructures.ControlSignature.SpaceAfterKeyword"/>
+ <error line="12" column="32" severity="error" message="Expected 1 space after closing parenthesis; found 0" source="Squiz.ControlStructures.ControlSignature.SpaceAfterCloseParenthesis"/>
+ <error line="13" column="32" severity="error" message="Expected 1 space after closing parenthesis; found 0" source="Squiz.ControlStructures.ControlSignature.SpaceAfterCloseParenthesis"/>
+ <error line="19" column="1" severity="error" message="Expected 1 space after IF keyword; 0 found" source="Squiz.ControlStructures.ControlSignature.SpaceAfterKeyword"/>
+ <error line="19" column="22" severity="error" message="Expected 1 space after closing parenthesis; found 0" source="Squiz.ControlStructures.ControlSignature.SpaceAfterCloseParenthesis"/>
+ <error line="44" column="128" severity="warning" message="Line exceeds 120 characters; contains 135 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="C:\Program Files (x86)\Jenkins\workspace\test\src\FrontBundle\Resources\public\ckeditor\plugins\imageuploader\create.php">
+ <error line="1" column="1" severity="error" message="End of line character is invalid; expected &quot;\n&quot; but found &quot;\r\n&quot;" source="Generic.Files.LineEndings.InvalidEOLChar"/>
+ <error line="6" column="1" severity="error" message="Expected 1 space after IF keyword; 0 found" source="Squiz.ControlStructures.ControlSignature.SpaceAfterKeyword"/>
+ <error line="6" column="58" severity="error" message="Expected 1 space after closing parenthesis; found 0" source="Squiz.ControlStructures.ControlSignature.SpaceAfterCloseParenthesis"/>
+</file>
+<file name="C:\Program Files (x86)\Jenkins\workspace\test\src\FrontBundle\Resources\public\ckeditor\plugins\imageuploader\function.php">
+ <error line="1" column="1" severity="warning" message="A file should declare new symbols (classes, functions, constants, etc.) and cause no other side effects, or it should execute logic with side effects, but should not do both. The first symbol is defined on line 10 and the first side effect is on line 4." source="PSR1.Files.SideEffects.FoundWithSymbols"/>
+ <error line="1" column="1" severity="error" message="End of line character is invalid; expected &quot;\n&quot; but found &quot;\r\n&quot;" source="Generic.Files.LineEndings.InvalidEOLChar"/>
+ <error line="3" column="1" severity="error" message="Expected 1 space after IF keyword; 0 found" source="Squiz.ControlStructures.ControlSignature.SpaceAfterKeyword"/>
+ <error line="3" column="21" severity="error" message="Expected 1 space after closing parenthesis; found 0" source="Squiz.ControlStructures.ControlSignature.SpaceAfterCloseParenthesis"/>
+ <error line="5" column="5" severity="error" message="Expected 1 space after IF keyword; 0 found" source="Squiz.ControlStructures.ControlSignature.SpaceAfterKeyword"/>
+ <error line="10" column="23" severity="error" message="Opening brace should be on a new line" source="Squiz.Functions.MultiLineFunctionDeclaration.BraceOnSameLine"/>
+ <error line="13" column="5" severity="error" message="Expected 1 space after IF keyword; 0 found" source="Squiz.ControlStructures.ControlSignature.SpaceAfterKeyword"/>
+ <error line="13" column="36" severity="error" message="Expected 1 space after closing parenthesis; found 0" source="Squiz.ControlStructures.ControlSignature.SpaceAfterCloseParenthesis"/>
+ <error line="13" column="37" severity="error" message="Blank line found at start of control structure" source="Squiz.WhiteSpace.ControlStructureSpacing.SpacingAfterOpen"/>
+ <error line="21" column="9" severity="error" message="Expected 1 space after FOR keyword; 0 found" source="Squiz.ControlStructures.ControlSignature.SpaceAfterKeyword"/>
+ <error line="21" column="46" severity="error" message="Expected 1 space after closing parenthesis; found 0" source="Squiz.ControlStructures.ControlSignature.SpaceAfterCloseParenthesis"/>
+ <error line="37" column="68" severity="error" message="No space found after comma in function call" source="Generic.Functions.FunctionCallArgumentSpacing.NoSpaceAfterComma"/>
+ <error line="43" column="13" severity="error" message="Expected 1 space after IF keyword; 0 found" source="Squiz.ControlStructures.ControlSignature.SpaceAfterKeyword"/>
+ <error line="45" column="157" severity="warning" message="Line exceeds 120 characters; contains 160 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="46" column="134" severity="warning" message="Line exceeds 120 characters; contains 137 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="49" column="146" severity="error" message="Expected 1 space after IF keyword; 0 found" source="Squiz.ControlStructures.ControlSignature.SpaceAfterKeyword"/>
+ <error line="49" column="170" severity="error" message="Expected 1 space after closing parenthesis; found 0" source="Squiz.ControlStructures.ControlSignature.SpaceAfterCloseParenthesis"/>
+ <error line="49" column="171" severity="error" message="Newline required after opening brace" source="Squiz.ControlStructures.ControlSignature.NewlineAfterOpenBrace"/>
+ <error line="49" column="197" severity="error" message="Closing brace must be on a line by itself" source="Squiz.WhiteSpace.ScopeClosingBrace.ContentBefore"/>
+ <error line="49" column="201" severity="warning" message="Line exceeds 120 characters; contains 204 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="50" column="52" severity="error" message="Space before opening parenthesis of function call prohibited" source="PSR2.Methods.FunctionCallSignature.SpaceBeforeOpenBracket"/>
+ <error line="53" column="21" severity="error" message="Expected 1 space after ELSEIF keyword; 0 found" source="Squiz.ControlStructures.ControlSignature.SpaceAfterKeyword"/>
+ <error line="55" column="157" severity="warning" message="Line exceeds 120 characters; contains 160 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="56" column="134" severity="warning" message="Line exceeds 120 characters; contains 137 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="58" column="125" severity="warning" message="Line exceeds 120 characters; contains 132 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="59" column="93" severity="error" message="Expected 1 space after IF keyword; 0 found" source="Squiz.ControlStructures.ControlSignature.SpaceAfterKeyword"/>
+ <error line="59" column="117" severity="error" message="Expected 1 space after closing parenthesis; found 0" source="Squiz.ControlStructures.ControlSignature.SpaceAfterCloseParenthesis"/>
+ <error line="59" column="118" severity="error" message="Newline required after opening brace" source="Squiz.ControlStructures.ControlSignature.NewlineAfterOpenBrace"/>
+ <error line="59" column="144" severity="error" message="Closing brace must be on a line by itself" source="Squiz.WhiteSpace.ScopeClosingBrace.ContentBefore"/>
+ <error line="59" column="148" severity="warning" message="Line exceeds 120 characters; contains 151 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="62" column="182" severity="warning" message="Line exceeds 120 characters; contains 184 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="65" column="118" severity="warning" message="Line exceeds 120 characters; contains 121 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="67" column="80" severity="error" message="Space before opening parenthesis of function call prohibited" source="PSR2.Methods.FunctionCallSignature.SpaceBeforeOpenBracket"/>
+ <error line="67" column="121" severity="warning" message="Line exceeds 120 characters; contains 124 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="70" column="1" severity="error" message="Blank line found at end of control structure" source="Squiz.WhiteSpace.ControlStructureSpacing.SpacingBeforeClose"/>
+ <error line="72" column="9" severity="error" message="Expected 1 space after IF keyword; 0 found" source="Squiz.ControlStructures.ControlSignature.SpaceAfterKeyword"/>
+ <error line="72" column="23" severity="error" message="Expected 1 space after closing parenthesis; found 0" source="Squiz.ControlStructures.ControlSignature.SpaceAfterCloseParenthesis"/>
+ <error line="76" column="9" severity="error" message="Expected 1 space after IF keyword; 0 found" source="Squiz.ControlStructures.ControlSignature.SpaceAfterKeyword"/>
+ <error line="76" column="26" severity="error" message="Expected 1 space after closing parenthesis; found 0" source="Squiz.ControlStructures.ControlSignature.SpaceAfterCloseParenthesis"/>
+ <error line="79" column="9" severity="error" message="Expected 1 space after IF keyword; 0 found" source="Squiz.ControlStructures.ControlSignature.SpaceAfterKeyword"/>
+ <error line="79" column="29" severity="error" message="Expected 1 space after closing parenthesis; found 0" source="Squiz.ControlStructures.ControlSignature.SpaceAfterCloseParenthesis"/>
+ <error line="80" column="55" severity="error" message="No space found after comma in function call" source="Generic.Functions.FunctionCallArgumentSpacing.NoSpaceAfterComma"/>
+ <error line="94" column="24" severity="error" message="Opening brace should be on a new line" source="Squiz.Functions.MultiLineFunctionDeclaration.BraceOnSameLine"/>
+ <error line="98" column="5" severity="error" message="Expected 1 space after FOREACH keyword; 0 found" source="Squiz.ControlStructures.ControlSignature.SpaceAfterKeyword"/>
+</file>
+<file name="C:\Program Files (x86)\Jenkins\workspace\test\src\FrontBundle\Resources\public\ckeditor\plugins\imageuploader\imgbrowser.php">
+ <error line="1" column="1" severity="error" message="End of line character is invalid; expected &quot;\n&quot; but found &quot;\r\n&quot;" source="Generic.Files.LineEndings.InvalidEOLChar"/>
+ <error line="16" column="1" severity="error" message="Expected 1 space after IF keyword; 0 found" source="Squiz.ControlStructures.ControlSignature.SpaceAfterKeyword"/>
+ <error line="40" column="5" severity="error" message="Expected 1 space after IF keyword; 0 found" source="Squiz.ControlStructures.ControlSignature.SpaceAfterKeyword"/>
+ <error line="40" column="37" severity="error" message="Expected 1 space after closing parenthesis; found 0" source="Squiz.ControlStructures.ControlSignature.SpaceAfterCloseParenthesis"/>
+ <error line="45" column="5" severity="error" message="Expected 1 space after IF keyword; 0 found" source="Squiz.ControlStructures.ControlSignature.SpaceAfterKeyword"/>
+ <error line="45" column="37" severity="error" message="Expected 1 space after closing parenthesis; found 0" source="Squiz.ControlStructures.ControlSignature.SpaceAfterCloseParenthesis"/>
+ <error line="92" column="1" severity="warning" message="Line exceeds 120 characters; contains 147 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="93" column="1" severity="warning" message="Line exceeds 120 characters; contains 130 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="96" column="11" severity="error" message="Expected 1 space after IF keyword; 0 found" source="Squiz.ControlStructures.ControlSignature.SpaceAfterKeyword"/>
+ <error line="96" column="28" severity="error" message="Expected 1 space after closing parenthesis; found 0" source="Squiz.ControlStructures.ControlSignature.SpaceAfterCloseParenthesis"/>
+ <error line="102" column="175" severity="warning" message="Line exceeds 120 characters; contains 184 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="103" column="190" severity="warning" message="Line exceeds 120 characters; contains 203 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="104" column="171" severity="warning" message="Line exceeds 120 characters; contains 180 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="105" column="177" severity="warning" message="Line exceeds 120 characters; contains 186 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="121" column="112" severity="warning" message="Line exceeds 120 characters; contains 142 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="122" column="11" severity="error" message="Expected 1 space after IF keyword; 0 found" source="Squiz.ControlStructures.ControlSignature.SpaceAfterKeyword"/>
+ <error line="123" column="1" severity="warning" message="Line exceeds 120 characters; contains 152 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="124" column="13" severity="error" message="Expected 1 space after ELSEIF keyword; 0 found" source="Squiz.ControlStructures.ControlSignature.SpaceAfterKeyword"/>
+ <error line="125" column="1" severity="warning" message="Line exceeds 120 characters; contains 155 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="126" column="1" severity="warning" message="Line exceeds 120 characters; contains 137 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="127" column="1" severity="warning" message="Line exceeds 120 characters; contains 136 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="138" column="7" severity="error" message="Expected 1 space after IF keyword; 0 found" source="Squiz.ControlStructures.ControlSignature.SpaceAfterKeyword"/>
+ <error line="145" column="9" severity="error" message="Expected 1 space after ELSEIF keyword; 0 found" source="Squiz.ControlStructures.ControlSignature.SpaceAfterKeyword"/>
+ <error line="157" column="1" severity="warning" message="Line exceeds 120 characters; contains 199 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="158" column="1" severity="warning" message="Line exceeds 120 characters; contains 146 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="159" column="168" severity="warning" message="Line exceeds 120 characters; contains 176 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="166" column="1" severity="warning" message="Line exceeds 120 characters; contains 173 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="167" column="176" severity="warning" message="Line exceeds 120 characters; contains 184 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="169" column="1" severity="warning" message="Line exceeds 120 characters; contains 129 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="172" column="217" severity="warning" message="Line exceeds 120 characters; contains 222 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="177" column="7" severity="error" message="Expected 1 space after IF keyword; 0 found" source="Squiz.ControlStructures.ControlSignature.SpaceAfterKeyword"/>
+ <error line="180" column="1" severity="warning" message="Line exceeds 120 characters; contains 176 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="196" column="104" severity="warning" message="Line exceeds 120 characters; contains 140 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="200" column="15" severity="error" message="Expected 1 space after IF keyword; 0 found" source="Squiz.ControlStructures.ControlSignature.SpaceAfterKeyword"/>
+ <error line="200" column="39" severity="error" message="Expected 1 space after closing parenthesis; found 0" source="Squiz.ControlStructures.ControlSignature.SpaceAfterCloseParenthesis"/>
+ <error line="201" column="167" severity="warning" message="Line exceeds 120 characters; contains 170 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="202" column="17" severity="error" message="Expected 1 space after ELSEIF keyword; 0 found" source="Squiz.ControlStructures.ControlSignature.SpaceAfterKeyword"/>
+ <error line="203" column="166" severity="warning" message="Line exceeds 120 characters; contains 169 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="206" column="15" severity="error" message="Expected 1 space after IF keyword; 0 found" source="Squiz.ControlStructures.ControlSignature.SpaceAfterKeyword"/>
+ <error line="206" column="39" severity="error" message="Expected 1 space after closing parenthesis; found 0" source="Squiz.ControlStructures.ControlSignature.SpaceAfterCloseParenthesis"/>
+ <error line="207" column="152" severity="warning" message="Line exceeds 120 characters; contains 155 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="208" column="17" severity="error" message="Expected 1 space after ELSEIF keyword; 0 found" source="Squiz.ControlStructures.ControlSignature.SpaceAfterKeyword"/>
+ <error line="209" column="153" severity="warning" message="Line exceeds 120 characters; contains 156 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="212" column="143" severity="warning" message="Line exceeds 120 characters; contains 146 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="215" column="15" severity="error" message="Expected 1 space after IF keyword; 0 found" source="Squiz.ControlStructures.ControlSignature.SpaceAfterKeyword"/>
+ <error line="215" column="56" severity="error" message="Expected 1 space after closing parenthesis; found 0" source="Squiz.ControlStructures.ControlSignature.SpaceAfterCloseParenthesis"/>
+ <error line="218" column="136" severity="warning" message="Line exceeds 120 characters; contains 139 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="220" column="287" severity="warning" message="Line exceeds 120 characters; contains 290 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="225" column="148" severity="warning" message="Line exceeds 120 characters; contains 151 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="229" column="201" severity="warning" message="Line exceeds 120 characters; contains 204 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="231" column="298" severity="warning" message="Line exceeds 120 characters; contains 301 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="243" column="167" severity="warning" message="Line exceeds 120 characters; contains 170 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="255" column="1" severity="warning" message="Line exceeds 120 characters; contains 125 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="256" column="1" severity="warning" message="Line exceeds 120 characters; contains 124 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="257" column="1" severity="warning" message="Line exceeds 120 characters; contains 123 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="260" column="271" severity="warning" message="Line exceeds 120 characters; contains 294 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="C:\Program Files (x86)\Jenkins\workspace\test\src\FrontBundle\Resources\public\ckeditor\plugins\imageuploader\imgdelete.php">
+ <error line="1" column="1" severity="error" message="End of line character is invalid; expected &quot;\n&quot; but found &quot;\r\n&quot;" source="Generic.Files.LineEndings.InvalidEOLChar"/>
+ <error line="5" column="1" severity="error" message="Expected 1 space after IF keyword; 0 found" source="Squiz.ControlStructures.ControlSignature.SpaceAfterKeyword"/>
+ <error line="38" column="1" severity="error" message="Expected 1 space after IF keyword; 0 found" source="Squiz.ControlStructures.ControlSignature.SpaceAfterKeyword"/>
+ <error line="38" column="32" severity="error" message="Expected 1 space after closing parenthesis; found 0" source="Squiz.ControlStructures.ControlSignature.SpaceAfterCloseParenthesis"/>
+ <error line="38" column="33" severity="error" message="Blank line found at start of control structure" source="Squiz.WhiteSpace.ControlStructureSpacing.SpacingAfterOpen"/>
+ <error line="44" column="5" severity="error" message="Expected 1 space after IF keyword; 0 found" source="Squiz.ControlStructures.ControlSignature.SpaceAfterKeyword"/>
+ <error line="44" column="28" severity="error" message="Expected 1 space after closing parenthesis; found 0" source="Squiz.ControlStructures.ControlSignature.SpaceAfterCloseParenthesis"/>
+ <error line="50" column="13" severity="error" message="Expected 1 space after IF keyword; 0 found" source="Squiz.ControlStructures.ControlSignature.SpaceAfterKeyword"/>
+ <error line="50" column="50" severity="error" message="Expected 1 space after closing parenthesis; found 0" source="Squiz.ControlStructures.ControlSignature.SpaceAfterCloseParenthesis"/>
+ <error line="56" column="17" severity="error" message="Expected 1 space after IF keyword; 0 found" source="Squiz.ControlStructures.ControlSignature.SpaceAfterKeyword"/>
+ <error line="56" column="57" severity="error" message="Expected 1 space after closing parenthesis; found 0" source="Squiz.ControlStructures.ControlSignature.SpaceAfterCloseParenthesis"/>
+ <error line="60" column="21" severity="error" message="Expected 1 space after IF keyword; 0 found" source="Squiz.ControlStructures.ControlSignature.SpaceAfterKeyword"/>
+ <error line="60" column="45" severity="error" message="Space found before comma in function call" source="Generic.Functions.FunctionCallArgumentSpacing.SpaceBeforeComma"/>
+ <error line="138" column="1" severity="error" message="Blank line found at end of control structure" source="Squiz.WhiteSpace.ControlStructureSpacing.SpacingBeforeClose"/>
+</file>
+<file name="C:\Program Files (x86)\Jenkins\workspace\test\src\FrontBundle\Resources\public\ckeditor\plugins\imageuploader\imgupload.php">
+ <error line="1" column="1" severity="error" message="End of line character is invalid; expected &quot;\n&quot; but found &quot;\r\n&quot;" source="Generic.Files.LineEndings.InvalidEOLChar"/>
+ <error line="8" column="1" severity="error" message="Expected 1 space after IF keyword; 0 found" source="Squiz.ControlStructures.ControlSignature.SpaceAfterKeyword"/>
+ <error line="13" column="1" severity="error" message="Expected 1 space after IF keyword; 0 found" source="Squiz.ControlStructures.ControlSignature.SpaceAfterKeyword"/>
+ <error line="36" column="49" severity="error" message="No space found after comma in function call" source="Generic.Functions.FunctionCallArgumentSpacing.NoSpaceAfterComma"/>
+ <error line="36" column="56" severity="error" message="No space found after comma in function call" source="Generic.Functions.FunctionCallArgumentSpacing.NoSpaceAfterComma"/>
+ <error line="36" column="60" severity="error" message="No space found after comma in function call" source="Generic.Functions.FunctionCallArgumentSpacing.NoSpaceAfterComma"/>
+ <error line="42" column="39" severity="error" message="No space found after comma in function call" source="Generic.Functions.FunctionCallArgumentSpacing.NoSpaceAfterComma"/>
+ <error line="45" column="1" severity="error" message="Expected 1 space after IF keyword; 0 found" source="Squiz.ControlStructures.ControlSignature.SpaceAfterKeyword"/>
+ <error line="62" column="1" severity="error" message="Expected 1 space after IF keyword; 0 found" source="Squiz.ControlStructures.ControlSignature.SpaceAfterKeyword"/>
+ <error line="73" column="9" severity="error" message="Expected 1 space after IF keyword; 0 found" source="Squiz.ControlStructures.ControlSignature.SpaceAfterKeyword"/>
+ <error line="73" column="43" severity="error" message="Expected 1 space after closing parenthesis; found 0" source="Squiz.ControlStructures.ControlSignature.SpaceAfterCloseParenthesis"/>
+ <error line="75" column="135" severity="warning" message="Line exceeds 120 characters; contains 135 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="82" column="1" severity="error" message="Expected 1 space after IF keyword; 0 found" source="Squiz.ControlStructures.ControlSignature.SpaceAfterKeyword"/>
+ <error line="82" column="36" severity="error" message="Expected 1 space after closing parenthesis; found 0" source="Squiz.ControlStructures.ControlSignature.SpaceAfterCloseParenthesis"/>
+</file>
+<file name="C:\Program Files (x86)\Jenkins\workspace\test\src\FrontBundle\Resources\public\ckeditor\plugins\imageuploader\login.php">
+ <error line="1" column="1" severity="error" message="End of line character is invalid; expected &quot;\n&quot; but found &quot;\r\n&quot;" source="Generic.Files.LineEndings.InvalidEOLChar"/>
+ <error line="6" column="1" severity="error" message="Expected 1 space after IF keyword; 0 found" source="Squiz.ControlStructures.ControlSignature.SpaceAfterKeyword"/>
+ <error line="27" column="1" severity="error" message="Expected 1 space after IF keyword; 0 found" source="Squiz.ControlStructures.ControlSignature.SpaceAfterKeyword"/>
+</file>
+<file name="C:\Program Files (x86)\Jenkins\workspace\test\src\FrontBundle\Resources\public\ckeditor\plugins\imageuploader\loginindex.php">
+ <error line="1" column="1" severity="error" message="End of line character is invalid; expected &quot;\n&quot; but found &quot;\r\n&quot;" source="Generic.Files.LineEndings.InvalidEOLChar"/>
+ <error line="3" column="1" severity="error" message="Expected 1 space after IF keyword; 0 found" source="Squiz.ControlStructures.ControlSignature.SpaceAfterKeyword"/>
+ <error line="34" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="35" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="36" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="37" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="38" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="39" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="40" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="41" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="42" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="44" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="45" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="46" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="47" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="48" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="49" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="50" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="51" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="52" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="54" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="55" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="56" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="58" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="59" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="60" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="61" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="62" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="63" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="64" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="65" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="66" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="67" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="68" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="69" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="70" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="72" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="73" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="74" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="76" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="77" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="80" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="82" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="83" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="84" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="85" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="87" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="88" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="89" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="90" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="91" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="92" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="93" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="95" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="96" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="97" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="98" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="99" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="100" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="101" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="102" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="103" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="104" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="105" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="106" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="108" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="109" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="110" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="111" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="112" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="113" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="114" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="116" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="117" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="118" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="140" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="143" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="156" column="1" severity="warning" message="Line exceeds 120 characters; contains 227 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="157" column="1" severity="warning" message="Line exceeds 120 characters; contains 258 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="C:\Program Files (x86)\Jenkins\workspace\test\src\FrontBundle\Resources\public\ckeditor\plugins\imageuploader\logout.php">
+ <error line="1" column="1" severity="error" message="End of line character is invalid; expected &quot;\n&quot; but found &quot;\r\n&quot;" source="Generic.Files.LineEndings.InvalidEOLChar"/>
+ <error line="3" column="1" severity="error" message="Expected 1 space after IF keyword; 0 found" source="Squiz.ControlStructures.ControlSignature.SpaceAfterKeyword"/>
+</file>
+<file name="C:\Program Files (x86)\Jenkins\workspace\test\src\FrontBundle\Resources\public\ckeditor\plugins\imageuploader\new.php">
+ <error line="1" column="1" severity="warning" message="No PHP code was found in this file and short open tags are not allowed by this install of PHP. This file may be using short open tags but PHP does not allow them." source="Internal.NoCodeFound"/>
+</file>
+<file name="C:\Program Files (x86)\Jenkins\workspace\test\src\FrontBundle\Resources\public\ckeditor\plugins\imageuploader\pluginconfig.php">
+ <error line="1" column="1" severity="error" message="End of line character is invalid; expected &quot;\n&quot; but found &quot;\r\n&quot;" source="Generic.Files.LineEndings.InvalidEOLChar"/>
+ <error line="4" column="1" severity="error" message="Expected 1 space after IF keyword; 0 found" source="Squiz.ControlStructures.ControlSignature.SpaceAfterKeyword"/>
+ <error line="20" column="1" severity="error" message="Expected 1 space after IF keyword; 0 found" source="Squiz.ControlStructures.ControlSignature.SpaceAfterKeyword"/>
+ <error line="20" column="88" severity="error" message="Expected 1 space after closing parenthesis; found 0" source="Squiz.ControlStructures.ControlSignature.SpaceAfterCloseParenthesis"/>
+ <error line="24" column="1" severity="error" message="Expected 1 space after IF keyword; 0 found" source="Squiz.ControlStructures.ControlSignature.SpaceAfterKeyword"/>
+ <error line="24" column="32" severity="error" message="Expected 1 space after closing parenthesis; found 0" source="Squiz.ControlStructures.ControlSignature.SpaceAfterCloseParenthesis"/>
+ <error line="24" column="33" severity="error" message="Blank line found at start of control structure" source="Squiz.WhiteSpace.ControlStructureSpacing.SpacingAfterOpen"/>
+ <error line="26" column="5" severity="error" message="Expected 1 space after IF keyword; 0 found" source="Squiz.ControlStructures.ControlSignature.SpaceAfterKeyword"/>
+ <error line="26" column="32" severity="error" message="Expected 1 space after closing parenthesis; found 0" source="Squiz.ControlStructures.ControlSignature.SpaceAfterCloseParenthesis"/>
+ <error line="38" column="5" severity="error" message="Expected 1 space after IF keyword; 0 found" source="Squiz.ControlStructures.ControlSignature.SpaceAfterKeyword"/>
+ <error line="38" column="34" severity="error" message="Expected 1 space after closing parenthesis; found 0" source="Squiz.ControlStructures.ControlSignature.SpaceAfterCloseParenthesis"/>
+ <error line="40" column="9" severity="error" message="Expected 1 space after IF keyword; 0 found" source="Squiz.ControlStructures.ControlSignature.SpaceAfterKeyword"/>
+ <error line="40" column="69" severity="error" message="Expected 1 space after closing parenthesis; found 0" source="Squiz.ControlStructures.ControlSignature.SpaceAfterCloseParenthesis"/>
+ <error line="55" column="5" severity="error" message="Expected 1 space after IF keyword; 0 found" source="Squiz.ControlStructures.ControlSignature.SpaceAfterKeyword"/>
+ <error line="55" column="34" severity="error" message="Expected 1 space after closing parenthesis; found 0" source="Squiz.ControlStructures.ControlSignature.SpaceAfterCloseParenthesis"/>
+ <error line="57" column="9" severity="error" message="Expected 1 space after IF keyword; 0 found" source="Squiz.ControlStructures.ControlSignature.SpaceAfterKeyword"/>
+ <error line="57" column="59" severity="error" message="Expected 1 space after closing parenthesis; found 0" source="Squiz.ControlStructures.ControlSignature.SpaceAfterCloseParenthesis"/>
+ <error line="73" column="1" severity="error" message="Blank line found at end of control structure" source="Squiz.WhiteSpace.ControlStructureSpacing.SpacingBeforeClose"/>
+ <error line="129" column="1" severity="error" message="Expected 1 space after IF keyword; 0 found" source="Squiz.ControlStructures.ControlSignature.SpaceAfterKeyword"/>
+ <error line="129" column="35" severity="error" message="Expected 1 space after closing parenthesis; found 0" source="Squiz.ControlStructures.ControlSignature.SpaceAfterCloseParenthesis"/>
+ <error line="136" column="1" severity="error" message="Expected 1 space after IF keyword; 0 found" source="Squiz.ControlStructures.ControlSignature.SpaceAfterKeyword"/>
+ <error line="136" column="33" severity="error" message="Expected 1 space after closing parenthesis; found 0" source="Squiz.ControlStructures.ControlSignature.SpaceAfterCloseParenthesis"/>
+ <error line="143" column="1" severity="error" message="Expected 1 space after IF keyword; 0 found" source="Squiz.ControlStructures.ControlSignature.SpaceAfterKeyword"/>
+ <error line="143" column="34" severity="error" message="Expected 1 space after closing parenthesis; found 0" source="Squiz.ControlStructures.ControlSignature.SpaceAfterCloseParenthesis"/>
+ <error line="155" column="122" severity="warning" message="Line exceeds 120 characters; contains 122 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="C:\Program Files (x86)\Jenkins\workspace\test\src\FrontBundle\Tests\Controller\StatControllerTest.php">
+ <error line="1" column="1" severity="error" message="End of line character is invalid; expected &quot;\n&quot; but found &quot;\r\n&quot;" source="Generic.Files.LineEndings.InvalidEOLChar"/>
+ <error line="9" column="1" severity="error" message="There must be one blank line after the namespace declaration" source="PSR2.Namespaces.NamespaceDeclaration.BlankLineAfter"/>
+ <error line="12" column="1" severity="error" message="There must be one blank line after the last USE statement; 2 found;" source="PSR2.Namespaces.UseDeclaration.SpaceAfterLastUse"/>
+ <error line="17" column="32" severity="error" message="Opening brace should be on a new line" source="Squiz.Functions.MultiLineFunctionDeclaration.BraceOnSameLine"/>
+ <error line="20" column="38" severity="error" message="No space found after comma in function call" source="Generic.Functions.FunctionCallArgumentSpacing.NoSpaceAfterComma"/>
+ <error line="23" column="1" severity="error" message="The closing brace for the class must go on the next line after the body" source="PSR2.Classes.ClassDeclaration.CloseBraceAfterBody"/>
+</file>
+<file name="C:\Program Files (x86)\Jenkins\workspace\test\src\UserBundle\Controller\DefaultController.php">
+ <error line="1" column="1" severity="error" message="End of line character is invalid; expected &quot;\n&quot; but found &quot;\r\n&quot;" source="Generic.Files.LineEndings.InvalidEOLChar"/>
+</file>
+<file name="C:\Program Files (x86)\Jenkins\workspace\test\src\UserBundle\Entity\User.php">
+ <error line="1" column="1" severity="error" message="End of line character is invalid; expected &quot;\n&quot; but found &quot;\r\n&quot;" source="Generic.Files.LineEndings.InvalidEOLChar"/>
+ <error line="27" column="1" severity="error" message="Expected 1 newline at end of file; 0 found" source="PSR2.Files.EndFileNewline.NoneFound"/>
+</file>
+<file name="C:\Program Files (x86)\Jenkins\workspace\test\src\UserBundle\UserBundle.php">
+ <error line="1" column="1" severity="error" message="End of line character is invalid; expected &quot;\n&quot; but found &quot;\r\n&quot;" source="Generic.Files.LineEndings.InvalidEOLChar"/>
+</file>
+</checkstyle>
+

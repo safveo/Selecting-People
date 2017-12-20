@@ -1,0 +1,152 @@
+{% extends 'FrontBundle:layout:layout.html.twig' %}
+
+{% block nextpage %}
+    {{ path('stat_3') }}
+{% endblock %}
+
+{% block content %}
+
+    <div class="row">
+        <div class="col-md-12" align="center">
+
+            <div class="title">
+                <h2>
+                    {{ today|date("d/m/Y")  }}
+                </h2>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 stat" align="center">
+
+            <script src="https://code.highcharts.com/highcharts.js"></script>
+            <div id="chart-container"></div>
+            <br>
+            <div id="container" style="min-width: 290px; height: 300px; margin: 0 auto"></div>
+        </div>
+    </div>
+
+
+    {{ include ("FrontBundle:layout:vignette.html.twig") }}
+
+    <script type="text/javascript" src="http://static.fusioncharts.com/code/latest/fusioncharts.js"></script>
+    <script type="text/javascript" src="http://static.fusioncharts.com/code/latest/themes/fusioncharts.theme.fint.js?cacheBust=56"></script>
+
+    <script type="text/javascript">
+        FusionCharts.ready(function(){
+            var fusioncharts = new FusionCharts({
+                    type: 'hlineargauge',
+                    renderAt: 'chart-container',
+                    id: 'cpu-linear-gauge',
+                    width: '1000',
+                    height: '160',
+                    dataFormat: 'json',
+                    dataSource: {
+                        "chart": {
+                            "theme": "fint",
+                            "caption": "Semaine {{ semaine }}",
+                            "subcaption": "",
+                            "lowerLimit": "0",
+                            "upperLimit": "{{ nbrObjRecretement }}",
+                            "numberSuffix": " recrutements",
+                            "chartBottomMargin": "40",
+                            "valueFontSize": "22",
+                            "valueFontBold": "1"
+                        },
+                        "colorRange": {
+                            "color": [{
+                                "minValue": "0",
+                                "maxValue": "{{ nbrRecretementSemaine }}",
+                                "label": "{{ nbrRecretementSemaine }}/{{ nbrObjRecretement }}",
+                                "code": "#1ee410"
+                            }, {
+                                "minValue": "70",
+                                "maxValue": "{{ nbrObjRecretement }}",
+                                "label": "Objectifs de recrutement",
+                                "code": "#e46b4d"
+                            }]
+                        },
+                        "pointers": {
+                            "pointer": [{
+                                "value": "{{ nbrRecretementSemaine }}"
+                            }]
+                        }
+                    }
+                }
+            );
+            fusioncharts.render();
+        });
+    </script>
+
+    <script>
+
+        Highcharts.setOptions({
+            chart: {
+                backgroundColor: 'rgb(240, 240, 255)',
+                plotBackgroundColor: 'rgba(255, 255, 255, .9)',
+                plotShadow: true
+            }
+
+        });
+
+
+        Highcharts.chart('container', {
+            chart: {
+                type: 'column'
+            },
+            title: {
+                text: ''
+            },
+            xAxis: {
+                categories: ['Recrutements  en {{ mois }}', 'Mission en cours Semaine  {{ semaine }}', 'Missions difficile Semaine {{ semaine }}']
+            },
+            yAxis: {
+                min: 0,
+                title: {
+                    text: ''
+                },
+                stackLabels: {
+                    enabled: true,
+                    style: {
+                        fontWeight: '',
+                        color: (Highcharts.theme && Highcharts.theme.textColor) || 'gray'
+                    }
+                }
+            },
+            legend: {
+                align: 'right',
+                x: -30,
+                verticalAlign: 'top',
+                y: 25,
+                floating: false,
+                backgroundColor: (Highcharts.theme && Highcharts.theme.background2) || 'white',
+                borderColor: '#CCC',
+                borderWidth: 1,
+                shadow: false
+            },
+            tooltip: {
+                headerFormat: '<b>{point.x}</b><br/>',
+                pointFormat: '{series.name}: {point.y}<br/>Total: {point.stackTotal}'
+            },
+            plotOptions: {
+                column: {
+                    stacking: 'normal',
+                    dataLabels: {
+                        enabled: true,
+                        color: (Highcharts.theme && Highcharts.theme.dataLabelsColor) || 'white'
+                    }
+                }
+            },
+            series: [{
+                name: 'Nombre de recrutement en sous traitance ',
+                data: [{{ nbrRecretementSTmois }}, {{ nbrMissionSTSemaineCours }}, {{ nbrMissionDiffSTSemaineCours }}],
+                color: "#2ac00c"
+            }, {
+                name: 'Nombre de recrutement selecting people',
+                data: [{{ nbrRecretementSPmois }}, {{ nbrMissionSPSemaineCours }}, {{ nbrMissionDiffSPSemaineCours }}]
+            }]
+        });
+    </script>
+
+
+{% endblock %}

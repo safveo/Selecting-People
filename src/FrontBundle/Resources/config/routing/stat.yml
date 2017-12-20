@@ -1,0 +1,18 @@
+stat_1:
+    path:     /indexDay
+    defaults: { _controller: "FrontBundle:Stat:indexDay" }
+    methods:  GET
+stat_2:
+    path:     /indexWeek
+    defaults: { _controller: "FrontBundle:Stat:indexWeek" }
+    methods:  GET
+
+stat_3:
+    path:     /indexYear
+    defaults: { _controller: "FrontBundle:Stat:indexYear" }
+    methods:  GET
+
+ecran_show:
+    path:     /{id}/show
+    defaults: { _controller: "BackBundle:Ecran:show" }
+    methods:  GET

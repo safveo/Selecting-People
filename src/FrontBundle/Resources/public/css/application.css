@@ -1,0 +1,78 @@
+body{
+    background-color: #e8e8e8 !important;
+}
+
+.highcharts-credits{
+    display: none !important;
+}
+.day{
+    height: 451px;
+}
+.day .stat{
+    height: 100%;
+}
+.day .stat #chart-container{
+    margin-top: 8%;
+    margin-bottom: 8%;
+}
+
+.titleYear{
+    margin: 18px 10px;
+    border-radius: 6px;
+    /* border: 1px; */
+    height: 50px;
+    background-color: #fdfdfd;
+    padding:0px;
+}
+.title{
+    /*border: 2px solid silver;*/
+    /*margin: 18px 10px;*/
+    /*border-radius: 20px;*/
+    /*!* border: 1px; *!*/
+    /*height: 90px;*/
+    /*background-color: beige;*/
+
+    margin: 18px 10px;
+    border-radius: 6px;
+    /* border: 1px; */
+    height: 90px;
+    background-color: #fdfdfd;
+    padding:1px;
+
+}
+.title>h2{
+    font-family: cursive;
+}
+tspan{
+    font-size: 16px !important;
+}
+.raphael-group-71-creditgroup , .raphael-group-73-annotations{
+    display: none;
+}
+.highcharts-label > text{
+    fill: #101010 !important;
+}
+#page-login .card-box{
+    background: #bbbbbb;
+}
+.contenu{
+    /*border: 2px solid silver;*/
+    /*margin: 18px 10px;*/
+    /*border-radius: 20px;*/
+    /*!* border: 1px; *!*/
+    /*height: 122px;*/
+    /*background-color: white;*/
+
+    margin: 18px 10px;
+    border-radius: 6px;
+    /* border: 1px; */
+    height: 122px;
+    background-color: white;
+}
+.stat{
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: gray;
+    padding-bottom: 7px;
+    box-shadow: 0 0px 33px 0 rgb(162, 158, 158), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}

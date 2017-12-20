@@ -1,0 +1,35 @@
+ecran_index:
+    path:     /
+    defaults: { _controller: "BackBundle:Ecran:index" }
+    methods:  GET
+
+
+ecran_visualise:
+    path:     /{id}/showOne
+    defaults: { _controller: "BackBundle:Ecran:showOne" }
+    methods:  GET
+
+ecran_new:
+    path:     /new
+    defaults: { _controller: "BackBundle:Ecran:new" }
+    methods:  [GET, POST]
+
+ecran_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "BackBundle:Ecran:edit" }
+    methods:  [GET, POST]
+
+ecran_delete:
+    path:     /delete
+    defaults: { _controller: "BackBundle:Ecran:delete" }
+
+ecran_active:
+    path:     /active
+    defaults: { _controller: "BackBundle:Ecran:active" }
+
+ecran_update_ordre:
+    path:     /updateorerEcran
+    defaults: { _controller: "BackBundle:Ecran:updateOrdreEcran" }
+    methods:  [POST, PUT]
+    options:
+        expose: true

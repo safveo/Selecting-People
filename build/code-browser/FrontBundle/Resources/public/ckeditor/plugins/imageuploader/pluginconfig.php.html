@@ -1,0 +1,666 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>
+            Mayflower Code Browser - Source Code
+        </title>
+        <link rel="stylesheet" type="text/css" href="../../../../../js/jquery.sidebar/css/codebrowser/sidebar.css" />
+        <link rel="stylesheet" type="text/css" href="../../../../../css/global.css" />
+        <link rel="stylesheet" type="text/css" href="../../../../../css/cruisecontrol.css" />
+        <link rel="stylesheet" type="text/css" href="../../../../../css/review.css" />
+
+        <script type="text/javascript" src="../../../../../js/jquery-1.4.2.min.js"></script>
+        <script type="text/javascript" src="../../../../../js/jquery.sidebar/jquery-ui-1.7.2.custom.min.js"></script>
+        <script type="text/javascript" src="../../../../../js/jquery.sidebar/jquery.sidebar.js"></script>
+        <script type="text/javascript" src="../../../../../js/jquery.cluetip/lib/jquery.hoverIntent.js"></script>
+        <script type="text/javascript" src="../../../../../js/jquery.cluetip/lib/jquery.bgiframe.min.js"></script>
+        <script type="text/javascript" src="../../../../../js/jquery.cluetip/jquery.cluetip.min.js"></script>
+
+        <script type="text/javascript" src="../../../../../js/review.js"></script>
+    </head>
+    <body class="codebrowser">
+        <div class="header">
+            <a href="./../../../../../index.html">Go back to index</a> |
+            <a href="https://github.com/Mayflower/PHP_CodeBrowser">PHP CodeBrowser</a>
+        </div>
+        <hr/>
+        <div id="review">
+            <div class="filepath">
+                FrontBundle/Resources/public/ckeditor/plugins/imageuploader/pluginconfig.php            </div>
+
+            <ol class="code"><li id="line_1" title='|
+                        &lt;div class="tooltip"&gt;
+                            &lt;div class="title Checkstyle"&gt;Checkstyle&lt;/div&gt;
+                            &lt;div class="text"&gt;End of line character is invalid; expected &amp;quot;\n&amp;quot; but found &amp;quot;\r\n&amp;quot;&lt;/div&gt;
+                        &lt;/div&gt;
+                        ' class="odd hasIssues Checkstyle"><span class="lineNumber">&nbsp;&nbsp;1&nbsp;</span><span>
+</span><span class="default">&lt;?php</span><a name="line_1"></a></li><li id="line_2" class="even"><span class="lineNumber">&nbsp;&nbsp;2&nbsp;</span><a name="line_2"></a></li><li id="line_3" class="odd"><span class="lineNumber">&nbsp;&nbsp;3&nbsp;</span><span class="comment">//&nbsp;checking&nbsp;lang&nbsp;value</span><a name="line_3"></a></li><li id="line_4" title='|
+                        &lt;div class="tooltip"&gt;
+                            &lt;div class="title Checkstyle"&gt;Checkstyle&lt;/div&gt;
+                            &lt;div class="text"&gt;Expected 1 space after IF keyword; 0 found&lt;/div&gt;
+                        &lt;/div&gt;
+                        ' class="even hasIssues Checkstyle"><span class="lineNumber">&nbsp;&nbsp;4&nbsp;</span><span class="keyword">if(isset(</span><span class="default">$_COOKIE</span><span class="keyword">[</span><span class="string">'sy_lang'</span><span class="keyword">]))&nbsp;{</span><a name="line_4"></a></li><li id="line_5" class="odd"><span class="lineNumber">&nbsp;&nbsp;5&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">$load_lang_code&nbsp;</span><span class="keyword">=&nbsp;</span><span class="default">$_COOKIE</span><span class="keyword">[</span><span class="string">'sy_lang'</span><span class="keyword">];</span><a name="line_5"></a></li><li id="line_6" class="even"><span class="lineNumber">&nbsp;&nbsp;6&nbsp;</span><span class="keyword">}&nbsp;else&nbsp;{</span><a name="line_6"></a></li><li id="line_7" class="odd"><span class="lineNumber">&nbsp;&nbsp;7&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">$load_lang_code&nbsp;</span><span class="keyword">=&nbsp;</span><span class="string">"en"</span><span class="keyword">;</span><a name="line_7"></a></li><li id="line_8" class="even"><span class="lineNumber">&nbsp;&nbsp;8&nbsp;</span><span class="keyword">}</span><a name="line_8"></a></li><li id="line_9" class="odd"><span class="lineNumber">&nbsp;&nbsp;9&nbsp;</span><a name="line_9"></a></li><li id="line_10" class="even"><span class="lineNumber">&nbsp;10&nbsp;</span><span class="comment">//&nbsp;including&nbsp;lang&nbsp;files</span><a name="line_10"></a></li><li id="line_11" class="odd"><span class="lineNumber">&nbsp;11&nbsp;</span><span class="keyword">switch&nbsp;(</span><span class="default">$load_lang_code</span><span class="keyword">)&nbsp;{</span><a name="line_11"></a></li><li id="line_12" class="even"><span class="lineNumber">&nbsp;12&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;case&nbsp;</span><span class="string">"en"</span><span class="keyword">:</span><a name="line_12"></a></li><li id="line_13" class="odd"><span class="lineNumber">&nbsp;13&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;require(</span><span class="default">__DIR__&nbsp;</span><span class="keyword">.&nbsp;</span><span class="string">'/lang/en.php'</span><span class="keyword">);</span><a name="line_13"></a></li><li id="line_14" class="even"><span class="lineNumber">&nbsp;14&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;</span><a name="line_14"></a></li><li id="line_15" class="odd"><span class="lineNumber">&nbsp;15&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;case&nbsp;</span><span class="string">"pl"</span><span class="keyword">:</span><a name="line_15"></a></li><li id="line_16" class="even"><span class="lineNumber">&nbsp;16&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;require(</span><span class="default">__DIR__&nbsp;</span><span class="keyword">.&nbsp;</span><span class="string">'/lang/pl.php'</span><span class="keyword">);</span><a name="line_16"></a></li><li id="line_17" class="odd"><span class="lineNumber">&nbsp;17&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;</span><a name="line_17"></a></li><li id="line_18" class="even"><span class="lineNumber">&nbsp;18&nbsp;</span><span class="keyword">}</span><a name="line_18"></a></li><li id="line_19" class="odd"><span class="lineNumber">&nbsp;19&nbsp;</span><a name="line_19"></a></li><li id="line_20" title='|
+                        &lt;div class="tooltip"&gt;
+                            &lt;div class="title Checkstyle"&gt;Checkstyle&lt;/div&gt;
+                            &lt;div class="text"&gt;Expected 1 space after IF keyword; 0 found&lt;/div&gt;
+                        &lt;/div&gt;
+                        
+                        &lt;div class="tooltip"&gt;
+                            &lt;div class="title Checkstyle"&gt;Checkstyle&lt;/div&gt;
+                            &lt;div class="text"&gt;Expected 1 space after closing parenthesis; found 0&lt;/div&gt;
+                        &lt;/div&gt;
+                        ' class="even hasIssues moreErrors"><span class="lineNumber">&nbsp;20&nbsp;</span><span class="keyword">if(isset(</span><span class="default">$_POST</span><span class="keyword">[</span><span class="string">"newpath"</span><span class="keyword">])&nbsp;or&nbsp;isset(</span><span class="default">$_POST</span><span class="keyword">[</span><span class="string">"extension"</span><span class="keyword">])&nbsp;or&nbsp;isset(</span><span class="default">$_GET</span><span class="keyword">[</span><span class="string">"file_style"</span><span class="keyword">])){</span><a name="line_20"></a></li><li id="line_21" class="odd"><span class="lineNumber">&nbsp;21&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">session_start</span><span class="keyword">();</span><a name="line_21"></a></li><li id="line_22" class="even"><span class="lineNumber">&nbsp;22&nbsp;</span><span class="keyword">}</span><a name="line_22"></a></li><li id="line_23" class="odd"><span class="lineNumber">&nbsp;23&nbsp;</span><a name="line_23"></a></li><li id="line_24" title='|
+                        &lt;div class="tooltip"&gt;
+                            &lt;div class="title Checkstyle"&gt;Checkstyle&lt;/div&gt;
+                            &lt;div class="text"&gt;Expected 1 space after IF keyword; 0 found&lt;/div&gt;
+                        &lt;/div&gt;
+                        
+                        &lt;div class="tooltip"&gt;
+                            &lt;div class="title Checkstyle"&gt;Checkstyle&lt;/div&gt;
+                            &lt;div class="text"&gt;Expected 1 space after closing parenthesis; found 0&lt;/div&gt;
+                        &lt;/div&gt;
+                        
+                        &lt;div class="tooltip"&gt;
+                            &lt;div class="title Checkstyle"&gt;Checkstyle&lt;/div&gt;
+                            &lt;div class="text"&gt;Blank line found at start of control structure&lt;/div&gt;
+                        &lt;/div&gt;
+                        ' class="even hasIssues moreErrors"><span class="lineNumber">&nbsp;24&nbsp;</span><span class="keyword">if(isset(</span><span class="default">$_SESSION</span><span class="keyword">[</span><span class="string">'username'</span><span class="keyword">])){</span><a name="line_24"></a></li><li id="line_25" class="odd"><span class="lineNumber">&nbsp;25&nbsp;</span><a name="line_25"></a></li><li id="line_26" title='|
+                        &lt;div class="tooltip"&gt;
+                            &lt;div class="title Checkstyle"&gt;Checkstyle&lt;/div&gt;
+                            &lt;div class="text"&gt;Expected 1 space after IF keyword; 0 found&lt;/div&gt;
+                        &lt;/div&gt;
+                        
+                        &lt;div class="tooltip"&gt;
+                            &lt;div class="title Checkstyle"&gt;Checkstyle&lt;/div&gt;
+                            &lt;div class="text"&gt;Expected 1 space after closing parenthesis; found 0&lt;/div&gt;
+                        &lt;/div&gt;
+                        ' class="even hasIssues moreErrors"><span class="lineNumber">&nbsp;26&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;if(isset(</span><span class="default">$_POST</span><span class="keyword">[</span><span class="string">"newpath"</span><span class="keyword">])){</span><a name="line_26"></a></li><li id="line_27" class="odd"><span class="lineNumber">&nbsp;27&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">$newpath&nbsp;</span><span class="keyword">=&nbsp;</span><span class="default">filter_input</span><span class="keyword">(</span><span class="default">INPUT_POST</span><span class="keyword">,&nbsp;</span><span class="string">'newpath'</span><span class="keyword">,&nbsp;</span><span class="default">FILTER_SANITIZE_STRING</span><span class="keyword">);</span><a name="line_27"></a></li><li id="line_28" class="even"><span class="lineNumber">&nbsp;28&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">$root&nbsp;</span><span class="keyword">=&nbsp;</span><span class="default">$_SERVER</span><span class="keyword">[</span><span class="string">'DOCUMENT_ROOT'</span><span class="keyword">];</span><a name="line_28"></a></li><li id="line_29" class="odd"><span class="lineNumber">&nbsp;29&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">$data&nbsp;</span><span class="keyword">=&nbsp;</span><span class="string">'</span><a name="line_29"></a></li><li id="line_30" class="even"><span class="lineNumber">&nbsp;30&nbsp;</span><span class="string">&nbsp;&nbsp;&nbsp;&nbsp;$useruploadfolder&nbsp;=&nbsp;"'</span><span class="keyword">.</span><span class="default">$newpath</span><span class="keyword">.</span><span class="string">'";</span><a name="line_30"></a></li><li id="line_31" class="odd"><span class="lineNumber">&nbsp;31&nbsp;</span><span class="string">&nbsp;&nbsp;&nbsp;&nbsp;$useruploadpath&nbsp;=&nbsp;$usersiteroot."$useruploadfolder/";</span><a name="line_31"></a></li><li id="line_32" class="even"><span class="lineNumber">&nbsp;32&nbsp;</span><span class="string">&nbsp;&nbsp;&nbsp;&nbsp;$foldershistory[]&nbsp;=&nbsp;"'</span><span class="keyword">.</span><span class="default">$newpath</span><span class="keyword">.</span><span class="string">'";</span><a name="line_32"></a></li><li id="line_33" class="odd"><span class="lineNumber">&nbsp;33&nbsp;</span><span class="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'</span><span class="keyword">.</span><span class="default">PHP_EOL</span><span class="keyword">;</span><a name="line_33"></a></li><li id="line_34" class="even"><span class="lineNumber">&nbsp;34&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">$fp&nbsp;</span><span class="keyword">=&nbsp;</span><span class="default">fopen</span><span class="keyword">(</span><span class="default">__DIR__&nbsp;</span><span class="keyword">.&nbsp;</span><span class="string">'/pluginconfig.php'</span><span class="keyword">,&nbsp;</span><span class="string">'a'</span><span class="keyword">);</span><a name="line_34"></a></li><li id="line_35" class="odd"><span class="lineNumber">&nbsp;35&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">fwrite</span><span class="keyword">(</span><span class="default">$fp</span><span class="keyword">,&nbsp;</span><span class="default">$data</span><span class="keyword">);</span><a name="line_35"></a></li><li id="line_36" class="even"><span class="lineNumber">&nbsp;36&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;}</span><a name="line_36"></a></li><li id="line_37" class="odd"><span class="lineNumber">&nbsp;37&nbsp;</span><a name="line_37"></a></li><li id="line_38" title='|
+                        &lt;div class="tooltip"&gt;
+                            &lt;div class="title Checkstyle"&gt;Checkstyle&lt;/div&gt;
+                            &lt;div class="text"&gt;Expected 1 space after IF keyword; 0 found&lt;/div&gt;
+                        &lt;/div&gt;
+                        
+                        &lt;div class="tooltip"&gt;
+                            &lt;div class="title Checkstyle"&gt;Checkstyle&lt;/div&gt;
+                            &lt;div class="text"&gt;Expected 1 space after closing parenthesis; found 0&lt;/div&gt;
+                        &lt;/div&gt;
+                        ' class="even hasIssues moreErrors"><span class="lineNumber">&nbsp;38&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;if(isset(</span><span class="default">$_POST</span><span class="keyword">[</span><span class="string">"extension"</span><span class="keyword">])){</span><a name="line_38"></a></li><li id="line_39" class="odd"><span class="lineNumber">&nbsp;39&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">$extension_setting&nbsp;</span><span class="keyword">=&nbsp;</span><span class="default">filter_input</span><span class="keyword">(</span><span class="default">INPUT_POST</span><span class="keyword">,&nbsp;</span><span class="string">'extension'</span><span class="keyword">,&nbsp;</span><span class="default">FILTER_SANITIZE_STRING</span><span class="keyword">);</span><a name="line_39"></a></li><li id="line_40" title='|
+                        &lt;div class="tooltip"&gt;
+                            &lt;div class="title Checkstyle"&gt;Checkstyle&lt;/div&gt;
+                            &lt;div class="text"&gt;Expected 1 space after IF keyword; 0 found&lt;/div&gt;
+                        &lt;/div&gt;
+                        
+                        &lt;div class="tooltip"&gt;
+                            &lt;div class="title Checkstyle"&gt;Checkstyle&lt;/div&gt;
+                            &lt;div class="text"&gt;Expected 1 space after closing parenthesis; found 0&lt;/div&gt;
+                        &lt;/div&gt;
+                        ' class="even hasIssues moreErrors"><span class="lineNumber">&nbsp;40&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(</span><span class="default">$extension_setting&nbsp;</span><span class="keyword">==&nbsp;</span><span class="string">"no"&nbsp;</span><span class="keyword">or&nbsp;</span><span class="default">$extension_setting&nbsp;</span><span class="keyword">==&nbsp;</span><span class="string">"yes"</span><span class="keyword">){</span><a name="line_40"></a></li><li id="line_41" class="odd"><span class="lineNumber">&nbsp;41&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">setcookie</span><span class="keyword">(</span><a name="line_41"></a></li><li id="line_42" class="even"><span class="lineNumber">&nbsp;42&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="string">"file_extens"</span><span class="keyword">,</span><a name="line_42"></a></li><li id="line_43" class="odd"><span class="lineNumber">&nbsp;43&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">$extension_setting</span><span class="keyword">,</span><a name="line_43"></a></li><li id="line_44" class="even"><span class="lineNumber">&nbsp;44&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">time</span><span class="keyword">()&nbsp;+&nbsp;(</span><span class="default">10&nbsp;</span><span class="keyword">*&nbsp;</span><span class="default">365&nbsp;</span><span class="keyword">*&nbsp;</span><span class="default">24&nbsp;</span><span class="keyword">*&nbsp;</span><span class="default">60&nbsp;</span><span class="keyword">*&nbsp;</span><span class="default">60</span><span class="keyword">)</span><a name="line_44"></a></li><li id="line_45" class="odd"><span class="lineNumber">&nbsp;45&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;);</span><a name="line_45"></a></li><li id="line_46" class="even"><span class="lineNumber">&nbsp;46&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{</span><a name="line_46"></a></li><li id="line_47" class="odd"><span class="lineNumber">&nbsp;47&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo&nbsp;</span><span class="string">'</span><a name="line_47"></a></li><li id="line_48" class="even"><span class="lineNumber">&nbsp;48&nbsp;</span><span class="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;script&gt;</span><a name="line_48"></a></li><li id="line_49" class="odd"><span class="lineNumber">&nbsp;49&nbsp;</span><span class="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert("'</span><span class="keyword">.</span><span class="default">$dltimageerrors1</span><span class="keyword">.</span><span class="string">'\r\n\r\n'</span><span class="keyword">.</span><span class="default">$configerrors1</span><span class="keyword">.</span><span class="string">'");</span><a name="line_49"></a></li><li id="line_50" class="even"><span class="lineNumber">&nbsp;50&nbsp;</span><span class="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;history.back();</span><a name="line_50"></a></li><li id="line_51" class="odd"><span class="lineNumber">&nbsp;51&nbsp;</span><span class="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/script&gt;</span><a name="line_51"></a></li><li id="line_52" class="even"><span class="lineNumber">&nbsp;52&nbsp;</span><span class="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'</span><span class="keyword">;</span><a name="line_52"></a></li><li id="line_53" class="odd"><span class="lineNumber">&nbsp;53&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</span><a name="line_53"></a></li><li id="line_54" class="even"><span class="lineNumber">&nbsp;54&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;}</span><a name="line_54"></a></li><li id="line_55" title='|
+                        &lt;div class="tooltip"&gt;
+                            &lt;div class="title Checkstyle"&gt;Checkstyle&lt;/div&gt;
+                            &lt;div class="text"&gt;Expected 1 space after IF keyword; 0 found&lt;/div&gt;
+                        &lt;/div&gt;
+                        
+                        &lt;div class="tooltip"&gt;
+                            &lt;div class="title Checkstyle"&gt;Checkstyle&lt;/div&gt;
+                            &lt;div class="text"&gt;Expected 1 space after closing parenthesis; found 0&lt;/div&gt;
+                        &lt;/div&gt;
+                        ' class="odd hasIssues moreErrors"><span class="lineNumber">&nbsp;55&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;if(isset(</span><span class="default">$_GET</span><span class="keyword">[</span><span class="string">"file_style"</span><span class="keyword">])){</span><a name="line_55"></a></li><li id="line_56" class="even"><span class="lineNumber">&nbsp;56&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">$file_style&nbsp;</span><span class="keyword">=&nbsp;</span><span class="default">filter_input</span><span class="keyword">(</span><span class="default">INPUT_GET</span><span class="keyword">,&nbsp;</span><span class="string">'file_style'</span><span class="keyword">,&nbsp;</span><span class="default">FILTER_SANITIZE_STRING</span><span class="keyword">);</span><a name="line_56"></a></li><li id="line_57" title='|
+                        &lt;div class="tooltip"&gt;
+                            &lt;div class="title Checkstyle"&gt;Checkstyle&lt;/div&gt;
+                            &lt;div class="text"&gt;Expected 1 space after IF keyword; 0 found&lt;/div&gt;
+                        &lt;/div&gt;
+                        
+                        &lt;div class="tooltip"&gt;
+                            &lt;div class="title Checkstyle"&gt;Checkstyle&lt;/div&gt;
+                            &lt;div class="text"&gt;Expected 1 space after closing parenthesis; found 0&lt;/div&gt;
+                        &lt;/div&gt;
+                        ' class="odd hasIssues moreErrors"><span class="lineNumber">&nbsp;57&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(</span><span class="default">$file_style&nbsp;</span><span class="keyword">==&nbsp;</span><span class="string">"block"&nbsp;</span><span class="keyword">or&nbsp;</span><span class="default">$file_style&nbsp;</span><span class="keyword">==&nbsp;</span><span class="string">"list"</span><span class="keyword">){</span><a name="line_57"></a></li><li id="line_58" class="even"><span class="lineNumber">&nbsp;58&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">setcookie</span><span class="keyword">(</span><a name="line_58"></a></li><li id="line_59" class="odd"><span class="lineNumber">&nbsp;59&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="string">"file_style"</span><span class="keyword">,</span><a name="line_59"></a></li><li id="line_60" class="even"><span class="lineNumber">&nbsp;60&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">$file_style</span><span class="keyword">,</span><a name="line_60"></a></li><li id="line_61" class="odd"><span class="lineNumber">&nbsp;61&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">time</span><span class="keyword">()&nbsp;+&nbsp;(</span><span class="default">10&nbsp;</span><span class="keyword">*&nbsp;</span><span class="default">365&nbsp;</span><span class="keyword">*&nbsp;</span><span class="default">24&nbsp;</span><span class="keyword">*&nbsp;</span><span class="default">60&nbsp;</span><span class="keyword">*&nbsp;</span><span class="default">60</span><span class="keyword">)</span><a name="line_61"></a></li><li id="line_62" class="even"><span class="lineNumber">&nbsp;62&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;);</span><a name="line_62"></a></li><li id="line_63" class="odd"><span class="lineNumber">&nbsp;63&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">header</span><span class="keyword">(</span><span class="string">'Location:&nbsp;'&nbsp;</span><span class="keyword">.&nbsp;</span><span class="default">$_SERVER</span><span class="keyword">[</span><span class="string">'HTTP_REFERER'</span><span class="keyword">]);</span><a name="line_63"></a></li><li id="line_64" class="even"><span class="lineNumber">&nbsp;64&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{</span><a name="line_64"></a></li><li id="line_65" class="odd"><span class="lineNumber">&nbsp;65&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo&nbsp;</span><span class="string">'</span><a name="line_65"></a></li><li id="line_66" class="even"><span class="lineNumber">&nbsp;66&nbsp;</span><span class="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;script&gt;</span><a name="line_66"></a></li><li id="line_67" class="odd"><span class="lineNumber">&nbsp;67&nbsp;</span><span class="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert("'</span><span class="keyword">.</span><span class="default">$dltimageerrors1</span><span class="keyword">.</span><span class="string">'\r\n\r\n'</span><span class="keyword">.</span><span class="default">$configerrors2</span><span class="keyword">.</span><span class="string">'");</span><a name="line_67"></a></li><li id="line_68" class="even"><span class="lineNumber">&nbsp;68&nbsp;</span><span class="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;history.back();</span><a name="line_68"></a></li><li id="line_69" class="odd"><span class="lineNumber">&nbsp;69&nbsp;</span><span class="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/script&gt;</span><a name="line_69"></a></li><li id="line_70" class="even"><span class="lineNumber">&nbsp;70&nbsp;</span><span class="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'</span><span class="keyword">;</span><a name="line_70"></a></li><li id="line_71" class="odd"><span class="lineNumber">&nbsp;71&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</span><a name="line_71"></a></li><li id="line_72" class="even"><span class="lineNumber">&nbsp;72&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;}</span><a name="line_72"></a></li><li id="line_73" title='|
+                        &lt;div class="tooltip"&gt;
+                            &lt;div class="title Checkstyle"&gt;Checkstyle&lt;/div&gt;
+                            &lt;div class="text"&gt;Blank line found at end of control structure&lt;/div&gt;
+                        &lt;/div&gt;
+                        ' class="odd hasIssues Checkstyle"><span class="lineNumber">&nbsp;73&nbsp;</span><a name="line_73"></a></li><li id="line_74" class="even"><span class="lineNumber">&nbsp;74&nbsp;</span><span class="keyword">}</span><a name="line_74"></a></li><li id="line_75" class="odd"><span class="lineNumber">&nbsp;75&nbsp;</span><a name="line_75"></a></li><li id="line_76" class="even"><span class="lineNumber">&nbsp;76&nbsp;</span><span class="comment">//&nbsp;Version&nbsp;of&nbsp;the&nbsp;plugin</span><a name="line_76"></a></li><li id="line_77" class="odd"><span class="lineNumber">&nbsp;77&nbsp;</span><span class="default">$currentpluginver&nbsp;</span><span class="keyword">=&nbsp;</span><span class="string">"4.1.8"</span><span class="keyword">;</span><a name="line_77"></a></li><li id="line_78" class="even"><span class="lineNumber">&nbsp;78&nbsp;</span><a name="line_78"></a></li><li id="line_79" class="odd"><span class="lineNumber">&nbsp;79&nbsp;</span><span class="comment">//&nbsp;Show/Hide&nbsp;the&nbsp;settings&nbsp;button</span><a name="line_79"></a></li><li id="line_80" class="even"><span class="lineNumber">&nbsp;80&nbsp;</span><span class="default">$show_settings&nbsp;</span><span class="keyword">=&nbsp;</span><span class="default">true</span><span class="keyword">;</span><a name="line_80"></a></li><li id="line_81" class="odd"><span class="lineNumber">&nbsp;81&nbsp;</span><a name="line_81"></a></li><li id="line_82" class="even"><span class="lineNumber">&nbsp;82&nbsp;</span><span class="comment">//&nbsp;username&nbsp;and&nbsp;password</span><a name="line_82"></a></li><li id="line_83" class="odd"><span class="lineNumber">&nbsp;83&nbsp;</span><span class="default">$username&nbsp;</span><span class="keyword">=&nbsp;</span><span class="string">""</span><span class="keyword">;</span><a name="line_83"></a></li><li id="line_84" class="even"><span class="lineNumber">&nbsp;84&nbsp;</span><span class="default">$password&nbsp;</span><span class="keyword">=&nbsp;</span><span class="string">""</span><span class="keyword">;</span><a name="line_84"></a></li><li id="line_85" class="odd"><span class="lineNumber">&nbsp;85&nbsp;</span><a name="line_85"></a></li><li id="line_86" class="even"><span class="lineNumber">&nbsp;86&nbsp;</span><span class="comment">//&nbsp;ststem&nbsp;icons</span><a name="line_86"></a></li><li id="line_87" class="odd"><span class="lineNumber">&nbsp;87&nbsp;</span><span class="default">$sy_icons&nbsp;</span><span class="keyword">=&nbsp;array(</span><a name="line_87"></a></li><li id="line_88" class="even"><span class="lineNumber">&nbsp;88&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="string">"cd-ico-browser.ico"</span><span class="keyword">,</span><a name="line_88"></a></li><li id="line_89" class="odd"><span class="lineNumber">&nbsp;89&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="string">"cd-icon-block.png"</span><span class="keyword">,</span><a name="line_89"></a></li><li id="line_90" class="even"><span class="lineNumber">&nbsp;90&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="string">"cd-icon-browser.png"</span><span class="keyword">,</span><a name="line_90"></a></li><li id="line_91" class="odd"><span class="lineNumber">&nbsp;91&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="string">"cd-icon-bug.png"</span><span class="keyword">,</span><a name="line_91"></a></li><li id="line_92" class="even"><span class="lineNumber">&nbsp;92&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="string">"cd-icon-close-black.png"</span><span class="keyword">,</span><a name="line_92"></a></li><li id="line_93" class="odd"><span class="lineNumber">&nbsp;93&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="string">"cd-icon-close-grey.png"</span><span class="keyword">,</span><a name="line_93"></a></li><li id="line_94" class="even"><span class="lineNumber">&nbsp;94&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="string">"cd-icon-close.png"</span><span class="keyword">,</span><a name="line_94"></a></li><li id="line_95" class="odd"><span class="lineNumber">&nbsp;95&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="string">"cd-icon-coffee.png"</span><span class="keyword">,</span><a name="line_95"></a></li><li id="line_96" class="even"><span class="lineNumber">&nbsp;96&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="string">"cd-icon-credits.png"</span><span class="keyword">,</span><a name="line_96"></a></li><li id="line_97" class="odd"><span class="lineNumber">&nbsp;97&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="string">"cd-icon-delete.png"</span><span class="keyword">,</span><a name="line_97"></a></li><li id="line_98" class="even"><span class="lineNumber">&nbsp;98&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="string">"cd-icon-disable.png"</span><span class="keyword">,</span><a name="line_98"></a></li><li id="line_99" class="odd"><span class="lineNumber">&nbsp;99&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="string">"cd-icon-done.png"</span><span class="keyword">,</span><a name="line_99"></a></li><li id="line_100" class="even"><span class="lineNumber">100&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="string">"cd-icon-download.png"</span><span class="keyword">,</span><a name="line_100"></a></li><li id="line_101" class="odd"><span class="lineNumber">101&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="string">"cd-icon-edit.png"</span><span class="keyword">,</span><a name="line_101"></a></li><li id="line_102" class="even"><span class="lineNumber">102&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="string">"cd-icon-english.png"</span><span class="keyword">,</span><a name="line_102"></a></li><li id="line_103" class="odd"><span class="lineNumber">103&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="string">"cd-icon-faq.png"</span><span class="keyword">,</span><a name="line_103"></a></li><li id="line_104" class="even"><span class="lineNumber">104&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="string">"cd-icon-german.png"</span><span class="keyword">,</span><a name="line_104"></a></li><li id="line_105" class="odd"><span class="lineNumber">105&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="string">"cd-icon-hideext.png"</span><span class="keyword">,</span><a name="line_105"></a></li><li id="line_106" class="even"><span class="lineNumber">106&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="string">"cd-icon-image.png"</span><span class="keyword">,</span><a name="line_106"></a></li><li id="line_107" class="odd"><span class="lineNumber">107&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="string">"cd-icon-images.png"</span><span class="keyword">,</span><a name="line_107"></a></li><li id="line_108" class="even"><span class="lineNumber">108&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="string">"cd-icon-list.png"</span><span class="keyword">,</span><a name="line_108"></a></li><li id="line_109" class="odd"><span class="lineNumber">109&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="string">"cd-icon-logout.png"</span><span class="keyword">,</span><a name="line_109"></a></li><li id="line_110" class="even"><span class="lineNumber">110&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="string">"cd-icon-password.png"</span><span class="keyword">,</span><a name="line_110"></a></li><li id="line_111" class="odd"><span class="lineNumber">111&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="string">"cd-icon-polish.png"</span><span class="keyword">,</span><a name="line_111"></a></li><li id="line_112" class="even"><span class="lineNumber">112&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="string">"cd-icon-qedit.png"</span><span class="keyword">,</span><a name="line_112"></a></li><li id="line_113" class="odd"><span class="lineNumber">113&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="string">"cd-icon-qtrash.png"</span><span class="keyword">,</span><a name="line_113"></a></li><li id="line_114" class="even"><span class="lineNumber">114&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="string">"cd-icon-refresh.png"</span><span class="keyword">,</span><a name="line_114"></a></li><li id="line_115" class="odd"><span class="lineNumber">115&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="string">"cd-icon-select.png"</span><span class="keyword">,</span><a name="line_115"></a></li><li id="line_116" class="even"><span class="lineNumber">116&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="string">"cd-icon-settings.png"</span><span class="keyword">,</span><a name="line_116"></a></li><li id="line_117" class="odd"><span class="lineNumber">117&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="string">"cd-icon-showext.png"</span><span class="keyword">,</span><a name="line_117"></a></li><li id="line_118" class="even"><span class="lineNumber">118&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="string">"cd-icon-translate.png"</span><span class="keyword">,</span><a name="line_118"></a></li><li id="line_119" class="odd"><span class="lineNumber">119&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="string">"cd-icon-updates.png"</span><span class="keyword">,</span><a name="line_119"></a></li><li id="line_120" class="even"><span class="lineNumber">120&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="string">"cd-icon-upload-big.png"</span><span class="keyword">,</span><a name="line_120"></a></li><li id="line_121" class="odd"><span class="lineNumber">121&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="string">"cd-icon-upload-grey.png"</span><span class="keyword">,</span><a name="line_121"></a></li><li id="line_122" class="even"><span class="lineNumber">122&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="string">"cd-icon-upload.png"</span><span class="keyword">,</span><a name="line_122"></a></li><li id="line_123" class="odd"><span class="lineNumber">123&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="string">"cd-icon-use.png"</span><span class="keyword">,</span><a name="line_123"></a></li><li id="line_124" class="even"><span class="lineNumber">124&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="string">"cd-icon-version.png"</span><span class="keyword">,</span><a name="line_124"></a></li><li id="line_125" class="odd"><span class="lineNumber">125&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="string">"cd-icon-warning.png"</span><span class="keyword">,</span><a name="line_125"></a></li><li id="line_126" class="even"><span class="lineNumber">126&nbsp;</span><span class="keyword">);</span><a name="line_126"></a></li><li id="line_127" class="odd"><span class="lineNumber">127&nbsp;</span><a name="line_127"></a></li><li id="line_128" class="even"><span class="lineNumber">128&nbsp;</span><span class="comment">//&nbsp;show/hide&nbsp;file&nbsp;extension</span><a name="line_128"></a></li><li id="line_129" title='|
+                        &lt;div class="tooltip"&gt;
+                            &lt;div class="title Checkstyle"&gt;Checkstyle&lt;/div&gt;
+                            &lt;div class="text"&gt;Expected 1 space after IF keyword; 0 found&lt;/div&gt;
+                        &lt;/div&gt;
+                        
+                        &lt;div class="tooltip"&gt;
+                            &lt;div class="title Checkstyle"&gt;Checkstyle&lt;/div&gt;
+                            &lt;div class="text"&gt;Expected 1 space after closing parenthesis; found 0&lt;/div&gt;
+                        &lt;/div&gt;
+                        ' class="odd hasIssues moreErrors"><span class="lineNumber">129&nbsp;</span><span class="keyword">if(!isset(</span><span class="default">$_COOKIE</span><span class="keyword">[</span><span class="string">"file_extens"</span><span class="keyword">])){</span><a name="line_129"></a></li><li id="line_130" class="even"><span class="lineNumber">130&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">$file_extens&nbsp;</span><span class="keyword">=&nbsp;</span><span class="string">"no"</span><span class="keyword">;</span><a name="line_130"></a></li><li id="line_131" class="odd"><span class="lineNumber">131&nbsp;</span><span class="keyword">}&nbsp;else&nbsp;{</span><a name="line_131"></a></li><li id="line_132" class="even"><span class="lineNumber">132&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">$file_extens&nbsp;</span><span class="keyword">=&nbsp;</span><span class="default">$_COOKIE</span><span class="keyword">[</span><span class="string">"file_extens"</span><span class="keyword">];</span><a name="line_132"></a></li><li id="line_133" class="odd"><span class="lineNumber">133&nbsp;</span><span class="keyword">}</span><a name="line_133"></a></li><li id="line_134" class="even"><span class="lineNumber">134&nbsp;</span><a name="line_134"></a></li><li id="line_135" class="odd"><span class="lineNumber">135&nbsp;</span><span class="comment">//&nbsp;show/hide&nbsp;news&nbsp;section</span><a name="line_135"></a></li><li id="line_136" title='|
+                        &lt;div class="tooltip"&gt;
+                            &lt;div class="title Checkstyle"&gt;Checkstyle&lt;/div&gt;
+                            &lt;div class="text"&gt;Expected 1 space after IF keyword; 0 found&lt;/div&gt;
+                        &lt;/div&gt;
+                        
+                        &lt;div class="tooltip"&gt;
+                            &lt;div class="title Checkstyle"&gt;Checkstyle&lt;/div&gt;
+                            &lt;div class="text"&gt;Expected 1 space after closing parenthesis; found 0&lt;/div&gt;
+                        &lt;/div&gt;
+                        ' class="even hasIssues moreErrors"><span class="lineNumber">136&nbsp;</span><span class="keyword">if(!isset(</span><span class="default">$_COOKIE</span><span class="keyword">[</span><span class="string">"show_news"</span><span class="keyword">])){</span><a name="line_136"></a></li><li id="line_137" class="odd"><span class="lineNumber">137&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">$news_sction&nbsp;</span><span class="keyword">=&nbsp;</span><span class="string">"yes"</span><span class="keyword">;</span><a name="line_137"></a></li><li id="line_138" class="even"><span class="lineNumber">138&nbsp;</span><span class="keyword">}&nbsp;else&nbsp;{</span><a name="line_138"></a></li><li id="line_139" class="odd"><span class="lineNumber">139&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">$news_sction&nbsp;</span><span class="keyword">=&nbsp;</span><span class="string">"no"</span><span class="keyword">;</span><a name="line_139"></a></li><li id="line_140" class="even"><span class="lineNumber">140&nbsp;</span><span class="keyword">}</span><a name="line_140"></a></li><li id="line_141" class="odd"><span class="lineNumber">141&nbsp;</span><a name="line_141"></a></li><li id="line_142" class="even"><span class="lineNumber">142&nbsp;</span><span class="comment">//&nbsp;file_style</span><a name="line_142"></a></li><li id="line_143" title='|
+                        &lt;div class="tooltip"&gt;
+                            &lt;div class="title Checkstyle"&gt;Checkstyle&lt;/div&gt;
+                            &lt;div class="text"&gt;Expected 1 space after IF keyword; 0 found&lt;/div&gt;
+                        &lt;/div&gt;
+                        
+                        &lt;div class="tooltip"&gt;
+                            &lt;div class="title Checkstyle"&gt;Checkstyle&lt;/div&gt;
+                            &lt;div class="text"&gt;Expected 1 space after closing parenthesis; found 0&lt;/div&gt;
+                        &lt;/div&gt;
+                        ' class="odd hasIssues moreErrors"><span class="lineNumber">143&nbsp;</span><span class="keyword">if(!isset(</span><span class="default">$_COOKIE</span><span class="keyword">[</span><span class="string">"file_style"</span><span class="keyword">])){</span><a name="line_143"></a></li><li id="line_144" class="even"><span class="lineNumber">144&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">$file_style&nbsp;</span><span class="keyword">=&nbsp;</span><span class="string">"block"</span><span class="keyword">;</span><a name="line_144"></a></li><li id="line_145" class="odd"><span class="lineNumber">145&nbsp;</span><span class="keyword">}&nbsp;else&nbsp;{</span><a name="line_145"></a></li><li id="line_146" class="even"><span class="lineNumber">146&nbsp;</span><span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">$file_style&nbsp;</span><span class="keyword">=&nbsp;</span><span class="default">$_COOKIE</span><span class="keyword">[</span><span class="string">"file_style"</span><span class="keyword">];</span><a name="line_146"></a></li><li id="line_147" class="odd"><span class="lineNumber">147&nbsp;</span><span class="keyword">}</span><a name="line_147"></a></li><li id="line_148" class="even"><span class="lineNumber">148&nbsp;</span><a name="line_148"></a></li><li id="line_149" class="odd"><span class="lineNumber">149&nbsp;</span><span class="comment">//&nbsp;Path&nbsp;to&nbsp;the&nbsp;upload&nbsp;folder,&nbsp;please&nbsp;set&nbsp;the&nbsp;path&nbsp;using&nbsp;the&nbsp;Image&nbsp;Browser&nbsp;Settings&nbsp;menu.</span><a name="line_149"></a></li><li id="line_150" class="even"><span class="lineNumber">150&nbsp;</span><a name="line_150"></a></li><li id="line_151" class="odd"><span class="lineNumber">151&nbsp;</span><span class="default">$foldershistory&nbsp;</span><span class="keyword">=&nbsp;array();</span><a name="line_151"></a></li><li id="line_152" class="even"><span class="lineNumber">152&nbsp;</span><span class="default">$useruploadroot&nbsp;</span><span class="keyword">=&nbsp;</span><span class="string">"http://</span><span class="default">$_SERVER</span><span class="keyword">[</span><span class="default">HTTP_HOST</span><span class="keyword">]</span><span class="string">"</span><span class="keyword">;</span><a name="line_152"></a></li><li id="line_153" class="odd"><span class="lineNumber">153&nbsp;</span><span class="default">$browserfolder&nbsp;</span><span class="keyword">=&nbsp;</span><span class="default">pathinfo</span><span class="keyword">(</span><span class="string">"</span><span class="default">$_SERVER</span><span class="keyword">[</span><span class="default">REQUEST_URI</span><span class="keyword">]</span><span class="string">"</span><span class="keyword">);</span><a name="line_153"></a></li><li id="line_154" class="even"><span class="lineNumber">154&nbsp;</span><span class="default">$browserfolder&nbsp;</span><span class="keyword">=&nbsp;</span><span class="default">ltrim</span><span class="keyword">(</span><span class="default">$browserfolder</span><span class="keyword">[</span><span class="string">"dirname"</span><span class="keyword">],&nbsp;</span><span class="string">'/'</span><span class="keyword">);</span><a name="line_154"></a></li><li id="line_155" title='|
+                        &lt;div class="tooltip"&gt;
+                            &lt;div class="title Checkstyle"&gt;Checkstyle&lt;/div&gt;
+                            &lt;div class="text"&gt;Line exceeds 120 characters; contains 122 characters&lt;/div&gt;
+                        &lt;/div&gt;
+                        ' class="odd hasIssues Checkstyle"><span class="lineNumber">155&nbsp;</span><span class="default">$usersiteroot&nbsp;</span><span class="keyword">=&nbsp;</span><span class="default">substr</span><span class="keyword">(</span><span class="default">$_SERVER</span><span class="keyword">[</span><span class="string">"SCRIPT_FILENAME"</span><span class="keyword">],&nbsp;</span><span class="default">0</span><span class="keyword">,&nbsp;(</span><span class="default">stripos</span><span class="keyword">(</span><span class="default">$_SERVER</span><span class="keyword">[</span><span class="string">"SCRIPT_FILENAME"</span><span class="keyword">],&nbsp;</span><span class="default">$_SERVER</span><span class="keyword">[</span><span class="string">"SCRIPT_NAME"</span><span class="keyword">])+</span><span class="default">1</span><span class="keyword">));</span><a name="line_155"></a></li><li id="line_156" class="even"><span class="lineNumber">156&nbsp;</span><a name="line_156"></a></li><li id="line_157" class="odd"><span class="lineNumber">157&nbsp;</span><span class="default">$useruploadfolder&nbsp;</span><span class="keyword">=&nbsp;</span><span class="string">"</span><span class="default">$browserfolder</span><span class="string">/uploads"</span><span class="keyword">;</span><a name="line_157"></a></li><li id="line_158" class="even"><span class="lineNumber">158&nbsp;</span><span class="default">$useruploadpath&nbsp;</span><span class="keyword">=&nbsp;</span><span class="default">$usersiteroot</span><span class="keyword">.</span><span class="string">"</span><span class="default">$useruploadfolder</span><span class="string">/"</span><span class="keyword">;</span><a name="line_158"></a></li><li id="line_159" class="odd"><span class="lineNumber">159&nbsp;</span><span class="default">$foldershistory</span><span class="keyword">[]&nbsp;=&nbsp;</span><span class="default">$useruploadfolder</span><span class="keyword">;</span><span>
+</span><a name="line_159"></a></li></ol>
+            
+            <div id="sidebar">
+                <table cellpadding="3">
+                    <thead>
+                        <tr>
+                            <th width="40px" align="center">
+                                <strong>start</strong>
+                            </th>
+                            <th width="40px" align="center">
+                                <strong>end</strong>
+                            </th>
+                            <th>
+                                <strong>comment</strong>
+                            </th>
+                            <th width="120px">
+                                <strong>type of error</strong>
+                            </th>
+                            <th width="60px">
+                                <strong>severity</strong>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                        <tr class="Checkstyle">
+                            <td align="center">
+                                <a href="#line_1" onclick="switchLine('line_1')">
+                                1</a>
+                            </td>
+                            <td align="center">
+                                <a href="#line_1" onclick="switchLine('line_1'); new Effect.Highlight('line_1-1', {duration: 1.5}); return false">
+                                1</a>
+                            </td>
+                            <td>
+                                <a href="#line_1" onclick="switchLine('line_1'); new Effect.Highlight('line_1-1', {duration: 1.5}); return false">
+                                End of line character is invalid; expected &quot;\n&quot; but found &quot;\r\n&quot;</a>
+                            </td>
+                            <td>
+                                Checkstyle                            </td>
+                            <td>
+                                error                            </td>
+                        </tr>
+                        
+                        <tr class="Checkstyle">
+                            <td align="center">
+                                <a href="#line_4" onclick="switchLine('line_4')">
+                                4</a>
+                            </td>
+                            <td align="center">
+                                <a href="#line_4" onclick="switchLine('line_4'); new Effect.Highlight('line_4-4', {duration: 1.5}); return false">
+                                4</a>
+                            </td>
+                            <td>
+                                <a href="#line_4" onclick="switchLine('line_4'); new Effect.Highlight('line_4-4', {duration: 1.5}); return false">
+                                Expected 1 space after IF keyword; 0 found</a>
+                            </td>
+                            <td>
+                                Checkstyle                            </td>
+                            <td>
+                                error                            </td>
+                        </tr>
+                        
+                        <tr class="Checkstyle">
+                            <td align="center">
+                                <a href="#line_20" onclick="switchLine('line_20')">
+                                20</a>
+                            </td>
+                            <td align="center">
+                                <a href="#line_20" onclick="switchLine('line_20'); new Effect.Highlight('line_20-20', {duration: 1.5}); return false">
+                                20</a>
+                            </td>
+                            <td>
+                                <a href="#line_20" onclick="switchLine('line_20'); new Effect.Highlight('line_20-20', {duration: 1.5}); return false">
+                                Expected 1 space after IF keyword; 0 found</a>
+                            </td>
+                            <td>
+                                Checkstyle                            </td>
+                            <td>
+                                error                            </td>
+                        </tr>
+                        
+                        <tr class="Checkstyle">
+                            <td align="center">
+                                <a href="#line_20" onclick="switchLine('line_20')">
+                                20</a>
+                            </td>
+                            <td align="center">
+                                <a href="#line_20" onclick="switchLine('line_20'); new Effect.Highlight('line_20-20', {duration: 1.5}); return false">
+                                20</a>
+                            </td>
+                            <td>
+                                <a href="#line_20" onclick="switchLine('line_20'); new Effect.Highlight('line_20-20', {duration: 1.5}); return false">
+                                Expected 1 space after closing parenthesis; found 0</a>
+                            </td>
+                            <td>
+                                Checkstyle                            </td>
+                            <td>
+                                error                            </td>
+                        </tr>
+                        
+                        <tr class="Checkstyle">
+                            <td align="center">
+                                <a href="#line_24" onclick="switchLine('line_24')">
+                                24</a>
+                            </td>
+                            <td align="center">
+                                <a href="#line_24" onclick="switchLine('line_24'); new Effect.Highlight('line_24-24', {duration: 1.5}); return false">
+                                24</a>
+                            </td>
+                            <td>
+                                <a href="#line_24" onclick="switchLine('line_24'); new Effect.Highlight('line_24-24', {duration: 1.5}); return false">
+                                Expected 1 space after IF keyword; 0 found</a>
+                            </td>
+                            <td>
+                                Checkstyle                            </td>
+                            <td>
+                                error                            </td>
+                        </tr>
+                        
+                        <tr class="Checkstyle">
+                            <td align="center">
+                                <a href="#line_24" onclick="switchLine('line_24')">
+                                24</a>
+                            </td>
+                            <td align="center">
+                                <a href="#line_24" onclick="switchLine('line_24'); new Effect.Highlight('line_24-24', {duration: 1.5}); return false">
+                                24</a>
+                            </td>
+                            <td>
+                                <a href="#line_24" onclick="switchLine('line_24'); new Effect.Highlight('line_24-24', {duration: 1.5}); return false">
+                                Expected 1 space after closing parenthesis; found 0</a>
+                            </td>
+                            <td>
+                                Checkstyle                            </td>
+                            <td>
+                                error                            </td>
+                        </tr>
+                        
+                        <tr class="Checkstyle">
+                            <td align="center">
+                                <a href="#line_24" onclick="switchLine('line_24')">
+                                24</a>
+                            </td>
+                            <td align="center">
+                                <a href="#line_24" onclick="switchLine('line_24'); new Effect.Highlight('line_24-24', {duration: 1.5}); return false">
+                                24</a>
+                            </td>
+                            <td>
+                                <a href="#line_24" onclick="switchLine('line_24'); new Effect.Highlight('line_24-24', {duration: 1.5}); return false">
+                                Blank line found at start of control structure</a>
+                            </td>
+                            <td>
+                                Checkstyle                            </td>
+                            <td>
+                                error                            </td>
+                        </tr>
+                        
+                        <tr class="Checkstyle">
+                            <td align="center">
+                                <a href="#line_26" onclick="switchLine('line_26')">
+                                26</a>
+                            </td>
+                            <td align="center">
+                                <a href="#line_26" onclick="switchLine('line_26'); new Effect.Highlight('line_26-26', {duration: 1.5}); return false">
+                                26</a>
+                            </td>
+                            <td>
+                                <a href="#line_26" onclick="switchLine('line_26'); new Effect.Highlight('line_26-26', {duration: 1.5}); return false">
+                                Expected 1 space after IF keyword; 0 found</a>
+                            </td>
+                            <td>
+                                Checkstyle                            </td>
+                            <td>
+                                error                            </td>
+                        </tr>
+                        
+                        <tr class="Checkstyle">
+                            <td align="center">
+                                <a href="#line_26" onclick="switchLine('line_26')">
+                                26</a>
+                            </td>
+                            <td align="center">
+                                <a href="#line_26" onclick="switchLine('line_26'); new Effect.Highlight('line_26-26', {duration: 1.5}); return false">
+                                26</a>
+                            </td>
+                            <td>
+                                <a href="#line_26" onclick="switchLine('line_26'); new Effect.Highlight('line_26-26', {duration: 1.5}); return false">
+                                Expected 1 space after closing parenthesis; found 0</a>
+                            </td>
+                            <td>
+                                Checkstyle                            </td>
+                            <td>
+                                error                            </td>
+                        </tr>
+                        
+                        <tr class="Checkstyle">
+                            <td align="center">
+                                <a href="#line_38" onclick="switchLine('line_38')">
+                                38</a>
+                            </td>
+                            <td align="center">
+                                <a href="#line_38" onclick="switchLine('line_38'); new Effect.Highlight('line_38-38', {duration: 1.5}); return false">
+                                38</a>
+                            </td>
+                            <td>
+                                <a href="#line_38" onclick="switchLine('line_38'); new Effect.Highlight('line_38-38', {duration: 1.5}); return false">
+                                Expected 1 space after IF keyword; 0 found</a>
+                            </td>
+                            <td>
+                                Checkstyle                            </td>
+                            <td>
+                                error                            </td>
+                        </tr>
+                        
+                        <tr class="Checkstyle">
+                            <td align="center">
+                                <a href="#line_38" onclick="switchLine('line_38')">
+                                38</a>
+                            </td>
+                            <td align="center">
+                                <a href="#line_38" onclick="switchLine('line_38'); new Effect.Highlight('line_38-38', {duration: 1.5}); return false">
+                                38</a>
+                            </td>
+                            <td>
+                                <a href="#line_38" onclick="switchLine('line_38'); new Effect.Highlight('line_38-38', {duration: 1.5}); return false">
+                                Expected 1 space after closing parenthesis; found 0</a>
+                            </td>
+                            <td>
+                                Checkstyle                            </td>
+                            <td>
+                                error                            </td>
+                        </tr>
+                        
+                        <tr class="Checkstyle">
+                            <td align="center">
+                                <a href="#line_40" onclick="switchLine('line_40')">
+                                40</a>
+                            </td>
+                            <td align="center">
+                                <a href="#line_40" onclick="switchLine('line_40'); new Effect.Highlight('line_40-40', {duration: 1.5}); return false">
+                                40</a>
+                            </td>
+                            <td>
+                                <a href="#line_40" onclick="switchLine('line_40'); new Effect.Highlight('line_40-40', {duration: 1.5}); return false">
+                                Expected 1 space after IF keyword; 0 found</a>
+                            </td>
+                            <td>
+                                Checkstyle                            </td>
+                            <td>
+                                error                            </td>
+                        </tr>
+                        
+                        <tr class="Checkstyle">
+                            <td align="center">
+                                <a href="#line_40" onclick="switchLine('line_40')">
+                                40</a>
+                            </td>
+                            <td align="center">
+                                <a href="#line_40" onclick="switchLine('line_40'); new Effect.Highlight('line_40-40', {duration: 1.5}); return false">
+                                40</a>
+                            </td>
+                            <td>
+                                <a href="#line_40" onclick="switchLine('line_40'); new Effect.Highlight('line_40-40', {duration: 1.5}); return false">
+                                Expected 1 space after closing parenthesis; found 0</a>
+                            </td>
+                            <td>
+                                Checkstyle                            </td>
+                            <td>
+                                error                            </td>
+                        </tr>
+                        
+                        <tr class="Checkstyle">
+                            <td align="center">
+                                <a href="#line_55" onclick="switchLine('line_55')">
+                                55</a>
+                            </td>
+                            <td align="center">
+                                <a href="#line_55" onclick="switchLine('line_55'); new Effect.Highlight('line_55-55', {duration: 1.5}); return false">
+                                55</a>
+                            </td>
+                            <td>
+                                <a href="#line_55" onclick="switchLine('line_55'); new Effect.Highlight('line_55-55', {duration: 1.5}); return false">
+                                Expected 1 space after IF keyword; 0 found</a>
+                            </td>
+                            <td>
+                                Checkstyle                            </td>
+                            <td>
+                                error                            </td>
+                        </tr>
+                        
+                        <tr class="Checkstyle">
+                            <td align="center">
+                                <a href="#line_55" onclick="switchLine('line_55')">
+                                55</a>
+                            </td>
+                            <td align="center">
+                                <a href="#line_55" onclick="switchLine('line_55'); new Effect.Highlight('line_55-55', {duration: 1.5}); return false">
+                                55</a>
+                            </td>
+                            <td>
+                                <a href="#line_55" onclick="switchLine('line_55'); new Effect.Highlight('line_55-55', {duration: 1.5}); return false">
+                                Expected 1 space after closing parenthesis; found 0</a>
+                            </td>
+                            <td>
+                                Checkstyle                            </td>
+                            <td>
+                                error                            </td>
+                        </tr>
+                        
+                        <tr class="Checkstyle">
+                            <td align="center">
+                                <a href="#line_57" onclick="switchLine('line_57')">
+                                57</a>
+                            </td>
+                            <td align="center">
+                                <a href="#line_57" onclick="switchLine('line_57'); new Effect.Highlight('line_57-57', {duration: 1.5}); return false">
+                                57</a>
+                            </td>
+                            <td>
+                                <a href="#line_57" onclick="switchLine('line_57'); new Effect.Highlight('line_57-57', {duration: 1.5}); return false">
+                                Expected 1 space after IF keyword; 0 found</a>
+                            </td>
+                            <td>
+                                Checkstyle                            </td>
+                            <td>
+                                error                            </td>
+                        </tr>
+                        
+                        <tr class="Checkstyle">
+                            <td align="center">
+                                <a href="#line_57" onclick="switchLine('line_57')">
+                                57</a>
+                            </td>
+                            <td align="center">
+                                <a href="#line_57" onclick="switchLine('line_57'); new Effect.Highlight('line_57-57', {duration: 1.5}); return false">
+                                57</a>
+                            </td>
+                            <td>
+                                <a href="#line_57" onclick="switchLine('line_57'); new Effect.Highlight('line_57-57', {duration: 1.5}); return false">
+                                Expected 1 space after closing parenthesis; found 0</a>
+                            </td>
+                            <td>
+                                Checkstyle                            </td>
+                            <td>
+                                error                            </td>
+                        </tr>
+                        
+                        <tr class="Checkstyle">
+                            <td align="center">
+                                <a href="#line_73" onclick="switchLine('line_73')">
+                                73</a>
+                            </td>
+                            <td align="center">
+                                <a href="#line_73" onclick="switchLine('line_73'); new Effect.Highlight('line_73-73', {duration: 1.5}); return false">
+                                73</a>
+                            </td>
+                            <td>
+                                <a href="#line_73" onclick="switchLine('line_73'); new Effect.Highlight('line_73-73', {duration: 1.5}); return false">
+                                Blank line found at end of control structure</a>
+                            </td>
+                            <td>
+                                Checkstyle                            </td>
+                            <td>
+                                error                            </td>
+                        </tr>
+                        
+                        <tr class="Checkstyle">
+                            <td align="center">
+                                <a href="#line_129" onclick="switchLine('line_129')">
+                                129</a>
+                            </td>
+                            <td align="center">
+                                <a href="#line_129" onclick="switchLine('line_129'); new Effect.Highlight('line_129-129', {duration: 1.5}); return false">
+                                129</a>
+                            </td>
+                            <td>
+                                <a href="#line_129" onclick="switchLine('line_129'); new Effect.Highlight('line_129-129', {duration: 1.5}); return false">
+                                Expected 1 space after IF keyword; 0 found</a>
+                            </td>
+                            <td>
+                                Checkstyle                            </td>
+                            <td>
+                                error                            </td>
+                        </tr>
+                        
+                        <tr class="Checkstyle">
+                            <td align="center">
+                                <a href="#line_129" onclick="switchLine('line_129')">
+                                129</a>
+                            </td>
+                            <td align="center">
+                                <a href="#line_129" onclick="switchLine('line_129'); new Effect.Highlight('line_129-129', {duration: 1.5}); return false">
+                                129</a>
+                            </td>
+                            <td>
+                                <a href="#line_129" onclick="switchLine('line_129'); new Effect.Highlight('line_129-129', {duration: 1.5}); return false">
+                                Expected 1 space after closing parenthesis; found 0</a>
+                            </td>
+                            <td>
+                                Checkstyle                            </td>
+                            <td>
+                                error                            </td>
+                        </tr>
+                        
+                        <tr class="Checkstyle">
+                            <td align="center">
+                                <a href="#line_136" onclick="switchLine('line_136')">
+                                136</a>
+                            </td>
+                            <td align="center">
+                                <a href="#line_136" onclick="switchLine('line_136'); new Effect.Highlight('line_136-136', {duration: 1.5}); return false">
+                                136</a>
+                            </td>
+                            <td>
+                                <a href="#line_136" onclick="switchLine('line_136'); new Effect.Highlight('line_136-136', {duration: 1.5}); return false">
+                                Expected 1 space after IF keyword; 0 found</a>
+                            </td>
+                            <td>
+                                Checkstyle                            </td>
+                            <td>
+                                error                            </td>
+                        </tr>
+                        
+                        <tr class="Checkstyle">
+                            <td align="center">
+                                <a href="#line_136" onclick="switchLine('line_136')">
+                                136</a>
+                            </td>
+                            <td align="center">
+                                <a href="#line_136" onclick="switchLine('line_136'); new Effect.Highlight('line_136-136', {duration: 1.5}); return false">
+                                136</a>
+                            </td>
+                            <td>
+                                <a href="#line_136" onclick="switchLine('line_136'); new Effect.Highlight('line_136-136', {duration: 1.5}); return false">
+                                Expected 1 space after closing parenthesis; found 0</a>
+                            </td>
+                            <td>
+                                Checkstyle                            </td>
+                            <td>
+                                error                            </td>
+                        </tr>
+                        
+                        <tr class="Checkstyle">
+                            <td align="center">
+                                <a href="#line_143" onclick="switchLine('line_143')">
+                                143</a>
+                            </td>
+                            <td align="center">
+                                <a href="#line_143" onclick="switchLine('line_143'); new Effect.Highlight('line_143-143', {duration: 1.5}); return false">
+                                143</a>
+                            </td>
+                            <td>
+                                <a href="#line_143" onclick="switchLine('line_143'); new Effect.Highlight('line_143-143', {duration: 1.5}); return false">
+                                Expected 1 space after IF keyword; 0 found</a>
+                            </td>
+                            <td>
+                                Checkstyle                            </td>
+                            <td>
+                                error                            </td>
+                        </tr>
+                        
+                        <tr class="Checkstyle">
+                            <td align="center">
+                                <a href="#line_143" onclick="switchLine('line_143')">
+                                143</a>
+                            </td>
+                            <td align="center">
+                                <a href="#line_143" onclick="switchLine('line_143'); new Effect.Highlight('line_143-143', {duration: 1.5}); return false">
+                                143</a>
+                            </td>
+                            <td>
+                                <a href="#line_143" onclick="switchLine('line_143'); new Effect.Highlight('line_143-143', {duration: 1.5}); return false">
+                                Expected 1 space after closing parenthesis; found 0</a>
+                            </td>
+                            <td>
+                                Checkstyle                            </td>
+                            <td>
+                                error                            </td>
+                        </tr>
+                        
+                        <tr class="Checkstyle">
+                            <td align="center">
+                                <a href="#line_155" onclick="switchLine('line_155')">
+                                155</a>
+                            </td>
+                            <td align="center">
+                                <a href="#line_155" onclick="switchLine('line_155'); new Effect.Highlight('line_155-155', {duration: 1.5}); return false">
+                                155</a>
+                            </td>
+                            <td>
+                                <a href="#line_155" onclick="switchLine('line_155'); new Effect.Highlight('line_155-155', {duration: 1.5}); return false">
+                                Line exceeds 120 characters; contains 122 characters</a>
+                            </td>
+                            <td>
+                                Checkstyle                            </td>
+                            <td>
+                                warning                            </td>
+                        </tr>
+                                            </tbody>
+                </table>
+            </div>
+            <script type="text/javascript" language="javascript">
+                $(initReview);
+            </script>
+                    </div>
+    </body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>
+            Mayflower Code Browser - Source Code
+        </title>
+        <link rel="stylesheet" type="text/css" href="../../../../../../../js/jquery.sidebar/css/codebrowser/sidebar.css" />
+        <link rel="stylesheet" type="text/css" href="../../../../../../../css/global.css" />
+        <link rel="stylesheet" type="text/css" href="../../../../../../../css/cruisecontrol.css" />
+        <link rel="stylesheet" type="text/css" href="../../../../../../../css/review.css" />
+
+        <script type="text/javascript" src="../../../../../../../js/jquery-1.4.2.min.js"></script>
+        <script type="text/javascript" src="../../../../../../../js/jquery.sidebar/jquery-ui-1.7.2.custom.min.js"></script>
+        <script type="text/javascript" src="../../../../../../../js/jquery.sidebar/jquery.sidebar.js"></script>
+        <script type="text/javascript" src="../../../../../../../js/jquery.cluetip/lib/jquery.hoverIntent.js"></script>
+        <script type="text/javascript" src="../../../../../../../js/jquery.cluetip/lib/jquery.bgiframe.min.js"></script>
+        <script type="text/javascript" src="../../../../../../../js/jquery.cluetip/jquery.cluetip.min.js"></script>
+
+        <script type="text/javascript" src="../../../../../../../js/review.js"></script>
+    </head>
+    <body class="codebrowser">
+        <div class="header">
+            <a href="./../../../../../../../index.html">Go back to index</a> |
+            <a href="https://github.com/Mayflower/PHP_CodeBrowser">PHP CodeBrowser</a>
+        </div>
+        <hr/>
+        <div id="review">
+            <div class="filepath">
+                FrontBundle/Resources/public/plugins/moment/src/lib/duration/humanize.js            </div>
+
+            <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><div class="code"><ol class="code"><li id="line_1" class="odd"><span class="lineNumber">&nbsp;1&nbsp;</span>import&nbsp;{&nbsp;createDuration&nbsp;}&nbsp;from&nbsp;'./create';<a name="line_1"></a></li>
+<li id="line_2" class="even"><span class="lineNumber">&nbsp;2&nbsp;</span><a name="line_2"></a></li>
+<li id="line_3" class="odd"><span class="lineNumber">&nbsp;3&nbsp;</span>var&nbsp;round&nbsp;=&nbsp;Math.round;<a name="line_3"></a></li>
+<li id="line_4" class="even"><span class="lineNumber">&nbsp;4&nbsp;</span>var&nbsp;thresholds&nbsp;=&nbsp;{<a name="line_4"></a></li>
+<li id="line_5" class="odd"><span class="lineNumber">&nbsp;5&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;s:&nbsp;45,&nbsp;&nbsp;//&nbsp;seconds&nbsp;to&nbsp;minute<a name="line_5"></a></li>
+<li id="line_6" class="even"><span class="lineNumber">&nbsp;6&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;m:&nbsp;45,&nbsp;&nbsp;//&nbsp;minutes&nbsp;to&nbsp;hour<a name="line_6"></a></li>
+<li id="line_7" class="odd"><span class="lineNumber">&nbsp;7&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;h:&nbsp;22,&nbsp;&nbsp;//&nbsp;hours&nbsp;to&nbsp;day<a name="line_7"></a></li>
+<li id="line_8" class="even"><span class="lineNumber">&nbsp;8&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;d:&nbsp;26,&nbsp;&nbsp;//&nbsp;days&nbsp;to&nbsp;month<a name="line_8"></a></li>
+<li id="line_9" class="odd"><span class="lineNumber">&nbsp;9&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;M:&nbsp;11&nbsp;&nbsp;&nbsp;//&nbsp;months&nbsp;to&nbsp;year<a name="line_9"></a></li>
+<li id="line_10" class="even"><span class="lineNumber">10&nbsp;</span>};<a name="line_10"></a></li>
+<li id="line_11" class="odd"><span class="lineNumber">11&nbsp;</span><a name="line_11"></a></li>
+<li id="line_12" class="even"><span class="lineNumber">12&nbsp;</span>//&nbsp;helper&nbsp;function&nbsp;for&nbsp;moment.fn.from,&nbsp;moment.fn.fromNow,&nbsp;and&nbsp;moment.duration.fn.humanize<a name="line_12"></a></li>
+<li id="line_13" class="odd"><span class="lineNumber">13&nbsp;</span>function&nbsp;substituteTimeAgo(string,&nbsp;number,&nbsp;withoutSuffix,&nbsp;isFuture,&nbsp;locale)&nbsp;{<a name="line_13"></a></li>
+<li id="line_14" class="even"><span class="lineNumber">14&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;locale.relativeTime(number&nbsp;||&nbsp;1,&nbsp;!!withoutSuffix,&nbsp;string,&nbsp;isFuture);<a name="line_14"></a></li>
+<li id="line_15" class="odd"><span class="lineNumber">15&nbsp;</span>}<a name="line_15"></a></li>
+<li id="line_16" class="even"><span class="lineNumber">16&nbsp;</span><a name="line_16"></a></li>
+<li id="line_17" class="odd"><span class="lineNumber">17&nbsp;</span>function&nbsp;relativeTime&nbsp;(posNegDuration,&nbsp;withoutSuffix,&nbsp;locale)&nbsp;{<a name="line_17"></a></li>
+<li id="line_18" class="even"><span class="lineNumber">18&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;duration&nbsp;=&nbsp;createDuration(posNegDuration).abs();<a name="line_18"></a></li>
+<li id="line_19" class="odd"><span class="lineNumber">19&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;seconds&nbsp;&nbsp;=&nbsp;round(duration.as('s'));<a name="line_19"></a></li>
+<li id="line_20" class="even"><span class="lineNumber">20&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;minutes&nbsp;&nbsp;=&nbsp;round(duration.as('m'));<a name="line_20"></a></li>
+<li id="line_21" class="odd"><span class="lineNumber">21&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;hours&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;round(duration.as('h'));<a name="line_21"></a></li>
+<li id="line_22" class="even"><span class="lineNumber">22&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;days&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;round(duration.as('d'));<a name="line_22"></a></li>
+<li id="line_23" class="odd"><span class="lineNumber">23&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;months&nbsp;&nbsp;&nbsp;=&nbsp;round(duration.as('M'));<a name="line_23"></a></li>
+<li id="line_24" class="even"><span class="lineNumber">24&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;years&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;round(duration.as('y'));<a name="line_24"></a></li>
+<li id="line_25" class="odd"><span class="lineNumber">25&nbsp;</span><a name="line_25"></a></li>
+<li id="line_26" class="even"><span class="lineNumber">26&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;a&nbsp;=&nbsp;seconds&nbsp;&lt;&nbsp;thresholds.s&nbsp;&amp;&amp;&nbsp;['s',&nbsp;seconds]&nbsp;&nbsp;||<a name="line_26"></a></li>
+<li id="line_27" class="odd"><span class="lineNumber">27&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;minutes&nbsp;===&nbsp;1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&amp;&amp;&nbsp;['m']&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;||<a name="line_27"></a></li>
+<li id="line_28" class="even"><span class="lineNumber">28&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;minutes&nbsp;&lt;&nbsp;thresholds.m&nbsp;&amp;&amp;&nbsp;['mm',&nbsp;minutes]&nbsp;||<a name="line_28"></a></li>
+<li id="line_29" class="odd"><span class="lineNumber">29&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hours&nbsp;&nbsp;&nbsp;===&nbsp;1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&amp;&amp;&nbsp;['h']&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;||<a name="line_29"></a></li>
+<li id="line_30" class="even"><span class="lineNumber">30&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hours&nbsp;&nbsp;&nbsp;&lt;&nbsp;thresholds.h&nbsp;&amp;&amp;&nbsp;['hh',&nbsp;hours]&nbsp;&nbsp;&nbsp;||<a name="line_30"></a></li>
+<li id="line_31" class="odd"><span class="lineNumber">31&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;days&nbsp;&nbsp;&nbsp;&nbsp;===&nbsp;1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&amp;&amp;&nbsp;['d']&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;||<a name="line_31"></a></li>
+<li id="line_32" class="even"><span class="lineNumber">32&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;days&nbsp;&nbsp;&nbsp;&nbsp;&lt;&nbsp;thresholds.d&nbsp;&amp;&amp;&nbsp;['dd',&nbsp;days]&nbsp;&nbsp;&nbsp;&nbsp;||<a name="line_32"></a></li>
+<li id="line_33" class="odd"><span class="lineNumber">33&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;months&nbsp;&nbsp;===&nbsp;1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&amp;&amp;&nbsp;['M']&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;||<a name="line_33"></a></li>
+<li id="line_34" class="even"><span class="lineNumber">34&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;months&nbsp;&nbsp;&lt;&nbsp;thresholds.M&nbsp;&amp;&amp;&nbsp;['MM',&nbsp;months]&nbsp;&nbsp;||<a name="line_34"></a></li>
+<li id="line_35" class="odd"><span class="lineNumber">35&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;years&nbsp;&nbsp;&nbsp;===&nbsp;1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&amp;&amp;&nbsp;['y']&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;['yy',&nbsp;years];<a name="line_35"></a></li>
+<li id="line_36" class="even"><span class="lineNumber">36&nbsp;</span><a name="line_36"></a></li>
+<li id="line_37" class="odd"><span class="lineNumber">37&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;a[2]&nbsp;=&nbsp;withoutSuffix;<a name="line_37"></a></li>
+<li id="line_38" class="even"><span class="lineNumber">38&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;a[3]&nbsp;=&nbsp;+posNegDuration&nbsp;&gt;&nbsp;0;<a name="line_38"></a></li>
+<li id="line_39" class="odd"><span class="lineNumber">39&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;a[4]&nbsp;=&nbsp;locale;<a name="line_39"></a></li>
+<li id="line_40" class="even"><span class="lineNumber">40&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;substituteTimeAgo.apply(null,&nbsp;a);<a name="line_40"></a></li>
+<li id="line_41" class="odd"><span class="lineNumber">41&nbsp;</span>}<a name="line_41"></a></li>
+<li id="line_42" class="even"><span class="lineNumber">42&nbsp;</span><a name="line_42"></a></li>
+<li id="line_43" class="odd"><span class="lineNumber">43&nbsp;</span>//&nbsp;This&nbsp;function&nbsp;allows&nbsp;you&nbsp;to&nbsp;set&nbsp;a&nbsp;threshold&nbsp;for&nbsp;relative&nbsp;time&nbsp;strings<a name="line_43"></a></li>
+<li id="line_44" class="even"><span class="lineNumber">44&nbsp;</span>export&nbsp;function&nbsp;getSetRelativeTimeThreshold&nbsp;(threshold,&nbsp;limit)&nbsp;{<a name="line_44"></a></li>
+<li id="line_45" class="odd"><span class="lineNumber">45&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(thresholds[threshold]&nbsp;===&nbsp;undefined)&nbsp;{<a name="line_45"></a></li>
+<li id="line_46" class="even"><span class="lineNumber">46&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;false;<a name="line_46"></a></li>
+<li id="line_47" class="odd"><span class="lineNumber">47&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;}<a name="line_47"></a></li>
+<li id="line_48" class="even"><span class="lineNumber">48&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(limit&nbsp;===&nbsp;undefined)&nbsp;{<a name="line_48"></a></li>
+<li id="line_49" class="odd"><span class="lineNumber">49&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;thresholds[threshold];<a name="line_49"></a></li>
+<li id="line_50" class="even"><span class="lineNumber">50&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;}<a name="line_50"></a></li>
+<li id="line_51" class="odd"><span class="lineNumber">51&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;thresholds[threshold]&nbsp;=&nbsp;limit;<a name="line_51"></a></li>
+<li id="line_52" class="even"><span class="lineNumber">52&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;true;<a name="line_52"></a></li>
+<li id="line_53" class="odd"><span class="lineNumber">53&nbsp;</span>}<a name="line_53"></a></li>
+<li id="line_54" class="even"><span class="lineNumber">54&nbsp;</span><a name="line_54"></a></li>
+<li id="line_55" class="odd"><span class="lineNumber">55&nbsp;</span>export&nbsp;function&nbsp;humanize&nbsp;(withSuffix)&nbsp;{<a name="line_55"></a></li>
+<li id="line_56" class="even"><span class="lineNumber">56&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;locale&nbsp;=&nbsp;this.localeData();<a name="line_56"></a></li>
+<li id="line_57" class="odd"><span class="lineNumber">57&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;output&nbsp;=&nbsp;relativeTime(this,&nbsp;!withSuffix,&nbsp;locale);<a name="line_57"></a></li>
+<li id="line_58" class="even"><span class="lineNumber">58&nbsp;</span><a name="line_58"></a></li>
+<li id="line_59" class="odd"><span class="lineNumber">59&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(withSuffix)&nbsp;{<a name="line_59"></a></li>
+<li id="line_60" class="even"><span class="lineNumber">60&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;output&nbsp;=&nbsp;locale.pastFuture(+this,&nbsp;output);<a name="line_60"></a></li>
+<li id="line_61" class="odd"><span class="lineNumber">61&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;}<a name="line_61"></a></li>
+<li id="line_62" class="even"><span class="lineNumber">62&nbsp;</span><a name="line_62"></a></li>
+<li id="line_63" class="odd"><span class="lineNumber">63&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;locale.postformat(output);<a name="line_63"></a></li>
+<li id="line_64" class="even"><span class="lineNumber">64&nbsp;</span>}<a name="line_64"></a></li></ol></div></body></html>
+                    </div>
+    </body>
+</html>

@@ -1,0 +1,92 @@
+{% extends 'base.html.twig' %}
+  {% block stylesheets %}
+      <link href="{{ asset('bundles/front/plugins/datatables/jquery.dataTables.min.css') }}" rel="stylesheet"
+            type="text/css"/>
+      <link href="{{ asset('bundles/front/plugins/datatables/responsive.bootstrap.min.css') }}" rel="stylesheet"
+            type="text/css"/>
+  {% endblock %}
+ {% block pageContent %}
+     <div class="card-box">
+
+         <div class="dropdown pull-right">
+             <a class="btn btn-new waves-effect waves-light m-b-5"
+                href="{{ path('ecran_new') }}"> <span>Ajouter </span>
+             </a>
+         </div>
+         <h4 class="header-title m-t-30 m-b-30">Liste des écrans supplémentaires</h4>
+
+       
+
+         {% for flashMessage in app.session.flashbag.get('notice') %}
+             <div class="alert alert-success fade in block-inner">
+                 <button type="button" class="close" data-dismiss="alert">×</button>
+                 {{ flashMessage }}
+             </div>
+         {% endfor %}
+       
+         {% if ecrans|length > 0 %}
+             {{ include('ecran/list_ecran.html.twig') }}
+         {% else %}
+             <div class="col-xs-12 empty-data">
+                 <div class="well"><h2> Aucun élément à afficher</h2>
+                 </div>
+             </div>
+         {% endif %}
+     </div>
+ {% endblock pageContent %}
+
+{% block javaScripts %}
+    <script src="{{ asset('bundles/front/plugins/magnific-popup/dist/jquery.magnific-popup.min.js') }}"></script>
+    <!-- Datatable init js -->
+    <script src="{{ asset('bundles/front/plugins/datatables/jquery.dataTables.min.js') }}"></script>
+    {#<script src="{{ asset('bundles/front/plugins/datatables/dataTables.bootstrap.js') }}"></script>#}
+    {#<script src="{{ asset('bundles/front/plugins/datatables/dataTables.responsive.min.js') }}"></script>#}
+
+
+    {#<!-- Datatable init js -->#}
+   {#<script src="{{ asset('bundles/fosjsrouting/js/router.js') }}"></script>#}
+    <script src="{{ path('fos_js_routing_js', {"callback": "fos.Router.setData"}) }}"></script>
+    {#script pour le changement d'ordre #}
+    <script>
+
+        $(function () {
+            $(document).ready(function () {
+
+                var table = $('#datatable-responsive').DataTable({
+                    "ordering": false,
+                    responsive: true,
+                    "columnDefs": [{
+                        "targets": 'no-sort',
+                        "orderable": true
+                    }]
+                });
+            });
+            $("#datatable-responsive tbody").sortable({
+                placeholder: "ui-sortable-placeholder",
+                update: function (event, ui) {
+                    ui.item.startPos = ui.item.index();
+                    $('.element').each(function (i) {
+                        $(this).children("#index").text(i + 1);// updates the data object
+                    });
+                },
+                stop: function (event, ui) {
+                    var path = "{{ path('ecran_update_ordre') }}";
+                    var order = $("#datatable-responsive tbody").sortable('toArray');
+                    $.ajax({
+                        type: "POST",
+                        dataType: "json",
+                        url: path,
+                        data: {order: order}
+                    });
+                }
+            });
+            //on search box keyup
+            $('input[type = search]').on('keyup', function () {
+                //start check from first character
+                table.search(' ' + this.value, true, false).draw();
+            });
+        });
+    </script>
+
+
+{% endblock %}

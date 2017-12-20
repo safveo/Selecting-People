@@ -1,0 +1,180 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>
+            Mayflower Code Browser - Source Code
+        </title>
+        <link rel="stylesheet" type="text/css" href="../../../../../../../js/jquery.sidebar/css/codebrowser/sidebar.css" />
+        <link rel="stylesheet" type="text/css" href="../../../../../../../css/global.css" />
+        <link rel="stylesheet" type="text/css" href="../../../../../../../css/cruisecontrol.css" />
+        <link rel="stylesheet" type="text/css" href="../../../../../../../css/review.css" />
+
+        <script type="text/javascript" src="../../../../../../../js/jquery-1.4.2.min.js"></script>
+        <script type="text/javascript" src="../../../../../../../js/jquery.sidebar/jquery-ui-1.7.2.custom.min.js"></script>
+        <script type="text/javascript" src="../../../../../../../js/jquery.sidebar/jquery.sidebar.js"></script>
+        <script type="text/javascript" src="../../../../../../../js/jquery.cluetip/lib/jquery.hoverIntent.js"></script>
+        <script type="text/javascript" src="../../../../../../../js/jquery.cluetip/lib/jquery.bgiframe.min.js"></script>
+        <script type="text/javascript" src="../../../../../../../js/jquery.cluetip/jquery.cluetip.min.js"></script>
+
+        <script type="text/javascript" src="../../../../../../../js/review.js"></script>
+    </head>
+    <body class="codebrowser">
+        <div class="header">
+            <a href="./../../../../../../../index.html">Go back to index</a> |
+            <a href="https://github.com/Mayflower/PHP_CodeBrowser">PHP CodeBrowser</a>
+        </div>
+        <hr/>
+        <div id="review">
+            <div class="filepath">
+                FrontBundle/Resources/public/plugins/moment/src/lib/moment/prototype.js            </div>
+
+            <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><div class="code"><ol class="code"><li id="line_1" class="odd"><span class="lineNumber">&nbsp;&nbsp;1&nbsp;</span>import&nbsp;{&nbsp;Moment&nbsp;}&nbsp;from&nbsp;'./constructor';<a name="line_1"></a></li>
+<li id="line_2" class="even"><span class="lineNumber">&nbsp;&nbsp;2&nbsp;</span><a name="line_2"></a></li>
+<li id="line_3" class="odd"><span class="lineNumber">&nbsp;&nbsp;3&nbsp;</span>var&nbsp;proto&nbsp;=&nbsp;Moment.prototype;<a name="line_3"></a></li>
+<li id="line_4" class="even"><span class="lineNumber">&nbsp;&nbsp;4&nbsp;</span><a name="line_4"></a></li>
+<li id="line_5" class="odd"><span class="lineNumber">&nbsp;&nbsp;5&nbsp;</span>import&nbsp;{&nbsp;add,&nbsp;subtract&nbsp;}&nbsp;from&nbsp;'./add-subtract';<a name="line_5"></a></li>
+<li id="line_6" class="even"><span class="lineNumber">&nbsp;&nbsp;6&nbsp;</span>import&nbsp;{&nbsp;calendar&nbsp;}&nbsp;from&nbsp;'./calendar';<a name="line_6"></a></li>
+<li id="line_7" class="odd"><span class="lineNumber">&nbsp;&nbsp;7&nbsp;</span>import&nbsp;{&nbsp;clone&nbsp;}&nbsp;from&nbsp;'./clone';<a name="line_7"></a></li>
+<li id="line_8" class="even"><span class="lineNumber">&nbsp;&nbsp;8&nbsp;</span>import&nbsp;{&nbsp;isBefore,&nbsp;isBetween,&nbsp;isSame,&nbsp;isAfter&nbsp;}&nbsp;from&nbsp;'./compare';<a name="line_8"></a></li>
+<li id="line_9" class="odd"><span class="lineNumber">&nbsp;&nbsp;9&nbsp;</span>import&nbsp;{&nbsp;diff&nbsp;}&nbsp;from&nbsp;'./diff';<a name="line_9"></a></li>
+<li id="line_10" class="even"><span class="lineNumber">&nbsp;10&nbsp;</span>import&nbsp;{&nbsp;format,&nbsp;toString,&nbsp;toISOString&nbsp;}&nbsp;from&nbsp;'./format';<a name="line_10"></a></li>
+<li id="line_11" class="odd"><span class="lineNumber">&nbsp;11&nbsp;</span>import&nbsp;{&nbsp;from,&nbsp;fromNow&nbsp;}&nbsp;from&nbsp;'./from';<a name="line_11"></a></li>
+<li id="line_12" class="even"><span class="lineNumber">&nbsp;12&nbsp;</span>import&nbsp;{&nbsp;to,&nbsp;toNow&nbsp;}&nbsp;from&nbsp;'./to';<a name="line_12"></a></li>
+<li id="line_13" class="odd"><span class="lineNumber">&nbsp;13&nbsp;</span>import&nbsp;{&nbsp;getSet&nbsp;}&nbsp;from&nbsp;'./get-set';<a name="line_13"></a></li>
+<li id="line_14" class="even"><span class="lineNumber">&nbsp;14&nbsp;</span>import&nbsp;{&nbsp;locale,&nbsp;localeData,&nbsp;lang&nbsp;}&nbsp;from&nbsp;'./locale';<a name="line_14"></a></li>
+<li id="line_15" class="odd"><span class="lineNumber">&nbsp;15&nbsp;</span>import&nbsp;{&nbsp;prototypeMin,&nbsp;prototypeMax&nbsp;}&nbsp;from&nbsp;'./min-max';<a name="line_15"></a></li>
+<li id="line_16" class="even"><span class="lineNumber">&nbsp;16&nbsp;</span>import&nbsp;{&nbsp;startOf,&nbsp;endOf&nbsp;}&nbsp;from&nbsp;'./start-end-of';<a name="line_16"></a></li>
+<li id="line_17" class="odd"><span class="lineNumber">&nbsp;17&nbsp;</span>import&nbsp;{&nbsp;valueOf,&nbsp;toDate,&nbsp;toArray,&nbsp;toObject,&nbsp;unix&nbsp;}&nbsp;from&nbsp;'./to-type';<a name="line_17"></a></li>
+<li id="line_18" class="even"><span class="lineNumber">&nbsp;18&nbsp;</span>import&nbsp;{&nbsp;isValid,&nbsp;parsingFlags,&nbsp;invalidAt&nbsp;}&nbsp;from&nbsp;'./valid';<a name="line_18"></a></li>
+<li id="line_19" class="odd"><span class="lineNumber">&nbsp;19&nbsp;</span><a name="line_19"></a></li>
+<li id="line_20" class="even"><span class="lineNumber">&nbsp;20&nbsp;</span>proto.add&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;add;<a name="line_20"></a></li>
+<li id="line_21" class="odd"><span class="lineNumber">&nbsp;21&nbsp;</span>proto.calendar&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;calendar;<a name="line_21"></a></li>
+<li id="line_22" class="even"><span class="lineNumber">&nbsp;22&nbsp;</span>proto.clone&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;clone;<a name="line_22"></a></li>
+<li id="line_23" class="odd"><span class="lineNumber">&nbsp;23&nbsp;</span>proto.diff&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;diff;<a name="line_23"></a></li>
+<li id="line_24" class="even"><span class="lineNumber">&nbsp;24&nbsp;</span>proto.endOf&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;endOf;<a name="line_24"></a></li>
+<li id="line_25" class="odd"><span class="lineNumber">&nbsp;25&nbsp;</span>proto.format&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;format;<a name="line_25"></a></li>
+<li id="line_26" class="even"><span class="lineNumber">&nbsp;26&nbsp;</span>proto.from&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;from;<a name="line_26"></a></li>
+<li id="line_27" class="odd"><span class="lineNumber">&nbsp;27&nbsp;</span>proto.fromNow&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;fromNow;<a name="line_27"></a></li>
+<li id="line_28" class="even"><span class="lineNumber">&nbsp;28&nbsp;</span>proto.to&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;to;<a name="line_28"></a></li>
+<li id="line_29" class="odd"><span class="lineNumber">&nbsp;29&nbsp;</span>proto.toNow&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;toNow;<a name="line_29"></a></li>
+<li id="line_30" class="even"><span class="lineNumber">&nbsp;30&nbsp;</span>proto.get&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;getSet;<a name="line_30"></a></li>
+<li id="line_31" class="odd"><span class="lineNumber">&nbsp;31&nbsp;</span>proto.invalidAt&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;invalidAt;<a name="line_31"></a></li>
+<li id="line_32" class="even"><span class="lineNumber">&nbsp;32&nbsp;</span>proto.isAfter&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;isAfter;<a name="line_32"></a></li>
+<li id="line_33" class="odd"><span class="lineNumber">&nbsp;33&nbsp;</span>proto.isBefore&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;isBefore;<a name="line_33"></a></li>
+<li id="line_34" class="even"><span class="lineNumber">&nbsp;34&nbsp;</span>proto.isBetween&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;isBetween;<a name="line_34"></a></li>
+<li id="line_35" class="odd"><span class="lineNumber">&nbsp;35&nbsp;</span>proto.isSame&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;isSame;<a name="line_35"></a></li>
+<li id="line_36" class="even"><span class="lineNumber">&nbsp;36&nbsp;</span>proto.isValid&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;isValid;<a name="line_36"></a></li>
+<li id="line_37" class="odd"><span class="lineNumber">&nbsp;37&nbsp;</span>proto.lang&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;lang;<a name="line_37"></a></li>
+<li id="line_38" class="even"><span class="lineNumber">&nbsp;38&nbsp;</span>proto.locale&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;locale;<a name="line_38"></a></li>
+<li id="line_39" class="odd"><span class="lineNumber">&nbsp;39&nbsp;</span>proto.localeData&nbsp;&nbsp;&nbsp;=&nbsp;localeData;<a name="line_39"></a></li>
+<li id="line_40" class="even"><span class="lineNumber">&nbsp;40&nbsp;</span>proto.max&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;prototypeMax;<a name="line_40"></a></li>
+<li id="line_41" class="odd"><span class="lineNumber">&nbsp;41&nbsp;</span>proto.min&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;prototypeMin;<a name="line_41"></a></li>
+<li id="line_42" class="even"><span class="lineNumber">&nbsp;42&nbsp;</span>proto.parsingFlags&nbsp;=&nbsp;parsingFlags;<a name="line_42"></a></li>
+<li id="line_43" class="odd"><span class="lineNumber">&nbsp;43&nbsp;</span>proto.set&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;getSet;<a name="line_43"></a></li>
+<li id="line_44" class="even"><span class="lineNumber">&nbsp;44&nbsp;</span>proto.startOf&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;startOf;<a name="line_44"></a></li>
+<li id="line_45" class="odd"><span class="lineNumber">&nbsp;45&nbsp;</span>proto.subtract&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;subtract;<a name="line_45"></a></li>
+<li id="line_46" class="even"><span class="lineNumber">&nbsp;46&nbsp;</span>proto.toArray&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;toArray;<a name="line_46"></a></li>
+<li id="line_47" class="odd"><span class="lineNumber">&nbsp;47&nbsp;</span>proto.toObject&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;toObject;<a name="line_47"></a></li>
+<li id="line_48" class="even"><span class="lineNumber">&nbsp;48&nbsp;</span>proto.toDate&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;toDate;<a name="line_48"></a></li>
+<li id="line_49" class="odd"><span class="lineNumber">&nbsp;49&nbsp;</span>proto.toISOString&nbsp;&nbsp;=&nbsp;toISOString;<a name="line_49"></a></li>
+<li id="line_50" class="even"><span class="lineNumber">&nbsp;50&nbsp;</span>proto.toJSON&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;toISOString;<a name="line_50"></a></li>
+<li id="line_51" class="odd"><span class="lineNumber">&nbsp;51&nbsp;</span>proto.toString&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;toString;<a name="line_51"></a></li>
+<li id="line_52" class="even"><span class="lineNumber">&nbsp;52&nbsp;</span>proto.unix&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;unix;<a name="line_52"></a></li>
+<li id="line_53" class="odd"><span class="lineNumber">&nbsp;53&nbsp;</span>proto.valueOf&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;valueOf;<a name="line_53"></a></li>
+<li id="line_54" class="even"><span class="lineNumber">&nbsp;54&nbsp;</span><a name="line_54"></a></li>
+<li id="line_55" class="odd"><span class="lineNumber">&nbsp;55&nbsp;</span>//&nbsp;Year<a name="line_55"></a></li>
+<li id="line_56" class="even"><span class="lineNumber">&nbsp;56&nbsp;</span>import&nbsp;{&nbsp;getSetYear,&nbsp;getIsLeapYear&nbsp;}&nbsp;from&nbsp;'../units/year';<a name="line_56"></a></li>
+<li id="line_57" class="odd"><span class="lineNumber">&nbsp;57&nbsp;</span>proto.year&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;getSetYear;<a name="line_57"></a></li>
+<li id="line_58" class="even"><span class="lineNumber">&nbsp;58&nbsp;</span>proto.isLeapYear&nbsp;=&nbsp;getIsLeapYear;<a name="line_58"></a></li>
+<li id="line_59" class="odd"><span class="lineNumber">&nbsp;59&nbsp;</span><a name="line_59"></a></li>
+<li id="line_60" class="even"><span class="lineNumber">&nbsp;60&nbsp;</span>//&nbsp;Week&nbsp;Year<a name="line_60"></a></li>
+<li id="line_61" class="odd"><span class="lineNumber">&nbsp;61&nbsp;</span>import&nbsp;{&nbsp;getSetWeekYear,&nbsp;getSetISOWeekYear,&nbsp;getWeeksInYear,&nbsp;getISOWeeksInYear&nbsp;}&nbsp;from&nbsp;'../units/week-year';<a name="line_61"></a></li>
+<li id="line_62" class="even"><span class="lineNumber">&nbsp;62&nbsp;</span>proto.weekYear&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;getSetWeekYear;<a name="line_62"></a></li>
+<li id="line_63" class="odd"><span class="lineNumber">&nbsp;63&nbsp;</span>proto.isoWeekYear&nbsp;=&nbsp;getSetISOWeekYear;<a name="line_63"></a></li>
+<li id="line_64" class="even"><span class="lineNumber">&nbsp;64&nbsp;</span><a name="line_64"></a></li>
+<li id="line_65" class="odd"><span class="lineNumber">&nbsp;65&nbsp;</span>//&nbsp;Quarter<a name="line_65"></a></li>
+<li id="line_66" class="even"><span class="lineNumber">&nbsp;66&nbsp;</span>import&nbsp;{&nbsp;getSetQuarter&nbsp;}&nbsp;from&nbsp;'../units/quarter';<a name="line_66"></a></li>
+<li id="line_67" class="odd"><span class="lineNumber">&nbsp;67&nbsp;</span>proto.quarter&nbsp;=&nbsp;proto.quarters&nbsp;=&nbsp;getSetQuarter;<a name="line_67"></a></li>
+<li id="line_68" class="even"><span class="lineNumber">&nbsp;68&nbsp;</span><a name="line_68"></a></li>
+<li id="line_69" class="odd"><span class="lineNumber">&nbsp;69&nbsp;</span>//&nbsp;Month<a name="line_69"></a></li>
+<li id="line_70" class="even"><span class="lineNumber">&nbsp;70&nbsp;</span>import&nbsp;{&nbsp;getSetMonth,&nbsp;getDaysInMonth&nbsp;}&nbsp;from&nbsp;'../units/month';<a name="line_70"></a></li>
+<li id="line_71" class="odd"><span class="lineNumber">&nbsp;71&nbsp;</span>proto.month&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;getSetMonth;<a name="line_71"></a></li>
+<li id="line_72" class="even"><span class="lineNumber">&nbsp;72&nbsp;</span>proto.daysInMonth&nbsp;=&nbsp;getDaysInMonth;<a name="line_72"></a></li>
+<li id="line_73" class="odd"><span class="lineNumber">&nbsp;73&nbsp;</span><a name="line_73"></a></li>
+<li id="line_74" class="even"><span class="lineNumber">&nbsp;74&nbsp;</span>//&nbsp;Week<a name="line_74"></a></li>
+<li id="line_75" class="odd"><span class="lineNumber">&nbsp;75&nbsp;</span>import&nbsp;{&nbsp;getSetWeek,&nbsp;getSetISOWeek&nbsp;}&nbsp;from&nbsp;'../units/week';<a name="line_75"></a></li>
+<li id="line_76" class="even"><span class="lineNumber">&nbsp;76&nbsp;</span>proto.week&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;proto.weeks&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;getSetWeek;<a name="line_76"></a></li>
+<li id="line_77" class="odd"><span class="lineNumber">&nbsp;77&nbsp;</span>proto.isoWeek&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;proto.isoWeeks&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;getSetISOWeek;<a name="line_77"></a></li>
+<li id="line_78" class="even"><span class="lineNumber">&nbsp;78&nbsp;</span>proto.weeksInYear&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;getWeeksInYear;<a name="line_78"></a></li>
+<li id="line_79" class="odd"><span class="lineNumber">&nbsp;79&nbsp;</span>proto.isoWeeksInYear&nbsp;=&nbsp;getISOWeeksInYear;<a name="line_79"></a></li>
+<li id="line_80" class="even"><span class="lineNumber">&nbsp;80&nbsp;</span><a name="line_80"></a></li>
+<li id="line_81" class="odd"><span class="lineNumber">&nbsp;81&nbsp;</span>//&nbsp;Day<a name="line_81"></a></li>
+<li id="line_82" class="even"><span class="lineNumber">&nbsp;82&nbsp;</span>import&nbsp;{&nbsp;getSetDayOfMonth&nbsp;}&nbsp;from&nbsp;'../units/day-of-month';<a name="line_82"></a></li>
+<li id="line_83" class="odd"><span class="lineNumber">&nbsp;83&nbsp;</span>import&nbsp;{&nbsp;getSetDayOfWeek,&nbsp;getSetISODayOfWeek,&nbsp;getSetLocaleDayOfWeek&nbsp;}&nbsp;from&nbsp;'../units/day-of-week';<a name="line_83"></a></li>
+<li id="line_84" class="even"><span class="lineNumber">&nbsp;84&nbsp;</span>import&nbsp;{&nbsp;getSetDayOfYear&nbsp;}&nbsp;from&nbsp;'../units/day-of-year';<a name="line_84"></a></li>
+<li id="line_85" class="odd"><span class="lineNumber">&nbsp;85&nbsp;</span>proto.date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;getSetDayOfMonth;<a name="line_85"></a></li>
+<li id="line_86" class="even"><span class="lineNumber">&nbsp;86&nbsp;</span>proto.day&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;proto.days&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;getSetDayOfWeek;<a name="line_86"></a></li>
+<li id="line_87" class="odd"><span class="lineNumber">&nbsp;87&nbsp;</span>proto.weekday&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;getSetLocaleDayOfWeek;<a name="line_87"></a></li>
+<li id="line_88" class="even"><span class="lineNumber">&nbsp;88&nbsp;</span>proto.isoWeekday&nbsp;=&nbsp;getSetISODayOfWeek;<a name="line_88"></a></li>
+<li id="line_89" class="odd"><span class="lineNumber">&nbsp;89&nbsp;</span>proto.dayOfYear&nbsp;&nbsp;=&nbsp;getSetDayOfYear;<a name="line_89"></a></li>
+<li id="line_90" class="even"><span class="lineNumber">&nbsp;90&nbsp;</span><a name="line_90"></a></li>
+<li id="line_91" class="odd"><span class="lineNumber">&nbsp;91&nbsp;</span>//&nbsp;Hour<a name="line_91"></a></li>
+<li id="line_92" class="even"><span class="lineNumber">&nbsp;92&nbsp;</span>import&nbsp;{&nbsp;getSetHour&nbsp;}&nbsp;from&nbsp;'../units/hour';<a name="line_92"></a></li>
+<li id="line_93" class="odd"><span class="lineNumber">&nbsp;93&nbsp;</span>proto.hour&nbsp;=&nbsp;proto.hours&nbsp;=&nbsp;getSetHour;<a name="line_93"></a></li>
+<li id="line_94" class="even"><span class="lineNumber">&nbsp;94&nbsp;</span><a name="line_94"></a></li>
+<li id="line_95" class="odd"><span class="lineNumber">&nbsp;95&nbsp;</span>//&nbsp;Minute<a name="line_95"></a></li>
+<li id="line_96" class="even"><span class="lineNumber">&nbsp;96&nbsp;</span>import&nbsp;{&nbsp;getSetMinute&nbsp;}&nbsp;from&nbsp;'../units/minute';<a name="line_96"></a></li>
+<li id="line_97" class="odd"><span class="lineNumber">&nbsp;97&nbsp;</span>proto.minute&nbsp;=&nbsp;proto.minutes&nbsp;=&nbsp;getSetMinute;<a name="line_97"></a></li>
+<li id="line_98" class="even"><span class="lineNumber">&nbsp;98&nbsp;</span><a name="line_98"></a></li>
+<li id="line_99" class="odd"><span class="lineNumber">&nbsp;99&nbsp;</span>//&nbsp;Second<a name="line_99"></a></li>
+<li id="line_100" class="even"><span class="lineNumber">100&nbsp;</span>import&nbsp;{&nbsp;getSetSecond&nbsp;}&nbsp;from&nbsp;'../units/second';<a name="line_100"></a></li>
+<li id="line_101" class="odd"><span class="lineNumber">101&nbsp;</span>proto.second&nbsp;=&nbsp;proto.seconds&nbsp;=&nbsp;getSetSecond;<a name="line_101"></a></li>
+<li id="line_102" class="even"><span class="lineNumber">102&nbsp;</span><a name="line_102"></a></li>
+<li id="line_103" class="odd"><span class="lineNumber">103&nbsp;</span>//&nbsp;Millisecond<a name="line_103"></a></li>
+<li id="line_104" class="even"><span class="lineNumber">104&nbsp;</span>import&nbsp;{&nbsp;getSetMillisecond&nbsp;}&nbsp;from&nbsp;'../units/millisecond';<a name="line_104"></a></li>
+<li id="line_105" class="odd"><span class="lineNumber">105&nbsp;</span>proto.millisecond&nbsp;=&nbsp;proto.milliseconds&nbsp;=&nbsp;getSetMillisecond;<a name="line_105"></a></li>
+<li id="line_106" class="even"><span class="lineNumber">106&nbsp;</span><a name="line_106"></a></li>
+<li id="line_107" class="odd"><span class="lineNumber">107&nbsp;</span>//&nbsp;Offset<a name="line_107"></a></li>
+<li id="line_108" class="even"><span class="lineNumber">108&nbsp;</span>import&nbsp;{<a name="line_108"></a></li>
+<li id="line_109" class="odd"><span class="lineNumber">109&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;getSetOffset,<a name="line_109"></a></li>
+<li id="line_110" class="even"><span class="lineNumber">110&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;setOffsetToUTC,<a name="line_110"></a></li>
+<li id="line_111" class="odd"><span class="lineNumber">111&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;setOffsetToLocal,<a name="line_111"></a></li>
+<li id="line_112" class="even"><span class="lineNumber">112&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;setOffsetToParsedOffset,<a name="line_112"></a></li>
+<li id="line_113" class="odd"><span class="lineNumber">113&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;hasAlignedHourOffset,<a name="line_113"></a></li>
+<li id="line_114" class="even"><span class="lineNumber">114&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;isDaylightSavingTime,<a name="line_114"></a></li>
+<li id="line_115" class="odd"><span class="lineNumber">115&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;isDaylightSavingTimeShifted,<a name="line_115"></a></li>
+<li id="line_116" class="even"><span class="lineNumber">116&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;getSetZone,<a name="line_116"></a></li>
+<li id="line_117" class="odd"><span class="lineNumber">117&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;isLocal,<a name="line_117"></a></li>
+<li id="line_118" class="even"><span class="lineNumber">118&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;isUtcOffset,<a name="line_118"></a></li>
+<li id="line_119" class="odd"><span class="lineNumber">119&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;isUtc<a name="line_119"></a></li>
+<li id="line_120" class="even"><span class="lineNumber">120&nbsp;</span>}&nbsp;from&nbsp;'../units/offset';<a name="line_120"></a></li>
+<li id="line_121" class="odd"><span class="lineNumber">121&nbsp;</span>proto.utcOffset&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;getSetOffset;<a name="line_121"></a></li>
+<li id="line_122" class="even"><span class="lineNumber">122&nbsp;</span>proto.utc&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;setOffsetToUTC;<a name="line_122"></a></li>
+<li id="line_123" class="odd"><span class="lineNumber">123&nbsp;</span>proto.local&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;setOffsetToLocal;<a name="line_123"></a></li>
+<li id="line_124" class="even"><span class="lineNumber">124&nbsp;</span>proto.parseZone&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;setOffsetToParsedOffset;<a name="line_124"></a></li>
+<li id="line_125" class="odd"><span class="lineNumber">125&nbsp;</span>proto.hasAlignedHourOffset&nbsp;=&nbsp;hasAlignedHourOffset;<a name="line_125"></a></li>
+<li id="line_126" class="even"><span class="lineNumber">126&nbsp;</span>proto.isDST&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;isDaylightSavingTime;<a name="line_126"></a></li>
+<li id="line_127" class="odd"><span class="lineNumber">127&nbsp;</span>proto.isDSTShifted&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;isDaylightSavingTimeShifted;<a name="line_127"></a></li>
+<li id="line_128" class="even"><span class="lineNumber">128&nbsp;</span>proto.isLocal&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;isLocal;<a name="line_128"></a></li>
+<li id="line_129" class="odd"><span class="lineNumber">129&nbsp;</span>proto.isUtcOffset&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;isUtcOffset;<a name="line_129"></a></li>
+<li id="line_130" class="even"><span class="lineNumber">130&nbsp;</span>proto.isUtc&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;isUtc;<a name="line_130"></a></li>
+<li id="line_131" class="odd"><span class="lineNumber">131&nbsp;</span>proto.isUTC&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;isUtc;<a name="line_131"></a></li>
+<li id="line_132" class="even"><span class="lineNumber">132&nbsp;</span><a name="line_132"></a></li>
+<li id="line_133" class="odd"><span class="lineNumber">133&nbsp;</span>//&nbsp;Timezone<a name="line_133"></a></li>
+<li id="line_134" class="even"><span class="lineNumber">134&nbsp;</span>import&nbsp;{&nbsp;getZoneAbbr,&nbsp;getZoneName&nbsp;}&nbsp;from&nbsp;'../units/timezone';<a name="line_134"></a></li>
+<li id="line_135" class="odd"><span class="lineNumber">135&nbsp;</span>proto.zoneAbbr&nbsp;=&nbsp;getZoneAbbr;<a name="line_135"></a></li>
+<li id="line_136" class="even"><span class="lineNumber">136&nbsp;</span>proto.zoneName&nbsp;=&nbsp;getZoneName;<a name="line_136"></a></li>
+<li id="line_137" class="odd"><span class="lineNumber">137&nbsp;</span><a name="line_137"></a></li>
+<li id="line_138" class="even"><span class="lineNumber">138&nbsp;</span>//&nbsp;Deprecations<a name="line_138"></a></li>
+<li id="line_139" class="odd"><span class="lineNumber">139&nbsp;</span>import&nbsp;{&nbsp;deprecate&nbsp;}&nbsp;from&nbsp;'../utils/deprecate';<a name="line_139"></a></li>
+<li id="line_140" class="even"><span class="lineNumber">140&nbsp;</span>proto.dates&nbsp;&nbsp;=&nbsp;deprecate('dates&nbsp;accessor&nbsp;is&nbsp;deprecated.&nbsp;Use&nbsp;date&nbsp;instead.',&nbsp;getSetDayOfMonth);<a name="line_140"></a></li>
+<li id="line_141" class="odd"><span class="lineNumber">141&nbsp;</span>proto.months&nbsp;=&nbsp;deprecate('months&nbsp;accessor&nbsp;is&nbsp;deprecated.&nbsp;Use&nbsp;month&nbsp;instead',&nbsp;getSetMonth);<a name="line_141"></a></li>
+<li id="line_142" class="even"><span class="lineNumber">142&nbsp;</span>proto.years&nbsp;&nbsp;=&nbsp;deprecate('years&nbsp;accessor&nbsp;is&nbsp;deprecated.&nbsp;Use&nbsp;year&nbsp;instead',&nbsp;getSetYear);<a name="line_142"></a></li>
+<li id="line_143" class="odd"><span class="lineNumber">143&nbsp;</span>proto.zone&nbsp;&nbsp;&nbsp;=&nbsp;deprecate('moment().zone&nbsp;is&nbsp;deprecated,&nbsp;use&nbsp;moment().utcOffset&nbsp;instead.&nbsp;https://github.com/moment/moment/issues/1779',&nbsp;getSetZone);<a name="line_143"></a></li>
+<li id="line_144" class="even"><span class="lineNumber">144&nbsp;</span><a name="line_144"></a></li>
+<li id="line_145" class="odd"><span class="lineNumber">145&nbsp;</span>export&nbsp;default&nbsp;proto;<a name="line_145"></a></li></ol></div></body></html>
+                    </div>
+    </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>
+            Mayflower Code Browser - Source Code
+        </title>
+        <link rel="stylesheet" type="text/css" href="../../../../../../js/jquery.sidebar/css/codebrowser/sidebar.css" />
+        <link rel="stylesheet" type="text/css" href="../../../../../../css/global.css" />
+        <link rel="stylesheet" type="text/css" href="../../../../../../css/cruisecontrol.css" />
+        <link rel="stylesheet" type="text/css" href="../../../../../../css/review.css" />
+
+        <script type="text/javascript" src="../../../../../../js/jquery-1.4.2.min.js"></script>
+        <script type="text/javascript" src="../../../../../../js/jquery.sidebar/jquery-ui-1.7.2.custom.min.js"></script>
+        <script type="text/javascript" src="../../../../../../js/jquery.sidebar/jquery.sidebar.js"></script>
+        <script type="text/javascript" src="../../../../../../js/jquery.cluetip/lib/jquery.hoverIntent.js"></script>
+        <script type="text/javascript" src="../../../../../../js/jquery.cluetip/lib/jquery.bgiframe.min.js"></script>
+        <script type="text/javascript" src="../../../../../../js/jquery.cluetip/jquery.cluetip.min.js"></script>
+
+        <script type="text/javascript" src="../../../../../../js/review.js"></script>
+    </head>
+    <body class="codebrowser">
+        <div class="header">
+            <a href="./../../../../../../index.html">Go back to index</a> |
+            <a href="https://github.com/Mayflower/PHP_CodeBrowser">PHP CodeBrowser</a>
+        </div>
+        <hr/>
+        <div id="review">
+            <div class="filepath">
+                FrontBundle/Resources/public/plugins/fullcalendar/dist/lang/hu.js            </div>
+
+            <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><div class="code"><ol class="code"><li id="line_1" class="odd"><span class="lineNumber">1&nbsp;</span>!function(a){"function"==typeof&nbsp;define&amp;&amp;define.amd?define(["jquery","moment"],a):a(jQuery,moment)}(function(a,b){function&nbsp;c(a,b,c,d){var&nbsp;e=a;switch(c){case"s":return&nbsp;d||b?"n&eacute;h&aacute;ny&nbsp;m&aacute;sodperc":"n&eacute;h&aacute;ny&nbsp;m&aacute;sodperce";case"m":return"egy"+(d||b?"&nbsp;perc":"&nbsp;perce");case"mm":return&nbsp;e+(d||b?"&nbsp;perc":"&nbsp;perce");case"h":return"egy"+(d||b?"&nbsp;&oacute;ra":"&nbsp;&oacute;r&aacute;ja");case"hh":return&nbsp;e+(d||b?"&nbsp;&oacute;ra":"&nbsp;&oacute;r&aacute;ja");case"d":return"egy"+(d||b?"&nbsp;nap":"&nbsp;napja");case"dd":return&nbsp;e+(d||b?"&nbsp;nap":"&nbsp;napja");case"M":return"egy"+(d||b?"&nbsp;h&oacute;nap":"&nbsp;h&oacute;napja");case"MM":return&nbsp;e+(d||b?"&nbsp;h&oacute;nap":"&nbsp;h&oacute;napja");case"y":return"egy"+(d||b?"&nbsp;&eacute;v":"&nbsp;&eacute;ve");case"yy":return&nbsp;e+(d||b?"&nbsp;&eacute;v":"&nbsp;&eacute;ve")}return""}function&nbsp;d(a){return(a?"":"[m&uacute;lt]&nbsp;")+"["+e[this.day()]+"]&nbsp;LT[-kor]"}var&nbsp;e="vas&aacute;rnap&nbsp;h&eacute;tf&Aring;&#145;n&nbsp;kedden&nbsp;szerd&aacute;n&nbsp;cs&uuml;t&ouml;rt&ouml;k&ouml;n&nbsp;p&eacute;nteken&nbsp;szombaton".split("&nbsp;");(b.defineLocale||b.lang).call(b,"hu",{months:"janu&aacute;r_febru&aacute;r_m&aacute;rcius_&aacute;prilis_m&aacute;jus_j&uacute;nius_j&uacute;lius_augusztus_szeptember_okt&oacute;ber_november_december".split("_"),monthsShort:"jan_feb_m&aacute;rc_&aacute;pr_m&aacute;j_j&uacute;n_j&uacute;l_aug_szept_okt_nov_dec".split("_"),weekdays:"vas&aacute;rnap_h&eacute;tf&Aring;&#145;_kedd_szerda_cs&uuml;t&ouml;rt&ouml;k_p&eacute;ntek_szombat".split("_"),weekdaysShort:"vas_h&eacute;t_kedd_sze_cs&uuml;t_p&eacute;n_szo".split("_"),weekdaysMin:"v_h_k_sze_cs_p_szo".split("_"),longDateFormat:{LT:"H:mm",LTS:"LT:ss",L:"YYYY.MM.DD.",LL:"YYYY.&nbsp;MMMM&nbsp;D.",LLL:"YYYY.&nbsp;MMMM&nbsp;D.,&nbsp;LT",LLLL:"YYYY.&nbsp;MMMM&nbsp;D.,&nbsp;dddd&nbsp;LT"},meridiemParse:/de|du/i,isPM:function(a){return"u"===a.charAt(1).toLowerCase()},meridiem:function(a,b,c){return&nbsp;12&gt;a?c===!0?"de":"DE":c===!0?"du":"DU"},calendar:{sameDay:"[ma]&nbsp;LT[-kor]",nextDay:"[holnap]&nbsp;LT[-kor]",nextWeek:function(){return&nbsp;d.call(this,!0)},lastDay:"[tegnap]&nbsp;LT[-kor]",lastWeek:function(){return&nbsp;d.call(this,!1)},sameElse:"L"},relativeTime:{future:"%s&nbsp;m&uacute;lva",past:"%s",s:c,m:c,mm:c,h:c,hh:c,d:c,dd:c,M:c,MM:c,y:c,yy:c},ordinalParse:/\d{1,2}\./,ordinal:"%d.",week:{dow:1,doy:7}}),a.fullCalendar.datepickerLang("hu","hu",{closeText:"bez&aacute;r",prevText:"vissza",nextText:"el&Aring;&#145;re",currentText:"ma",monthNames:["Janu&aacute;r","Febru&aacute;r","M&aacute;rcius","&Aacute;prilis","M&aacute;jus","J&uacute;nius","J&uacute;lius","Augusztus","Szeptember","Okt&oacute;ber","November","December"],monthNamesShort:["Jan","Feb","M&aacute;r","&Aacute;pr","M&aacute;j","J&uacute;n","J&uacute;l","Aug","Szep","Okt","Nov","Dec"],dayNames:["Vas&aacute;rnap","H&eacute;tf&Aring;&#145;","Kedd","Szerda","Cs&uuml;t&ouml;rt&ouml;k","P&eacute;ntek","Szombat"],dayNamesShort:["Vas","H&eacute;t","Ked","Sze","Cs&uuml;","P&eacute;n","Szo"],dayNamesMin:["V","H","K","Sze","Cs","P","Szo"],weekHeader:"H&eacute;t",dateFormat:"yy.mm.dd.",firstDay:1,isRTL:!1,showMonthAfterYear:!0,yearSuffix:""}),a.fullCalendar.lang("hu",{buttonText:{month:"H&oacute;nap",week:"H&eacute;t",day:"Nap",list:"Napl&oacute;"},allDayText:"Eg&eacute;sz&nbsp;nap",eventLimitText:"tov&aacute;bbi"})});<a name="line_1"></a></li></ol></div></body></html>
+                    </div>
+    </body>
+</html>

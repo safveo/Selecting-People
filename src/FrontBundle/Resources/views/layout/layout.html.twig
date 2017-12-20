@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html style="overflow:hidden">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
+    <meta http-equiv="X-UA-Compatible" content="IE=9">
+{% if ConditionBoocle == 0 %} <meta http-equiv="Refresh" content="10;url={% block nextpage %}{% endblock %}">{% endif %}
+    <title>Indicateurs TV</title>
+    {{ include('FrontBundle:layout:header.html.twig') }}
+    <link rel="shortcut icon" href="" />
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Cache" content="no store" />
+    <meta http-equiv="Expires" content="-1" />
+</head>
+<body class="skin-purple  sidebar-collapse" >
+<div>
+    <div class="content-wrapper">
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/highcharts-more.js"></script>
+        <div class="row">
+            <div class="col-md-1">
+                <div id="containerClock" style=" margin: 0 auto;margin-left: -15px;">
+                </div>
+                    </div>
+            <div class="col-md-10">
+                {% block content %}
+                {% endblock %}
+          {#</div>#}
+            {#<div class="col-md-1">#}
+            </div>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>

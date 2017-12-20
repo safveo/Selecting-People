@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A fully featured admin theme which can be used to build CRM, CMS, etc.">
+    <meta name="author" content="Coderthemes">
+
+    <title>TV</title>
+
+    <!-- App css -->
+    <link href="{{ asset('bundles/front/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css"/>
+    <link href="{{ asset('bundles/front/css/core.css') }}" rel="stylesheet" type="text/css"/>
+    <link href="{{ asset('bundles/front/css/components.css') }}" rel="stylesheet" type="text/css"/>
+    <link href="{{ asset('bundles/front/css/icons.css') }}" rel="stylesheet" type="text/css"/>
+    <link href="{{ asset('bundles/front/css/pages.css') }}" rel="stylesheet" type="text/css"/>
+    <link href="{{ asset('bundles/front/css/menu.css') }}" rel="stylesheet" type="text/css"/>
+    <link href="{{ asset('bundles/front/css/responsive.css') }}" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="{{ asset('bundles/front/css/tv.css') }}">
+    <link rel="stylesheet" href="{{ asset('bundles/front/plugins/magnific-popup/dist/magnific-popup.css') }}"/>
+
+    <link href="{{ asset('bundles/front/plugins/fullcalendar/dist/fullcalendar.css') }}
+     " rel="stylesheet"/>
+
+
+
+
+    {% block stylesheets %}
+    {% endblock %}
+    <!-- HTML5 Shiv and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="{{ asset('bundles/front/js/modernizr.min.js') }}"></script>
+    <!-- jQuery  -->
+    <script src="{{ asset('bundles/front/js/jquery.min.js') }}"></script>
+
+    <script type="text/javascript" src="{{ asset('bundles/front/js/jquery-ui.min.js') }}"></script>
+    {% block js %}
+    {% endblock %}
+
+</head>
+
+
+<body class="fixed-left">
+
+<!-- Begin page -->
+<div id="wrapper">
+
+    <!-- Top Bar Start -->
+    <div class="topbar">
+
+        <!-- LOGO -->
+        <div class="navbar navbar-default" role="navigation">
+            <div class="container">
+
+                <!-- Page title -->
+                <ul class="nav navbar-nav navbar-left">
+                    <li>
+                        <button class="button-menu-mobile open-left">
+                            <i class="zmdi zmdi-menu"></i>
+                        </button>
+
+                    </li>
+
+                </ul>
+
+                <!-- Right(Notification and Searchbox -->
+                <ul class="nav navbar-nav navbar-right">
+
+                </ul>
+
+            </div><!-- end container -->
+        </div><!-- end navbar -->
+
+    </div>
+    <!-- Top Bar End -->
+
+    <!-- ============================================================== -->
+    <!-- Start right Content here -->
+    <!-- ============================================================== -->
+    <div class="content-page">
+
+        <!-- Start content -->
+        <div class="content">
+            <a data-toggle="tooltip" data-placement="top" title="Déconnexion" href="{{ path('fos_user_security_logout') }}" class="text-custom">
+                <i class="zmdi zmdi-power"></i>Deconnexion
+            </a>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        {% block pageContent %}
+                        {% endblock pageContent %}
+                    </div>
+                </div>
+
+
+            </div> <!-- container -->
+
+        </div> <!-- content -->
+
+        <footer class="footer text-right">
+            2017 © NOZ.
+            <img class="logo image-responsive" src="{{ asset('bundles/front/images/logotype-noz.png') }}">
+        </footer>
+
+    </div>
+
+
+
+
+
+
+    <!-- /Right-bar -->
+    {# Pop Up Delete #}
+    <div id="delete" class="modal-block mfp-hide">
+        <section class="panel panel-info panel-color">
+            <header class="panel-heading">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">×</span>
+                </button>
+                <h2 class="panel-title">Suppression</h2>
+            </header>
+            <div class="panel-body">
+                <div class="modal-wrapper">
+                    <div class="modal-text">
+                        <p>Êtes-vous sûr de vouloir supprimer </p>
+                    </div>
+                </div>
+
+                <div class="row m-t-20">
+                    <div class="col-md-12 text-right">
+                        <button id="deleteConfirm" class="btn btn-info waves-effect waves-light">Oui</button>
+                        <button id="deleteCancel" class="btn btn-default waves-effect">Non</button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </div>
+
+    {# Pop Up Active/Désactiver #}
+    <div id="active" class="modal-block mfp-hide">
+        <section class="panel panel-info panel-color">
+            <header class="panel-heading">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">×</span>
+                </button>
+                <h2 class="panel-title">Etat</h2>
+            </header>
+            <div class="panel-body">
+                <div class="modal-wrapper">
+                    <div class="modal-text">
+                        <p>Êtes-vous sûr de vouloir changer l'etat</p>
+                    </div>
+                </div>
+
+                <div class="row m-t-20">
+                    <div class="col-md-12 text-right">
+                        <button id="activeConfirm" class="btn btn-info waves-effect waves-light">Oui</button>
+                        <button id="activeCancel" class="btn btn-default waves-effect">Non</button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </div>
+
+
+</div>
+
+<script src="{{ asset('bundles/front/js/bootstrap.min.js') }}"></script>
+<script src="{{ asset('bundles/front/js/detect.js') }}"></script>
+<script src="{{ asset('bundles/front/js/fastclick.js') }}"></script>
+<script src="{{ asset('bundles/front/js/jquery.slimscroll.js') }}"></script>
+<script type="text/javascript" src="{{ asset('bundles/front/js/tv.js') }}"></script>
+
+<script>
+    $(function(){
+        $(".slimScrollDiv").slimScroll({
+            height: '100%'
+        });
+    });
+</script>
+
+
+{% block javaScripts %}
+{% endblock javaScripts %}
+<!-- App js -->
+<!-- App js -->
+<script src="{{ asset('bundles/front/js/jquery.core.js') }}"></script>
+{#<script src="{{ asset('bundles/front/js/jquery.app.js') }}"></script>#}
+
+</body>
+</html>
